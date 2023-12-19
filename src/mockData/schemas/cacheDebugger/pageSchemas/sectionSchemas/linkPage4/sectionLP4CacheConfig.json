@@ -1,0 +1,22 @@
+{
+  "timeout": "1m",
+  "sourceType": "beanCache",
+  "kind": "contextAware",
+  "jitter": "0ms",
+  "useHardReferences": "true",
+  "size": "400",
+  "_expire": "-1",
+  "contextKeys": [
+    "app",
+    "mode",
+    "oldCacheFiller",
+    "segment",
+    "host",
+    "cacheFiller",
+    "region",
+    "layer",
+    "dc"
+  ],
+  "name": "BeanCache MemCached MemCachedConfiguration",
+  "maximumStaleness": "0ms"
+}

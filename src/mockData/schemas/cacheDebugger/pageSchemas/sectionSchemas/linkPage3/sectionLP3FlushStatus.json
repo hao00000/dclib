@@ -1,0 +1,27 @@
+{
+  "BeanCache service-trace ServiceTraceConfiguration": {
+    "effectiveSoftFlushDate": {
+      "audit": {
+        "auditTimestamp": "1552454934021",
+        "comment": "Not flushed"
+      },
+      "softFlushTimestamp": "0"
+    },
+    "cacheCfmHealth": {
+      "inGracePeriod": "false",
+      "statusMessage": "Blacklisted",
+      "status": "OFF"
+    },
+    "hardFlushDebugInfo": {
+      "changeDate": {
+        "audit": {
+          "auditTimestamp": "1552454934021",
+          "comment": "Not hard-flushed"
+        },
+        "softFlushTimestamp": "1552454934021"
+      },
+      "state": "NEVER_FLUSHED"
+    }
+  },
+  "_expire": "-1"
+}

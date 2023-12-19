@@ -1,0 +1,60 @@
+{
+  "pageMeta": {
+    "pageController": "controllers/urlDocsController.js"
+  },
+  "sections": [
+    {
+      "type": "PRE",
+      "title": "Index",
+      "loadAction": {
+        "type": "xhr",
+        "method": "GET",
+        "url": "/src/mockData/schemas/UrlsDocumentation/pageSchemas/sectionSchemas/UrlPatterns.json",
+        "data": {
+          "method": "getUrlPatterns"
+        },
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "urlDocIndexResponse"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "page error.",
+          "failureHandler": "myPageFailureHandler"
+        }
+      },
+      "sectionLocation": "Number(optional)",
+      "sourceDataStore": "urlDocIndexResponse",
+      "sourceDataField": "urlDocIndexResponse.result",
+      "renderHandler": "renderUrlDocsIndexOutput"
+
+    },
+    {
+      "type": "PRE",
+      "title": "Dispatchable URLS",
+      "loadAction": {
+        "type": "xhr",
+        "method": "GET",
+        "url": "/servicedebugger/send/:appContext.serviceName/:appContext.host/:appContext.port/admin",
+        "oldUrl": "/src/mockData/schemas/UrlsDocumentation/pageSchemas/sectionSchemas/UrlPatterns.json",
+        "data": {
+          "method": "getUrlPatterns"
+        },
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "urlDocumentationResponse"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "page error.",
+          "failureHandler": "myPageFailureHandler"
+        }
+      },
+      "sectionLocation": "Number(optional)",
+      "sourceDataStore": "urlDocumentationResponse",
+      "sourceDataField": "urlDocumentationResponse.result",
+      "renderHandler": "renderUrlDocsOutput"
+
+    }
+  ]
+}

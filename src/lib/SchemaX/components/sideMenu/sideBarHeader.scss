@@ -1,0 +1,60 @@
+.sidebar {
+  .brand {
+    &.ce0-bg-color,
+    &.xe0-bg-color,
+    &.qa-bg-color {
+      border-bottom: 1px solid #c3c0c0 !important;
+    }
+    &.stag-bg-color {
+      border-bottom: 1px solid #999 !important;
+    }
+    width: 100%;
+    display: flex;
+    background-color: $header-brand-bg-color;
+    color: $header-brand-color;
+    height: 80px;
+    border-bottom: 1px solid $header-brand-bottom-border-color;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    .brand-container {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+    .logo {
+      font-size: 17px;
+      vertical-align: top;
+      cursor: pointer;
+
+      .apple-logo {
+        font-size: 28px;
+        display: inline-block;
+        height: 28px;
+        width: 28px;
+        float: left;
+        margin-top: -9px;
+        .apple-icon {
+          padding-left: 3px;
+        }
+      }
+
+      .service-name {
+        color: #efefef;
+        font-weight: bold;
+      }
+
+      .config-layer {
+        font-size: 14px;
+        margin-left: 28px;
+      }
+
+      span {
+        word-break: break-all;
+      }
+
+      img {
+        padding-right: 3px;
+      }
+    }
+  }
+}

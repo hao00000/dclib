@@ -1,0 +1,248 @@
+{
+  "title": "DataStorageService",
+  "appContext": [
+    {
+      "contextField": "serviceName",
+      "valueResolver": ":query.serviceName",
+      "required": true
+    },
+    {
+      "contextField": "host",
+      "valueResolver": ":query.host",
+      "required": true
+    },
+    {
+      "contextField": "port",
+      "valueResolver": ":query.port",
+      "required": true
+    },
+    {
+      "contextField": "sdEnvironment",
+      "valueResolver": ":query.sdEnvironment",
+      "defaultValue": "DEV01"
+    },
+    {
+      "contextField": "urlPrefix",
+      "valueResolver": ":query.urlPrefix",
+      "defaultValue": "servicedebugger"
+    }
+  ],
+  "desc": "a prototype project, a set of configurations to allow users to define their schema, data set and how the UI displays",
+  "appMeta": {
+    "appController": "controllers/appController.js",
+    "loadAction": [
+      {
+        "type": "xhr",
+        "url": "/src/mockData/schemas/appDataSet.json",
+        "method": "GET",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "appSource",
+          "targetDataField": "appSource.sampleAppDataSet1"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "error.message"
+        }
+      },
+      {
+        "type": "xhr",
+        "url": "/src/mockData/schemas/appDataSet.json",
+        "method": "GET",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "appSource",
+          "targetDataField": "appSource.sampleAppDataSet2"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "error.message"
+        }
+      }
+    ]
+  },
+  "menu": [
+    {
+      "title": "DSS",
+      "showMenu": true,
+      "subMenu": [
+        {
+          "title": "Test",
+          "icon": "fa fa-address-card",
+          "pages": [
+            {
+              "type": "SCHEMA_PAGE",
+              "title": "Page 0 - Condition Show",
+              "pageSource": "/src/mockData/schemas/page0/pageSchemas/page0Demo.json",
+              "path": "/DSS/Cache/page0Demo",
+              "showIf": "showIfPage0Bool"
+            }
+          ]
+        },
+        {
+          "title": "Cache",
+          "icon": "fa fa-server",
+          "pages": [
+            {
+              "type": "SCHEMA_PAGE",
+              "title": "Cache Debugger",
+              "pageSource": "/src/mockData/schemas/cacheDebugger/pageSchemas/cacheDebugger.json",
+              "path": "/DSS/Cache/cacheDebugger"
+            },
+            {
+              "type": "SCHEMA_PAGE",
+              "title": "Page 1 - White Owl",
+              "pageSource": "/src/mockData/schemas/page1/pageSchemas/page1Demo.json",
+              "path": "/DSS/Cache/page1Demo"
+            },
+            {
+              "type": "SCHEMA_PAGE",
+              "title": "Page 2 - Black Owl",
+              "pageSource": "/src/mockData/schemas/page2/pageSchemas/page2Demo.json",
+              "path": "/DSS/Cache/page2Demo"
+            },
+            {
+              "type": "SCHEMA_PAGE",
+              "title": "Page 3",
+              "pageSource": "/src/mockData/schemas/page3/pageSchemas/page3Demo.json",
+              "path": "/DSS/Cache/page3Demo"
+            },
+            {
+              "type": "SCHEMA_PAGE",
+              "title": "Page 4",
+              "pageSource": "/src/mockData/schemas/page4/pageSchemas/page4Demo.json",
+              "path": "/DSS/Cache/page4Demo"
+            },
+            {
+              "type": "CUSTOM_PAGE",
+              "title": "Page 5 Turnstile (custom page)",
+              "pageContainer": "pageContainers/turnstile/TurnstileContainer",
+              "path": "/DSS/Cache/about"
+            },
+            {
+              "type": "LINK_PAGE",
+              "title": "Page 6 Linked Website",
+              "pageLink": "http://www.apple.com",
+              "path": "/DSS/Cache/linkPage"
+            },
+            {
+              "type": "LINK_PAGE",
+              "title": "Service Handler Debugger",
+              "pageLink": "sdInvokerLink",
+              "path": "/DSS/Cache/linkPage1"
+            },
+            {
+              "type": "LINK_PAGE",
+              "title": "Page 7 Iframe Website",
+              "pageLink": "http://localhost:1234/?serviceName=:appContext.serviceName&host=:appContext.host&port=:appContext.port&sdEnvironment=:appContext.sdEnvironment&urlPrefix=:appContext.urlPrefix",
+              "path": "/DSS/Cache/iFramePage",
+              "viewType": "Iframe",
+              "options": {
+                "width": "800px",
+                "height": "450px",
+                "display": "initial",
+                "position": "relative",
+                "allowFullScreen": true
+              }
+            },
+            {
+              "type": "SCHEMA_PAGE",
+              "title": "Page 8 Simplest for testing data load",
+              "pageSource": "/src/mockData/schemas/page8/pageSchemas/page8Demo.json",
+              "path": "/DSS/Cache/page8Demo"
+            }
+          ]
+        },
+        {
+          "title": "Components",
+          "icon": "fa fa-table",
+          "pages": [
+            {
+              "type": "SCHEMA_PAGE",
+              "title": "Table",
+              "pageSource": "/src/mockData/schemas/components/table/tableSchema.json",
+              "path": "/DSS/Components/table"
+            },
+            {
+              "type": "CUSTOM_PAGE",
+              "title": "Hydra (flex-sections)",
+              "pageContainer": "pageContainers/hydra/HydraContainer",
+              "path": "/DSS/Components/hydra"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mocked version",
+      "subMenu": [
+        {
+          "title": "Toolkit pages",
+          "pages": [
+            {
+              "type": "SCHEMA_PAGE",
+              "title": "Urls Documentation",
+              "pageSource": "/src/mockData/schemas/UrlsDocumentation/pageSchemas/UrlsDocumentation.json",
+              "path": "/DSS/Cache/UrlsDocumentation"
+            },
+            {
+              "type": "SCHEMA_PAGE",
+              "title": "View Info",
+              "pageSource": "/src/mockData/schemas/viewInfo/pageSchemas/viewInfo.json",
+              "path": "/DSS/Cache/viewInfo"
+            },
+            {
+              "type": "SCHEMA_PAGE",
+              "title": "View Configuration",
+              "pageSource": "/src/mockData/schemas/viewConfiguration/pageSchemas/viewConfiguration.json",
+              "path": "/DSS/Cache/viewConfiguration",
+              "queryParams": {
+                "namespace": "app",
+                "other": "!23"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dependents": [
+    {
+      "type": "SCHEMA_PAGE",
+      "title": "Cache Debugger Linked Page 1",
+      "pageSource": "/src/mockData/schemas/cacheDebugger/pageSchemas/cacheDebuggerLinkedPage1.json",
+      "path": "/DSS/Cache/cacheDebuggerLinkedPage1"
+    },
+    {
+      "type": "SCHEMA_PAGE",
+      "title": "Cache Debugger Linked Page 2",
+      "pageSource": "/src/mockData/schemas/cacheDebugger/pageSchemas/cacheDebuggerLinkedPage2.json",
+      "path": "/DSS/Cache/cacheDebuggerLinkedPage2"
+    },
+    {
+      "type": "SCHEMA_PAGE",
+      "title": "Cache Debugger Linked Page 3",
+      "pageSource": "/src/mockData/schemas/cacheDebugger/pageSchemas/cacheDebuggerLinkedPage3.json",
+      "path": "/DSS/Cache/cacheDebuggerLinkedPage3"
+    },
+    {
+      "type": "SCHEMA_PAGE",
+      "title": "Cache Debugger Linked Page 4",
+      "pageSource": "/src/mockData/schemas/cacheDebugger/pageSchemas/cacheDebuggerLinkedPage4.json",
+      "path": "/DSS/Cache/cacheDebuggerLinkedPage4"
+    },
+    {
+      "type": "SCHEMA_PAGE",
+      "title": "Cache Debugger Linked Page 5",
+      "pageSource": "/src/mockData/schemas/cacheDebugger/pageSchemas/cacheDebuggerLinkedPage5.json",
+      "path": "/DSS/Cache/cacheDebuggerLinkedPage5"
+    },
+    {
+      "type": "SCHEMA_PAGE",
+      "title": "Cache Debugger Linked Page 6",
+      "pageSource": "/src/mockData/schemas/cacheDebugger/pageSchemas/cacheDebuggerLinkedPage6.json",
+      "path": "/DSS/Cache/cacheDebuggerLinkedPage6"
+    }
+  ],
+  "homePath": "/DSS/Cache/cacheDebugger"
+}

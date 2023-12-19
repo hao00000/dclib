@@ -1,0 +1,27 @@
+{
+  "pageMeta": {
+    "pageController": "controllers/page0DemoController.js"
+  },
+  "sections": [
+    {
+      "type": "LIST",
+      "title": "Hidden list",
+      "data": [
+        "debugMenu - /<APPHOSTANDADMINPORT>/debug",
+        "WOAdaptors - /<APPHOSTANDADMINPORT>/debug/application/WOAdaptors",
+        "healthDebugger - /<APPHOSTANDADMINPORT>/debug/application/health"
+      ],
+      "showIf": "showIfHiddenList"
+    },
+    {
+      "type": "LIST",
+      "title": "employee list",
+      "data": [
+        "debugMenu - /<APPHOSTANDADMINPORT>/debug",
+        "WOAdaptors - /<APPHOSTANDADMINPORT>/debug/application/WOAdaptors",
+        "healthDebugger - /<APPHOSTANDADMINPORT>/debug/application/health"
+      ],
+      "showIf": "showIfEmployeeList"
+    }
+  ]
+}

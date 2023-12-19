@@ -1,0 +1,229 @@
+{
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "employee table",
+      "data": [
+        {
+          "id": 1,
+          "first_name": "Gibby",
+          "last_name": "Varnam",
+          "email": "gvarnam0@weibo.com",
+          "gender": "Male",
+          "ip_address": "214.182.98.67"
+        },
+        {
+          "id": 2,
+          "first_name": "Sharity",
+          "last_name": "Ferrige",
+          "email": "sferrige1@marketwatch.com",
+          "gender": "Female",
+          "ip_address": "145.78.176.179"
+        },
+        {
+          "id": 3,
+          "first_name": "Lonnard",
+          "last_name": "Yakobovitz",
+          "email": "lyakobovitz2@census.gov",
+          "gender": "Male",
+          "ip_address": "195.217.173.251"
+        }
+      ],
+      "tableSettings": {
+        "defaultPageSize": 5
+      }
+    },
+    {
+      "type": "FORM",
+      "title": "Employee entry form",
+      "sectionWrapper": "Specify PATH to a wrapper container by title to wrap around the rendered section. This allows Tab/Collapse/Accordion to be implemented",
+      "targetSection": "write title of another section here. Data created upon form submission of this form can be used as data for the table/json section given in aggregation",
+      "data": {
+        "firstName": "",
+        "lastName": "",
+        "age": "",
+        "bio": "",
+        "password": ""
+      },
+      "structure": {
+        "schema": {
+          "title": "A regular form",
+          "description": "A simple form example.",
+          "type": "object",
+          "required": ["firstName", "lastName"],
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "title": "First name"
+            },
+            "lastName": {
+              "type": "string",
+              "title": "Last name"
+            },
+            "age": {
+              "type": "integer",
+              "title": "Age"
+            },
+            "bio": {
+              "type": "string",
+              "title": "Bio"
+            },
+            "password": {
+              "type": "string",
+              "title": "Password",
+              "minLength": 3
+            },
+            "telephone": {
+              "type": "string",
+              "title": "Telephone",
+              "minLength": 10
+            }
+          }
+        },
+        "uiSchema": {
+          "firstName": {
+            "ui:autofocus": true,
+            "ui:emptyValue": "",
+            "ui:placeholder": "Enter your first name"
+          },
+          "lastName": {
+            "ui:emptyValue": "",
+            "ui:placeholder": "Enter your last name"
+          },
+          "age": {
+            "ui:widget": "updown",
+            "ui:title": "Age of person",
+            "ui:description": "(earthian year)",
+            "ui:placeholder": "Enter your age"
+          },
+          "bio": {
+            "ui:widget": "textarea",
+            "ui:placeholder": "Enter your bio"
+          },
+          "password": {
+            "ui:widget": "password",
+            "ui:help": "Hint: Make it strong!",
+            "ui:placeholder": "Enter your password"
+          },
+          "date": {
+            "ui:widget": "alt-datetime"
+          },
+          "telephone": {
+            "ui:options": {
+              "inputType": "tel"
+            },
+            "ui:placeholder": "Enter your phone number"
+          }
+        }
+      }
+    },
+    {
+      "type": "TABLE",
+      "title": "employee table",
+      "data": [
+        {
+          "id": 1,
+          "first_name": "Gibby",
+          "last_name": "Varnam",
+          "email": "gvarnam0@weibo.com",
+          "gender": "Male",
+          "ip_address": "214.182.98.67"
+        },
+        {
+          "id": 2,
+          "first_name": "Sharity",
+          "last_name": "Ferrige",
+          "email": "sferrige1@marketwatch.com",
+          "gender": "Female",
+          "ip_address": "145.78.176.179"
+        },
+        {
+          "id": 3,
+          "first_name": "Lonnard",
+          "last_name": "Yakobovitz",
+          "email": "lyakobovitz2@census.gov",
+          "gender": "Male",
+          "ip_address": "195.217.173.251"
+        }
+      ],
+      "tableSettings": {
+        "defaultPageSize": 5
+      }
+    },
+    {
+      "type": "JSON",
+      "title": "Thread Dump JSON",
+      "desc": "extra description",
+      "sectionLocation": "Number(optional)",
+      "sectionContainer": "Specify PATH to a wrapper container by title to wrap around the rendered section. This allows Tab/Collapse/Accordion to be implemented",
+      "targetSection": "write title of another section here. Data created upon form submission of this form can be used as data for the table/json section given in aggregation",
+      "data": [
+        {
+          "id": 1,
+          "first_name": "Gibby",
+          "last_name": "Varnam",
+          "email": "gvarnam0@weibo.com",
+          "gender": "Male",
+          "ip_address": "214.182.98.67"
+        },
+        {
+          "id": 2,
+          "first_name": "Sharity",
+          "last_name": "Ferrige",
+          "email": "sferrige1@marketwatch.com",
+          "gender": "Female",
+          "ip_address": "145.78.176.179"
+        },
+        {
+          "id": 3,
+          "first_name": "Lonnard",
+          "last_name": "Yakobovitz",
+          "email": "lyakobovitz2@census.gov",
+          "gender": "Male",
+          "ip_address": "195.217.173.251"
+        }
+      ]
+    },
+    {
+      "type": "LIST",
+      "title": "List section - simplest use case",
+      "data": [
+        "debugMenu - /<APPHOSTANDADMINPORT>/debug",
+        "WOAdaptors - /<APPHOSTANDADMINPORT>/debug/application/WOAdaptors",
+        "healthDebugger - /<APPHOSTANDADMINPORT>/debug/application/health"
+      ]
+    },
+    {
+      "type": "PRE",
+      "title": "Pre View",
+      "desc": "extra description",
+      "data": [
+        {
+          "id": 1,
+          "first_name": "Gibby",
+          "last_name": "Varnam",
+          "email": "gvarnam0@weibo.com",
+          "gender": "Male",
+          "ip_address": "214.182.98.67"
+        },
+        {
+          "id": 2,
+          "first_name": "Sharity",
+          "last_name": "Ferrige",
+          "email": "sferrige1@marketwatch.com",
+          "gender": "Female",
+          "ip_address": "145.78.176.179"
+        },
+        {
+          "id": 3,
+          "first_name": "Lonnard",
+          "last_name": "Yakobovitz",
+          "email": "lyakobovitz2@census.gov",
+          "gender": "Male",
+          "ip_address": "195.217.173.251"
+        }
+      ]
+    }
+  ],
+  "pageWrapper": "Page2Wrapper to enhance look and feel of the Page, add Header/Footer/Banner or anything wrapping the page of sections"
+}

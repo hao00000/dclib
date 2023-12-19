@@ -1,0 +1,96 @@
+{
+  "pageMeta": {
+    "pageController": "controllers/cacheDebuggerController.js",
+    "loadAction": [
+      {
+        "type": "xhr",
+        "url": "/src/mockData/schemas/cacheDebugger/pageSchemas/sectionSchemas/cacheMainPage/sectionCache.json",
+        "method": "GET",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "page8Source",
+          "successHandler": "myPageSuccessHandler"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "page8Source.cacheEntries.error.message",
+          "targetDataStore": "page8Source",
+          "targetDataField": "page8Source.cacheEntries.error",
+          "failureHandler": "myPageFailureHandler"
+        }
+      },
+      {
+        "type": "xhr",
+        "url": "/src/mockData/schemas/cacheDebugger/pageSchemas/sectionSchemas/cacheMainPage/sectionCFM.json",
+        "method": "GET",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "page8Source",
+          "targetDataField": "page8Source.CFMServiceData",
+          "successHandler": "myPageSuccessHandler"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "page8Source.CFMServiceData.error.message",
+          "targetDataStore": "page8Source",
+          "targetDataField": "page8Source.CFMServiceData.error",
+          "failureHandler": "myPageFailureHandler"
+        }
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Cache Entries",
+      "onClickRow": "onClickMyRow",
+      "onClickCell": "onClickMyCell",
+      "columns": [
+        {
+          "accessor": "name",
+          "Header": "Name",
+          "Cell": "onCellRenderer"
+        },
+        {
+          "accessor": "type",
+          "Header": "Type"
+        },
+        {
+          "accessor": "count",
+          "Header": "Count"
+        },
+        {
+          "accessor": "size",
+          "Header": "Size"
+        },
+        {
+          "accessor": "crm",
+          "Header": "CRM"
+        },
+        {
+          "accessor": "effectiveData",
+          "Header": "Effective Data"
+        },
+        {
+          "accessor": "hardFlushDebugInfo",
+          "Header": "Hard Flush Debug Info"
+        }
+      ],
+      "tableSettings": {
+        "showPagination": false
+      },
+      "sourceDataStore": "page8Source",
+      "sourceDataField": "page8Source.cacheEntries",
+      "footer": "*** By default, the \"Remote Count\" is not supported by CCCache, being very expensive on the server side."
+    },
+    {
+      "type": "LIST",
+      "title": "List section - simplest use case",
+      "data": [
+        "debugMenu - /<APPHOSTANDADMINPORT>/debug",
+        "WOAdaptors - /<APPHOSTANDADMINPORT>/debug/application/WOAdaptors",
+        "healthDebugger - /<APPHOSTANDADMINPORT>/debug/application/health"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6101 @@
+{
+  "mbeans": {
+    "AOS:name=SERVICE wireSize request ConfigServiceHandler,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ConfigurationWatcher addEntrySuccess,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response service provider http nocache sb,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CacheFlushManager sendRequest,type=Timer": {
+      "PerSecond": "0.21",
+      "Load": "0.0",
+      "Total": "35",
+      "Average": "2.5",
+      "Max": "5",
+      "Frequency": "4.86",
+      "Duration": "68",
+      "Count": "14",
+      "Min": "2"
+    },
+    "AOS:name=service provider anonymous getLocalConfigurationMetadata,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.03",
+      "Type": "LOAD",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "1",
+      "Frequency": "34.5",
+      "Count": "2",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request AdminServiceHandler getConfiguration,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response DevelopmentCacheHandler getCacheConfiguration,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response DevelopmentCacheHandler dump,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=serviceRetry,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=health SHUTDOWN,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=HealthHandler getStatus,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "63",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=jetty connection openprimary,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ActionRequestHandler dispatchRequest action,type=Timer": {
+      "PerSecond": "0.39",
+      "Load": "0.0",
+      "Total": "80",
+      "Average": "3.33",
+      "Max": "50",
+      "Frequency": "2.58",
+      "Duration": "62",
+      "Count": "24",
+      "Min": "0"
+    },
+    "AOS:name=ConfigServiceHandler getNamespacesWithContextKeys,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "64",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response StatisticsHandler getTimeSeriesStats,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request service provider anonymous,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.03",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "47.0",
+      "Max": "47",
+      "Frequency": "34.5",
+      "Count": "2",
+      "Min": "47"
+    },
+    "AOS:name=CPU SERVICE  HealthHandler runCheck,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "64",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request InvalidCharacterServiceImpl checkMultipleContent,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request HealthHandler getHeartbeats,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.01",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "2.0",
+      "Max": "2",
+      "Frequency": "68.0",
+      "Count": "1",
+      "Min": "2"
+    },
+    "AOS:name=SERVICE wireSize response HealthHandler,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.05",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "30782.67",
+      "Max": "91414",
+      "Frequency": "20.67",
+      "Count": "3",
+      "Min": "286"
+    },
+    "AOS:name=makeSecondCache,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "0",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "3000",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=CacheHandler,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LOAD",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "java.lang:name=PS Eden Space,type=MemoryPool": {
+      "MemoryManagerNames": [
+        "PS MarkSweep",
+        "PS Scavenge"
+      ],
+      "Name": "PS Eden Space",
+      "UsageThresholdExceeded": "0",
+      "CollectionUsageThresholdCount": {
+        "committed": "183500800",
+        "used": "176345688",
+        "max": "184549376",
+        "init": "179306496"
+      },
+      "CollectionUsageThreshold": {
+        "committed": "183500800",
+        "used": "0",
+        "max": "184549376",
+        "init": "179306496"
+      },
+      "UsageThresholdCount": "false",
+      "PeakUsage": {
+        "committed": "235405312",
+        "used": "235405312",
+        "max": "236978176",
+        "init": "179306496"
+      },
+      "CollectionUsageThresholdExceeded": "true",
+      "Type": "HEAP",
+      "UsageThresholdSupported": "0",
+      "Valid": "true",
+      "CollectionUsage": {
+        "canonicalKeyPropertyListString": "name=PS Eden Space,type=MemoryPool",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "name": "PS Eden Space",
+          "type": "MemoryPool"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.lang:name=PS Eden Space,type=MemoryPool",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=MemoryPool,name=PS Eden Space",
+        "domain": "java.lang"
+      },
+      "UsageThreshold": "false"
+    },
+    "AOS:name=healthcheck LocalConfigurationSmokeCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CacheFlushManager waitForResponse,type=Timer": {
+      "PerSecond": "0.21",
+      "Load": "0.0",
+      "Total": "49",
+      "Average": "3.5",
+      "Max": "15",
+      "Frequency": "4.86",
+      "Duration": "68",
+      "Count": "14",
+      "Min": "2"
+    },
+    "AOS:name=SERVICE wireSize response ConfigServiceHandler,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response InvalidCharacterAdminServiceImpl ping,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=RequestInterceptor willHandleActionRequest,type=Timer": {
+      "PerSecond": "0.41",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "2.42",
+      "Duration": "63",
+      "Count": "26",
+      "Min": "0"
+    },
+    "AOS:name=default Config Cache,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "66",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "100",
+      "Replacements": "66",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=cacheCount allCaches,type=Gauge": {
+      "Level": "31",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "31.0",
+      "Max": "31",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "31"
+    },
+    "AOS:name=ActionRequestHandler match,type=Timer": {
+      "PerSecond": "0.41",
+      "Load": "0.0",
+      "Total": "1",
+      "Average": "0.04",
+      "Max": "1",
+      "Frequency": "2.42",
+      "Duration": "63",
+      "Count": "26",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response service provider InvalidCharacterService,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU PAGE View,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "63",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=PAGE  ShowConfigurationNamespace,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "63",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request StatisticsHandler getTimeSeriesStats,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  AdminServiceHandler info,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=service provider InvalidCharacterService textContainsInvalidCharacters,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "63",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ASServiceHandler,type=Gauge": {
+      "Level": "2",
+      "PerSecond": "0.38",
+      "Type": "LOAD",
+      "Load": "0.0",
+      "Average": "3.79",
+      "Max": "2",
+      "Frequency": "2.63",
+      "Count": "24",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request ConfigServiceHandler getNamespacesWithContextKeys,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ConfigServiceHandler,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "64",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response AdminServiceHandler getLocalConfigHashStructured,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=jetty connection new sslprimary,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  DevelopmentCacheHandler getCacheFlushStatus,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ConfigurationWatcher registerListener,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "64",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=HttpClientConnectionPoolWatcher leasedConnections,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=System load average x,type=Gauge": {
+      "Level": "218",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "210.0",
+      "Max": "218",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "197"
+    },
+    "AOS:name=parseDateMidnightCache,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "0",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "200",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=CPU SERVICE  AdminServiceHandler extendedInfo,type=Timer": {
+      "PerSecond": "0.03",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "33.5",
+      "Duration": "67",
+      "Count": "2",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request DevelopmentCacheHandler getCacheSummary,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request StatisticsHandler getMBeans,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.02",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "2.0",
+      "Max": "2",
+      "Frequency": "62.0",
+      "Count": "1",
+      "Min": "2"
+    },
+    "AOS:name=health WARN,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response InvalidCharacterAdminServiceImpl,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=jetty connection closeadmin,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=GarbageCollectionCount PS MarkSweep,type=Gauge": {
+      "Level": "5",
+      "PerSecond": "0.0",
+      "Type": "METER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ConfigServiceHandler introspect,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "68",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response ConfigServiceHandler getNamespacesWithContextKeys,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=parseTimestampCache,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "715",
+      "Hits": "8",
+      "PerSecond": "0.1231",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "1.0",
+      "GarbageCollections": "0",
+      "Size": "3000",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=SERVICE wireSize response ConfigServiceHandler getPackagedFileContents,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ConfigurationWatcher run,type=Timer": {
+      "PerSecond": "0.02",
+      "Load": "0.01",
+      "Total": "763",
+      "Average": "763.0",
+      "Max": "763",
+      "Frequency": "64.0",
+      "Duration": "64",
+      "Count": "1",
+      "Min": "763"
+    },
+    "AOS:name=healthcheck CfmHealthCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  DevelopmentCacheHandler getCacheConfiguration,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=RequestInterceptor didHandleActionRequest,type=Timer": {
+      "PerSecond": "0.39",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "2.58",
+      "Duration": "62",
+      "Count": "24",
+      "Min": "0"
+    },
+    "java.util.logging:type=Logging": {
+      "LoggerNames": [
+        "javax.management.snmp.daemon",
+        "com.google.common.util.concurrent.ImmediateFuture",
+        "com.google.common.util.concurrent.AbstractFuture",
+        "javax.management.notification",
+        "com.google.common.cache.CacheBuilder",
+        "javax.management.misc",
+        "javax.management",
+        "com.google.common.base.Platform",
+        "javax.management.relation",
+        "sun.net.www.protocol.http.HttpURLConnection",
+        "global",
+        "javax.management.snmp",
+        "javax.management.mbeanserver",
+        "javax.management.modelmbean",
+        "javax.management.mlet",
+        "javax.management.timer",
+        "com.google.common.cache.LocalCache",
+        "",
+        "javax.management.monitor"
+      ],
+      "ObjectName": {
+        "canonicalKeyPropertyListString": "type=Logging",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "type": "Logging"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.util.logging:type=Logging",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=Logging",
+        "domain": "java.util.logging"
+      }
+    },
+    "AOS:name=CFMClient poll error,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=BeanCache encryption keys EncryptionKeysConfiguration,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "1",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "400",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=BeanCache MemCached MemCachedConfiguration,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "1",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "400",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=BeanCache HealthCheckInstrument Configuration,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "1",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "400",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=PAGE  DebugMenu,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=NotificationService Destinations,type=Cache": {
+      "Misses": "2",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "1",
+      "Hits": "0",
+      "PerSecond": "0.0294",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "0.0",
+      "GarbageCollections": "0",
+      "Size": "100",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "2"
+    },
+    "AOS:name=SERVICE wireSize response service provider http nocache sb ping,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request AdminServiceHandler getLocalConfigHashStructured,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request PeerHandler getLocalConfigurationMetadata,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.03",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "47.0",
+      "Max": "47",
+      "Frequency": "34.5",
+      "Count": "2",
+      "Min": "47"
+    },
+    "AOS:name=CPU SERVICE  AdminServiceHandler default,type=Timer": {
+      "PerSecond": "0.25",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "4.0",
+      "Duration": "68",
+      "Count": "17",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  ConfigServiceHandler getNamespacesWithContextKeys,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "64",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  StatisticsHandler getGauges,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "60",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=anonymous sendRequest networkOverhead,type=Timer": {
+      "PerSecond": "0.03",
+      "Load": "0.0",
+      "Total": "9",
+      "Average": "4.5",
+      "Max": "6",
+      "Frequency": "33.5",
+      "Duration": "67",
+      "Count": "2",
+      "Min": "3"
+    },
+    "AOS:name=SERVICE wireSize request AdminServiceHandler extendedInfo,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.03",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "2.0",
+      "Max": "2",
+      "Frequency": "33.5",
+      "Count": "2",
+      "Min": "2"
+    },
+    "AOS:name=SERVICE wireSize response AdminServiceHandler,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.29",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "493.56",
+      "Max": "4066",
+      "Frequency": "3.5",
+      "Count": "18",
+      "Min": "47"
+    },
+    "AOS:name=SERVICE wireSize response StatisticsHandler,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.02",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "158221.0",
+      "Max": "158221",
+      "Frequency": "63.0",
+      "Count": "1",
+      "Min": "158221"
+    },
+    "AOS:name=InvalidCharacterServiceImpl checkMultipleContent,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "65",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CacheFlushManager async wait,type=Timer": {
+      "PerSecond": "0.21",
+      "Load": "0.0",
+      "Total": "10",
+      "Average": "0.71",
+      "Max": "10",
+      "Frequency": "4.86",
+      "Duration": "68",
+      "Count": "14",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  DevelopmentCacheHandler getCacheSummary,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "65",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response AdminServiceHandler getLogs,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=service provider InvalidCharacterService,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "65",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CacheHandler,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "60",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=InvalidCharacterServiceImpl,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LOAD",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request BlackWordServiceImpl,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AppDynamics:type=SnapshotInfoProvider": {
+      "NumberOfSnapshotsCompletedByPolicy": "No data available",
+      "NumberOfSnapshotsCompleted": "1408",
+      "DetailMode": "false",
+      "MinDurationForJDBCCallSample": "10",
+      "NumberOfCallstackSamplesTaken": "168",
+      "MinDurationForJDBCResultSetIterationSample": "10",
+      "MinDurationForCustomActivityHandOffCallSample": "0",
+      "NumberOfShapshotsCurrentlyRunning": "0",
+      "NumberOfSnapshotsCompletedByTransaction": "No data available",
+      "NumberOfDroppedCallstackSamples": "0",
+      "ShowRawSQL": "false",
+      "ShouldOptimizeCustomActivityHandOffCallForSampling": "true"
+    },
+    "AOS:name=FreeDiskSpaceMB logs,type=Gauge": {
+      "Level": "1665729",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "1665729.31",
+      "Max": "1665730",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "1665729"
+    },
+    "AOS:name=SERVICE wireSize response InvalidCharacterServiceImpl checkMultipleContent,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request AdminServiceHandler getUrlPatterns,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response AdminServiceHandler default,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.25",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "47.0",
+      "Max": "47",
+      "Frequency": "4.0",
+      "Count": "17",
+      "Min": "47"
+    },
+    "AOS:name=BeanCache debug DebugConfiguration,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "1",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "400",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=as_user rn aosd d   lapp   rno apple com,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "java.lang:name=Compressed Class Space,type=MemoryPool": {
+      "MemoryManagerNames": [
+        "Metaspace Manager"
+      ],
+      "Name": "Compressed Class Space",
+      "UsageThresholdExceeded": "false",
+      "CollectionUsageThresholdCount": {
+        "committed": "9568256",
+        "used": "8644616",
+        "max": "260046848",
+        "init": "0"
+      },
+      "CollectionUsageThreshold": "<null>",
+      "UsageThresholdCount": "0",
+      "PeakUsage": {
+        "committed": "9568256",
+        "used": "8695832",
+        "max": "260046848",
+        "init": "0"
+      },
+      "CollectionUsageThresholdExceeded": "false",
+      "Type": "NON_HEAP",
+      "UsageThresholdSupported": "true",
+      "Valid": "true",
+      "CollectionUsage": {
+        "canonicalKeyPropertyListString": "name=Compressed Class Space,type=MemoryPool",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "name": "Compressed Class Space",
+          "type": "MemoryPool"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=MemoryPool,name=Compressed Class Space",
+        "domain": "java.lang"
+      },
+      "UsageThreshold": "0"
+    },
+    "AOS:name=ASCallable delay com apple store toolkit cache cfm spi_impl CFMClientImpl_V  anonymous,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "64",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response StatisticsHandler getGauges,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request AdminServiceHandler getNetstats,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  StatisticsHandler getTimeSeriesStats,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "61",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=jetty connection heldadmin,type=Gauge": {
+      "Level": "-1",
+      "PerSecond": "0.0",
+      "Type": "LOAD",
+      "Load": "-1.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ConfigServiceHandler,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LOAD",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=Configuration read,type=Timer": {
+      "PerSecond": "1.91",
+      "Load": "0.03",
+      "Total": "1753",
+      "Average": "14.37",
+      "Max": "456",
+      "Frequency": "0.52",
+      "Duration": "64",
+      "Count": "122",
+      "Min": "0"
+    },
+    "AppDynamics:type=BCIEngineInfoProvider": {
+      "RetransformClassesSupported": "true",
+      "NumberOfAbandonedBCIAttempts": "0",
+      "NumberOfTransformedMethods": "148",
+      "TransformerDisabled": "false",
+      "NumberOfTimedOutTransformations": "0",
+      "NumberOfBootstrapClassLookups": "0",
+      "NumberOfClassesLoaded": "7871",
+      "NumberOfBootstrapClassLoads": "1367",
+      "NumberOfClassesRetransformed": "17",
+      "BCIWriteClassDirectory": "<null>",
+      "NumberOfFailedRetransforms": "0",
+      "NumberOfTransformedClasses": "71",
+      "NumberOfBootstrapClassLoadMisses": "0",
+      "TransformedClassNames": "BCIEngineInfoProvider not in detail mode - no information available",
+      "NumberOfValidationFailures": "0",
+      "NumberOfBootstrapRefreshes": "0",
+      "BCITraceClasses": "No classes to trace",
+      "DetailCollection": "false"
+    },
+    "AOS:name=healthcheck HealthCheckManagerHeartbeat,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response DevelopmentCacheHandler getCacheManagerConfig,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request ConfigServiceHandler introspect,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ConfigurationWatcher registerListener processLiveListenerEntry,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "64",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=PAGE View,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "63",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=FreeDiskSpaceMB root,type=Gauge": {
+      "Level": "2554",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "2554.0",
+      "Max": "2554",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "2554"
+    },
+    "AOS:name=makeHourCache,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "0",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "1000",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=healthcheck LogsDiskSpaceCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response AdminServiceHandler ping,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request DevelopmentCacheHandler introspect,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=Log ERROR,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=BeanCache auditLogger AuditLoggerConfiguration,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "1",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "400",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=PeerHandler,type=Timer": {
+      "PerSecond": "0.03",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "34.5",
+      "Duration": "69",
+      "Count": "2",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request StatisticsHandler getCaches,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE View,type=Timer": {
+      "PerSecond": "0.39",
+      "Load": "0.0",
+      "Total": "83",
+      "Average": "3.46",
+      "Max": "51",
+      "Frequency": "2.58",
+      "Duration": "62",
+      "Count": "24",
+      "Min": "0"
+    },
+    "AOS:name=healthcheck AdminServerHealthCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "java.lang:name=CodeCacheManager,type=MemoryManager": {
+      "Name": "CodeCacheManager",
+      "MemoryPoolNames": [
+        "Code Cache"
+      ],
+      "Valid": "true",
+      "ObjectName": {
+        "canonicalKeyPropertyListString": "name=CodeCacheManager,type=MemoryManager",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "name": "CodeCacheManager",
+          "type": "MemoryManager"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.lang:name=CodeCacheManager,type=MemoryManager",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=MemoryManager,name=CodeCacheManager",
+        "domain": "java.lang"
+      }
+    },
+    "java.nio:name=mapped,type=BufferPool": {
+      "ObjectName": {
+        "canonicalKeyPropertyListString": "name=mapped,type=BufferPool",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "name": "mapped",
+          "type": "BufferPool"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.nio:name=mapped,type=BufferPool",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=BufferPool,name=mapped",
+        "domain": "java.nio"
+      },
+      "MemoryUsed": "0",
+      "TotalCapacity": "0",
+      "Count": "0",
+      "Name": "mapped"
+    },
+    "AOS:name=SERVICE wireSize request InvalidCharacterServiceImpl,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  HealthHandler getEvents,type=Timer": {
+      "PerSecond": "0.01",
+      "Load": "0.0",
+      "Total": "3",
+      "Average": "3.0",
+      "Max": "3",
+      "Frequency": "68.0",
+      "Duration": "68",
+      "Count": "1",
+      "Min": "3"
+    },
+    "AOS:name=CPU SERVICE  StatisticsHandler getTimers,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "65",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response DevelopmentCacheHandler getCacheSummary,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=cacheCount managedByCfm,type=Gauge": {
+      "Level": "2",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "2.0",
+      "Max": "2",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "2"
+    },
+    "AOS:name=healthcheck PrimaryServerHealthCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  HealthHandler getStatus,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request AdminServiceHandler,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.09",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "2.0",
+      "Max": "2",
+      "Frequency": "11.17",
+      "Count": "6",
+      "Min": "2"
+    },
+    "AOS:name=NotificationService async wait,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "68",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request DevelopmentCacheHandler getCacheConfiguration,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU PAGE  ShowConfigurationNamespace,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "63",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=HttpClientConnectionPoolWatcher maxConnections,type=Gauge": {
+      "Level": "128",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "128.0",
+      "Max": "128",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "128"
+    },
+    "AOS:name=CPU service provider anonymous getLocalConfigurationMetadata,type=Timer": {
+      "PerSecond": "0.03",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "34.5",
+      "Duration": "69",
+      "Count": "2",
+      "Min": "0"
+    },
+    "AppDynamics:type=TransactionMonitorInfoProvider": {
+      "MaxDeferredExitCallCount": "10",
+      "BTCPUMonitoringEnabled": "true",
+      "BTLockdownInEffect": "false",
+      "DeleteOrphanedCRCsAfter": "5000",
+      "HttpBackendResolutionFirstNSegments": "10",
+      "GroupUnmonitoredBackends": "true",
+      "EnableSoapHeaderCorrelation": "false",
+      "EnableXmlIdentification": "true",
+      "MaxCorrelationHeaderSize": "4096",
+      "CollectUserDataSync": "false",
+      "MaxMetricNameLength": "5000",
+      "EnableOnReceiveCorrelation": "false",
+      "MaxDiscoveredBackends": "300",
+      "CorrelationSplitDisabled": "false",
+      "NumberOfStartedTransactions": "43251",
+      "CountsByTransaction": "Not in detail mode - transaction counts not available",
+      "MaxDataLengthPerGatherer": "2000",
+      "EnableDefaultHTTPErrorCode": "true",
+      "InflightTransactionNames": "/service/stats[293] started at: Jan 31, 2019 6:14:15 PM on thread qtp616443292 BlackWordService_secure-5716\n/service/admin[263] started at: Jan 31, 2019 6:14:15 PM on thread qtp616443292 BlackWordService_secure-5630",
+      "FallBackToWebServiceUri": "true",
+      "DevMode": "false",
+      "NumberOfContinuingTransactions": "11",
+      "UseOldServletSplitOnGetParameterRule": "false",
+      "MaxPreparedStatementGlobalCacheSize": "5000",
+      "DetailMode": "false",
+      "IgnoreExitCallOnReEntry": "true",
+      "TransactionLimit": "50",
+      "Paused": "false",
+      "SpringIntegrationEntryPointDetectionEnabled": "true",
+      "MaxDataGatherer": "100",
+      "CurrentServiceEndPoints": "26",
+      "HttpBackendResolutionLastNSegments": "0",
+      "Disabled": "false",
+      "MinARTToCaptureBTCPU": "10",
+      "Axis2TransportCorrelationEnabled": "true",
+      "EnableJsonIdentification": "true",
+      "NumMaxCorrelationHeaderSizeWarningsHit": "false",
+      "LocalOnlySQLCache": "false",
+      "EnableCompletionListenerCorrelation": "false",
+      "CaptureErrorURLs": "true",
+      "MinLoadForDiagnosticSessionEvaluation": "10",
+      "NumberOfInflightTransactions": "2",
+      "PoolableHashMapEnabled": "false",
+      "PercentileMetricsEnabled": "true",
+      "SaveAllExitCalls": "true",
+      "EnableEueCorrelationForPartialSnapshot": "false",
+      "MinSlowRequestCaptureTime": "200",
+      "MaxDataPointsPerGatherer": "100",
+      "MaxLogMessagesPerSnapshot": "50"
+    },
+    "AOS:name=SERVICE wireSize request service provider anonymous ping,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request service provider InvalidCharacterService,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "java.nio:name=direct,type=BufferPool": {
+      "ObjectName": {
+        "canonicalKeyPropertyListString": "name=direct,type=BufferPool",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "name": "direct",
+          "type": "BufferPool"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.nio:name=direct,type=BufferPool",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=BufferPool,name=direct",
+        "domain": "java.nio"
+      },
+      "MemoryUsed": "486400",
+      "TotalCapacity": "486400",
+      "Count": "29",
+      "Name": "direct"
+    },
+    "AOS:name=CPU SERVICE  ConfigServiceHandler introspect,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "68",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  InvalidCharacterAdminServiceImpl ping,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "64",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU service provider InvalidCharacterService,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "65",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU PAGE  DebugMenu,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request AdminServiceHandler getThreadDump,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=jetty connection newadmin,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=parseSecondCache,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "0",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "3000",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=CPU SERVICE  AdminServiceHandler getNetstats,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "67",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=serviceTimeout CacheFlushManager,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  DevelopmentCacheHandler introspect,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "60",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  AdminServiceHandler getConfiguration,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "67",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response AdminServiceHandler getNetstats,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=serviceFailedNoRetry,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AppDynamics:type=DynamicServiceManager": {
+      "RegisteredDynamicServices": "analytics",
+      "ObjectName": {
+        "canonicalKeyPropertyListString": "type=DynamicServiceManager",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "type": "DynamicServiceManager"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "AppDynamics:type=DynamicServiceManager",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=DynamicServiceManager",
+        "domain": "AppDynamics"
+      },
+      "DynamicServiceMBeanObjectNames": "AppDynamics:type=DynamicServiceManager",
+      "ExternalServiceDirectory": "/Local/ThirdParty/appdynamics/AppServerAgent-4.3.8.3/ver4.3.8.3/external-services",
+      "Enabled": "true"
+    },
+    "AOS:name=service provider InvalidCharacterService,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LOAD",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=InvalidCharacterServiceImpl,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "65",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  BlackWordServiceImpl introspect,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "68",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response ConfigServiceHandler introspect,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=jetty connection heldprimary,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LOAD",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=cert validate client,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.22",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "4.53",
+      "Count": "15",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  AdminServiceHandler getLocalConfigHashStructured,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "66",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=healthcheck LocalConfigurationPeerCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  DevelopmentCacheHandler getCacheManagerConfig,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=makeDayCache,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "0",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "200",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=PAGE  DebugViewConfigurationFile,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "68",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=MemoryUsed,type=Gauge": {
+      "Level": "699608272",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "6.9323685333E8",
+      "Max": "699608272",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "685287312"
+    },
+    "AOS:name=HttpClientConnectionPoolWatcher newConnection,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.06",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "17.0",
+      "Count": "4",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response AdminServiceHandler getUrlPatterns,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response HealthHandler runCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response PeerHandler getLocalConfigurationMetadata,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.03",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "3374.0",
+      "Max": "3374",
+      "Frequency": "34.5",
+      "Count": "2",
+      "Min": "3374"
+    },
+    "AOS:name=SERVICE wireSize response BlackWordServiceImpl,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  InvalidCharacterServiceImpl textContainsInvalidCharacters,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "63",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ASCallable delay com apple store toolkit health ApplicationInformation anonymous,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "67",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  AdminServiceHandler getLogs,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=healthcheck ConfigurationWatcherHeartbeatCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=health ERROR,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  InvalidCharacterServiceImpl checkMultipleContent,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "65",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  PeerHandler getLocalConfigurationMetadata,type=Timer": {
+      "PerSecond": "0.03",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "34.5",
+      "Duration": "69",
+      "Count": "2",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request service provider http nocache sb ping,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=serviceFailed,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=Process thread count,type=Gauge": {
+      "Level": "103",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "103.67",
+      "Max": "104",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "103"
+    },
+    "AOS:name=GarbageCollectionCount PS Scavenge,type=Gauge": {
+      "Level": "755",
+      "PerSecond": "0.0",
+      "Type": "METER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request AdminServiceHandler introspect,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=HttpClientConnectionPoolWatcher aliveConnections,type=Gauge": {
+      "Level": "3",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "3.0",
+      "Max": "3",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "3"
+    },
+    "AOS:name=SERVICE wireSize response service provider anonymous ping,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=PeerHandler,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.03",
+      "Type": "LOAD",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "1",
+      "Frequency": "34.5",
+      "Count": "2",
+      "Min": "0"
+    },
+    "AOS:name=RedelegationTask,type=Timer": {
+      "PerSecond": "0.02",
+      "Load": "0.03",
+      "Total": "1726",
+      "Average": "1726.0",
+      "Max": "1726",
+      "Frequency": "64.0",
+      "Duration": "64",
+      "Count": "1",
+      "Min": "1726"
+    },
+    "AOS:name=client anonymous,type=Cache": {
+      "Misses": "4",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "0",
+      "Hits": "0",
+      "PerSecond": "0.0597",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "0.0",
+      "GarbageCollections": "0",
+      "Size": "200",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=CfmHealthCheck error,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  HealthHandler getHeartbeats,type=Timer": {
+      "PerSecond": "0.01",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "68.0",
+      "Duration": "68",
+      "Count": "1",
+      "Min": "0"
+    },
+    "AOS:name=jetty connection opensecure,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.28",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "3.58",
+      "Count": "19",
+      "Min": "0"
+    },
+    "AOS:name=ConfigurationWatcher registerListener invokeListener,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "64",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=healthcheck OutOfMemoryCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=default Config Resource List Cache,type=Cache": {
+      "Misses": "2943",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "2869",
+      "Hits": "2230",
+      "PerSecond": "79.5846",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "0.4311",
+      "GarbageCollections": "0",
+      "Size": "10000",
+      "Replacements": "2943",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=CFMClient poll success,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.21",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "4.86",
+      "Count": "14",
+      "Min": "0"
+    },
+    "AOS:name=UNKNOWN View,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=Log WARN,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=healthcheck RuntimeOverrideCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=jetty connection new sslsecure,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.28",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "3.58",
+      "Count": "19",
+      "Min": "0"
+    },
+    "AOS:name=ASWOHandler,type=Gauge": {
+      "Level": "-1",
+      "PerSecond": "0.0",
+      "Type": "LOAD",
+      "Load": "-1.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=serviceFailed CacheFlushManager,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response InvalidCharacterServiceImpl textContainsInvalidCharacters,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=GarbageCollectionMemory PS Scavenge,type=Gauge": {
+      "Level": "174636808",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "java.lang:name=PS Scavenge,type=GarbageCollector": {
+      "ObjectName": {
+        "canonicalKeyPropertyListString": "name=PS Scavenge,type=GarbageCollector",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "name": "PS Scavenge",
+          "type": "GarbageCollector"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.lang:name=PS Scavenge,type=GarbageCollector",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=GarbageCollector,name=PS Scavenge",
+        "domain": "java.lang"
+      },
+      "MemoryPoolNames": [
+        "PS Eden Space",
+        "PS Survivor Space"
+      ],
+      "CollectionTime": "28935",
+      "LastGcInfo": {
+        "memoryUsageAfterGc": {
+          "PS Eden Space": {
+            "value": {
+              "committed": "181927936",
+              "used": "0",
+              "max": "193462272",
+              "init": "179306496"
+            },
+            "key": "PS Eden Space"
+          },
+          "Code Cache": {
+            "value": {
+              "committed": "74317824",
+              "used": "73519808",
+              "max": "251658240",
+              "init": "2555904"
+            },
+            "key": "Code Cache"
+          },
+          "Compressed Class Space": {
+            "value": {
+              "committed": "9568256",
+              "used": "8644616",
+              "max": "260046848",
+              "init": "0"
+            },
+            "key": "Compressed Class Space"
+          },
+          "PS Survivor Space": {
+            "value": {
+              "committed": "30932992",
+              "used": "30898544",
+              "max": "30932992",
+              "init": "44564480"
+            },
+            "key": "PS Survivor Space"
+          },
+          "Metaspace": {
+            "value": {
+              "committed": "81395712",
+              "used": "76705272",
+              "max": "268435456",
+              "init": "0"
+            },
+            "key": "Metaspace"
+          },
+          "PS Old Gen": {
+            "value": {
+              "committed": "805306368",
+              "used": "570898136",
+              "max": "805306368",
+              "init": "805306368"
+            },
+            "key": "PS Old Gen"
+          }
+        },
+        "endTime": "112137964",
+        "memoryUsageBeforeGc": {
+          "PS Eden Space": {
+            "value": {
+              "committed": "183500800",
+              "used": "183500800",
+              "max": "184549376",
+              "init": "179306496"
+            },
+            "key": "PS Eden Space"
+          },
+          "Code Cache": {
+            "value": {
+              "committed": "74317824",
+              "used": "73519808",
+              "max": "251658240",
+              "init": "2555904"
+            },
+            "key": "Code Cache"
+          },
+          "Compressed Class Space": {
+            "value": {
+              "committed": "9568256",
+              "used": "8644616",
+              "max": "260046848",
+              "init": "0"
+            },
+            "key": "Compressed Class Space"
+          },
+          "PS Survivor Space": {
+            "value": {
+              "committed": "41418752",
+              "used": "5618856",
+              "max": "41418752",
+              "init": "44564480"
+            },
+            "key": "PS Survivor Space"
+          },
+          "Metaspace": {
+            "value": {
+              "committed": "81395712",
+              "used": "76705272",
+              "max": "268435456",
+              "init": "0"
+            },
+            "key": "Metaspace"
+          },
+          "PS Old Gen": {
+            "value": {
+              "committed": "805306368",
+              "used": "570889944",
+              "max": "805306368",
+              "init": "805306368"
+            },
+            "key": "PS Old Gen"
+          }
+        },
+        "GcThreadCount": "28",
+        "id": "757",
+        "duration": "28",
+        "startTime": "112137936"
+      },
+      "Valid": "true",
+      "CollectionCount": "757",
+      "Name": "PS Scavenge"
+    },
+    "AOS:name=SERVICE wireSize request StatisticsHandler introspect,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response StatisticsHandler introspect,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CacheFlushManager sendRequest networkOverhead,type=Timer": {
+      "PerSecond": "0.21",
+      "Load": "0.0",
+      "Total": "32",
+      "Average": "2.29",
+      "Max": "4",
+      "Frequency": "4.86",
+      "Duration": "68",
+      "Count": "14",
+      "Min": "1"
+    },
+    "AOS:name=SERVICE wireSize response DevelopmentCacheHandler,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=Empty,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "0",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "0",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=ConfigurationWatcher validEntriesCount,type=Gauge": {
+      "Level": "78",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "78.0",
+      "Max": "78",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "78"
+    },
+    "AOS:name=SERVICE wireSize request service provider http nocache sb,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=gzip compression time,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "66",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CacheHandler dump,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "java.lang:name=PS Old Gen,type=MemoryPool": {
+      "CollectionUsageThresholdExceeded": "false",
+      "UsageThreshold": "0",
+      "UsageThresholdSupported": "true",
+      "Valid": "true",
+      "CollectionUsageThresholdCount": "0",
+      "Usage": {
+        "committed": "805306368",
+        "used": "570898136",
+        "max": "805306368",
+        "init": "805306368"
+      },
+      "PeakUsage": {
+        "committed": "805306368",
+        "used": "792179584",
+        "max": "805306368",
+        "init": "805306368"
+      },
+      "Type": "HEAP",
+      "MemoryManagerNames": [
+        "PS MarkSweep"
+      ],
+      "CollectionUsageThreshold": "0",
+      "CollectionUsageThresholdSupported": "true",
+      "UsageThresholdCount": "0",
+      "Name": "PS Old Gen",
+      "UsageThresholdExceeded": "false",
+      "ObjectName": {
+        "canonicalKeyPropertyListString": "name=PS Old Gen,type=MemoryPool",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "name": "PS Old Gen",
+          "type": "MemoryPool"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.lang:name=PS Old Gen,type=MemoryPool",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=MemoryPool,name=PS Old Gen",
+        "domain": "java.lang"
+      },
+      "CollectionUsage": {
+        "committed": "805306368",
+        "used": "221377240",
+        "max": "805306368",
+        "init": "805306368"
+      }
+    },
+    "AOS:name=HttpClientManager reapIdleConnections,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "69",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=GarbageCollectionMemory PS MarkSweep,type=Gauge": {
+      "Level": "588847832",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request DevelopmentCacheHandler getCacheFlushStatus,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=PeerHandler getLocalConfigurationMetadata,type=Timer": {
+      "PerSecond": "0.03",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "34.5",
+      "Duration": "69",
+      "Count": "2",
+      "Min": "0"
+    },
+    "AOS:name=URLPatternManager compile time,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "67",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request ConfigServiceHandler getPackagedFileContents,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  AdminServiceHandler ping,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "64",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU ConfigDirectoryHasherV,type=Timer": {
+      "PerSecond": "0.01",
+      "Load": "0.01",
+      "Total": "754",
+      "Average": "754.0",
+      "Max": "754",
+      "Frequency": "68.0",
+      "Duration": "68",
+      "Count": "1",
+      "Min": "754"
+    },
+    "AOS:name=NotificationService sendRequest,type=Timer": {
+      "PerSecond": "0.03",
+      "Load": "0.0",
+      "Total": "6",
+      "Average": "3.0",
+      "Max": "4",
+      "Frequency": "33.5",
+      "Duration": "67",
+      "Count": "2",
+      "Min": "2"
+    },
+    "AOS:name=SERVICE wireSize request InvalidCharacterAdminServiceImpl,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response BlackWordServiceImpl introspect,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=parseHourCache,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "0",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "1000",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=SERVICE wireSize response HealthHandler getHeartbeats,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.01",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "286.0",
+      "Max": "286",
+      "Frequency": "68.0",
+      "Count": "1",
+      "Min": "286"
+    },
+    "AOS:name=ConfigDirectoryHasherV,type=Timer": {
+      "PerSecond": "0.01",
+      "Load": "0.05",
+      "Total": "3346",
+      "Average": "3346.0",
+      "Max": "3346",
+      "Frequency": "68.0",
+      "Duration": "68",
+      "Count": "1",
+      "Min": "3346"
+    },
+    "AOS:name=CPU SERVICE  AdminServiceHandler getLocalConfigHashUnstructured,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "63",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=serviceTimeout NotificationService,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  HealthHandler runAllChecks,type=Timer": {
+      "PerSecond": "0.01",
+      "Load": "0.0",
+      "Total": "12",
+      "Average": "12.0",
+      "Max": "12",
+      "Frequency": "68.0",
+      "Duration": "68",
+      "Count": "1",
+      "Min": "12"
+    },
+    "java.lang:name=PS MarkSweep,type=GarbageCollector": {
+      "ObjectName": {
+        "canonicalKeyPropertyListString": "name=PS MarkSweep,type=GarbageCollector",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "name": "PS MarkSweep",
+          "type": "GarbageCollector"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.lang:name=PS MarkSweep,type=GarbageCollector",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=GarbageCollector,name=PS MarkSweep",
+        "domain": "java.lang"
+      },
+      "MemoryPoolNames": [
+        "PS Eden Space",
+        "PS Survivor Space",
+        "PS Old Gen"
+      ],
+      "CollectionTime": "890",
+      "LastGcInfo": {
+        "memoryUsageAfterGc": {
+          "PS Eden Space": {
+            "value": {
+              "committed": "209715200",
+              "used": "0",
+              "max": "209715200",
+              "init": "179306496"
+            },
+            "key": "PS Eden Space"
+          },
+          "Code Cache": {
+            "value": {
+              "committed": "74186752",
+              "used": "73325248",
+              "max": "251658240",
+              "init": "2555904"
+            },
+            "key": "Code Cache"
+          },
+          "Compressed Class Space": {
+            "value": {
+              "committed": "9568256",
+              "used": "8633824",
+              "max": "260046848",
+              "init": "0"
+            },
+            "key": "Compressed Class Space"
+          },
+          "PS Survivor Space": {
+            "value": {
+              "committed": "29360128",
+              "used": "0",
+              "max": "29360128",
+              "init": "44564480"
+            },
+            "key": "PS Survivor Space"
+          },
+          "Metaspace": {
+            "value": {
+              "committed": "81395712",
+              "used": "76580040",
+              "max": "268435456",
+              "init": "0"
+            },
+            "key": "Metaspace"
+          },
+          "PS Old Gen": {
+            "value": {
+              "committed": "805306368",
+              "used": "221377240",
+              "max": "805306368",
+              "init": "805306368"
+            },
+            "key": "PS Old Gen"
+          }
+        },
+        "endTime": "104151985",
+        "memoryUsageBeforeGc": {
+          "PS Eden Space": {
+            "value": {
+              "committed": "209715200",
+              "used": "0",
+              "max": "209715200",
+              "init": "179306496"
+            },
+            "key": "PS Eden Space"
+          },
+          "Code Cache": {
+            "value": {
+              "committed": "74186752",
+              "used": "73325248",
+              "max": "251658240",
+              "init": "2555904"
+            },
+            "key": "Code Cache"
+          },
+          "Compressed Class Space": {
+            "value": {
+              "committed": "9568256",
+              "used": "8674152",
+              "max": "260046848",
+              "init": "0"
+            },
+            "key": "Compressed Class Space"
+          },
+          "PS Survivor Space": {
+            "value": {
+              "committed": "29360128",
+              "used": "18045488",
+              "max": "29360128",
+              "init": "44564480"
+            },
+            "key": "PS Survivor Space"
+          },
+          "Metaspace": {
+            "value": {
+              "committed": "81395712",
+              "used": "76840336",
+              "max": "268435456",
+              "init": "0"
+            },
+            "key": "Metaspace"
+          },
+          "PS Old Gen": {
+            "value": {
+              "committed": "805306368",
+              "used": "792179584",
+              "max": "805306368",
+              "init": "805306368"
+            },
+            "key": "PS Old Gen"
+          }
+        },
+        "GcThreadCount": "28",
+        "id": "5",
+        "duration": "303",
+        "startTime": "104151682"
+      },
+      "Valid": "true",
+      "CollectionCount": "5",
+      "Name": "PS MarkSweep"
+    },
+    "AOS:name=SERVICE wireSize response DevelopmentCacheHandler getCacheFlushStatus,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=serviceTimeout,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=Open file descriptor count,type=Gauge": {
+      "Level": "298",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "297.0",
+      "Max": "298",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "296"
+    },
+    "AOS:name=CacheHandler introspect,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "60",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=RequestInterceptor finalizeResponse,type=Timer": {
+      "PerSecond": "0.39",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "2.58",
+      "Duration": "62",
+      "Count": "24",
+      "Min": "0"
+    },
+    "AOS:name=jetty connection newprimary,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU service provider anonymous,type=Timer": {
+      "PerSecond": "0.03",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "34.5",
+      "Duration": "69",
+      "Count": "2",
+      "Min": "0"
+    },
+    "AOS:name=jetty connection newsecure,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.28",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "3.58",
+      "Count": "19",
+      "Min": "0"
+    },
+    "AOS:name=parseDayCache,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "0",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "200",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=SERVICE wireSize request HealthHandler runCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request DevelopmentCacheHandler getCacheManagerConfig,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=cacheCount managedByCfmUnhealthy,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request HealthHandler getEvents,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.01",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "2.0",
+      "Max": "2",
+      "Frequency": "68.0",
+      "Count": "1",
+      "Min": "2"
+    },
+    "AOS:name=BlackWordServiceImpl,type=Timer": {
+      "PerSecond": "0.03",
+      "Load": "0.0",
+      "Total": "1",
+      "Average": "0.5",
+      "Max": "1",
+      "Frequency": "33.5",
+      "Duration": "67",
+      "Count": "2",
+      "Min": "0"
+    },
+    "AOS:name=BlackWordServiceImpl checkContent,type=Timer": {
+      "PerSecond": "0.03",
+      "Load": "0.0",
+      "Total": "1",
+      "Average": "0.5",
+      "Max": "1",
+      "Frequency": "33.5",
+      "Duration": "67",
+      "Count": "2",
+      "Min": "0"
+    },
+    "AOS:name=ConfigurationWatcher entryCount,type=Gauge": {
+      "Level": "78",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "78.0",
+      "Max": "78",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "78"
+    },
+    "AOS:name=SERVICE wireSize request AdminServiceHandler default,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.07",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "2.0",
+      "Max": "2",
+      "Frequency": "15.25",
+      "Count": "4",
+      "Min": "2"
+    },
+    "AOS:name=Process CPU,type=Gauge": {
+      "Level": "1961840",
+      "PerSecond": "11.34",
+      "Type": "METER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.09",
+      "Count": "760",
+      "Min": "0"
+    },
+    "AOS:name=CFMClient poll fail,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=compressor,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=serviceRetry NotificationService,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=jetty connection new ssladmin,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "java.lang:type=ClassLoading": {
+      "ObjectName": {
+        "canonicalKeyPropertyListString": "type=ClassLoading",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "type": "ClassLoading"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.lang:type=ClassLoading",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=ClassLoading",
+        "domain": "java.lang"
+      },
+      "TotalLoadedClassCount": "13471",
+      "LoadedClassCount": "12980",
+      "UnloadedClassCount": "491",
+      "Verbose": "false"
+    },
+    "AOS:name=SERVICE wireSize request StatisticsHandler getGauges,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "java.lang:type=Compilation": {
+      "CompilationTimeMonitoringSupported": "true",
+      "Name": "HotSpot 64-Bit Tiered Compilers",
+      "TotalCompilationTime": "201936",
+      "ObjectName": {
+        "canonicalKeyPropertyListString": "type=Compilation",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "type": "Compilation"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.lang:type=Compilation",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=Compilation",
+        "domain": "java.lang"
+      }
+    },
+    "AOS:name=HealthHandler getEvents,type=Timer": {
+      "PerSecond": "0.01",
+      "Load": "0.0",
+      "Total": "1",
+      "Average": "1.0",
+      "Max": "1",
+      "Frequency": "68.0",
+      "Duration": "68",
+      "Count": "1",
+      "Min": "1"
+    },
+    "AOS:name=CacheHandler getCacheFlushStatus,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=NotificationService sendRequest networkOverhead,type=Timer": {
+      "PerSecond": "0.03",
+      "Load": "0.0",
+      "Total": "6",
+      "Average": "3.0",
+      "Max": "4",
+      "Frequency": "33.5",
+      "Duration": "67",
+      "Count": "2",
+      "Min": "2"
+    },
+    "AOS:name=SERVICE wireSize response service provider InvalidCharacterService checkMultipleContent,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=RequestInterceptor willDispatchRequest,type=Timer": {
+      "PerSecond": "0.41",
+      "Load": "0.0",
+      "Total": "2",
+      "Average": "0.08",
+      "Max": "1",
+      "Frequency": "2.42",
+      "Duration": "63",
+      "Count": "26",
+      "Min": "0"
+    },
+    "AOS:name=ConfigServiceHandler getPackagedFileContents,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "60",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  AdminServiceHandler introspect,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "61",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ASCallable time com apple store toolkit health ApplicationInformation anonymous,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "67",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=jetty connection openadmin,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response AdminServiceHandler extendedInfo,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.03",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "4066.0",
+      "Max": "4066",
+      "Frequency": "33.5",
+      "Count": "2",
+      "Min": "4066"
+    },
+    "AOS:name=BeanCache app debugMenu DebugMenuConfig,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "1",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "400",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=SERVICE wireSize response AdminServiceHandler getLocalConfigHashUnstructured,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=makeMinuteCache,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "0",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "2000",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=InvalidCharacterServiceImpl textContainsInvalidCharacters,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "63",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=jetty connection heldsecure,type=Gauge": {
+      "Level": "4",
+      "PerSecond": "0.22",
+      "Type": "LOAD",
+      "Load": "3.4168835757E8",
+      "Average": "1.5489872209908E12",
+      "Max": "5",
+      "Frequency": "4.53",
+      "Count": "15",
+      "Min": "0"
+    },
+    "AOS:name=CacheHandler getCacheConfiguration,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ASCallable time com apple store toolkit cache cfm spi_impl CFMClientImpl_V  anonymous,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "64",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  StatisticsHandler getMBeans,type=Timer": {
+      "PerSecond": "0.02",
+      "Load": "0.0",
+      "Total": "48",
+      "Average": "48.0",
+      "Max": "48",
+      "Frequency": "63.0",
+      "Duration": "63",
+      "Count": "1",
+      "Min": "48"
+    },
+    "AOS:name=CPU PAGE  DebugViewConfigurationFile,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "68",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=HealthHandler,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.05",
+      "Type": "LOAD",
+      "Load": "0.0",
+      "Average": "8.67",
+      "Max": "2",
+      "Frequency": "20.67",
+      "Count": "3",
+      "Min": "0"
+    },
+    "AOS:name=ConfigurationWatcher run processLiveListenerEntry,type=Timer": {
+      "PerSecond": "1.22",
+      "Load": "0.01",
+      "Total": "762",
+      "Average": "9.77",
+      "Max": "200",
+      "Frequency": "0.82",
+      "Duration": "64",
+      "Count": "78",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response StatisticsHandler getCaches,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "JMImplementation:type=MBeanServerDelegate": {
+      "ImplementationVendor": "Oracle Corporation",
+      "MBeanServerId": "rn-aosd-d01-lapp13.rno.apple.com_1548875137408",
+      "ImplementationVersion": "1.8.0_171-b11",
+      "ImplementationName": "JMX",
+      "SpecificationName": "Java Management Extensions",
+      "SpecificationVersion": "1.4",
+      "SpecificationVendor": "Oracle Corporation"
+    },
+    "AOS:name=request,type=Gauge": {
+      "Level": "2",
+      "PerSecond": "0.38",
+      "Type": "LOAD",
+      "Load": "0.0",
+      "Average": "3.46",
+      "Max": "2",
+      "Frequency": "2.63",
+      "Count": "24",
+      "Min": "0"
+    },
+    "AOS:name=CPU UNKNOWN View,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=BeanCache interceptor InterceptorConfiguration,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "1",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "400",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=SERVICE wireSize request BlackWordServiceImpl introspect,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=WOComponent ShowConfigurationNamespace,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "63",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response AdminServiceHandler introspect,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ConfigurationWatcherTimerTask,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "64",
+      "Count": "0",
+      "Min": "0"
+    },
+    "java.lang:type=OperatingSystem": {
+      "MaxFileDescriptorCount": "250000",
+      "SystemCpuLoad": "0.35171513923702913",
+      "OpenFileDescriptorCount": "299",
+      "TotalPhysicalMemorySize": "270176657408",
+      "SystemLoadAverage": "2.08",
+      "CommittedVirtualMemorySize": "13679149056",
+      "ProcessCpuLoad": "0.009202664652153011",
+      "FreePhysicalMemorySize": "88731705344",
+      "AvailableProcessors": "40",
+      "FreeSwapSpaceSize": "0",
+      "TotalSwapSpaceSize": "0",
+      "ProcessCpuTime": "1964380000000",
+      "Name": "Linux",
+      "Version": "3.10.0-862.14.4.el7.x86_64",
+      "Arch": "amd64",
+      "ObjectName": {
+        "canonicalKeyPropertyListString": "type=OperatingSystem",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "type": "OperatingSystem"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.lang:type=OperatingSystem",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=OperatingSystem",
+        "domain": "java.lang"
+      }
+    },
+    "AOS:name=SERVICE wireSize response HealthHandler getStatus,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=IDMS success,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request InvalidCharacterServiceImpl textContainsInvalidCharacters,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=service provider InvalidCharacterService checkMultipleContent,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "65",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ActionRequestHandler finalize,type=Timer": {
+      "PerSecond": "0.39",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "2.58",
+      "Duration": "62",
+      "Count": "24",
+      "Min": "0"
+    },
+    "java.lang:name=Metaspace,type=MemoryPool": {
+      "MemoryManagerNames": [
+        "Metaspace Manager"
+      ],
+      "Name": "Metaspace",
+      "UsageThresholdExceeded": "false",
+      "CollectionUsageThresholdCount": {
+        "committed": "81395712",
+        "used": "76705272",
+        "max": "268435456",
+        "init": "0"
+      },
+      "CollectionUsageThreshold": "<null>",
+      "UsageThresholdCount": "0",
+      "PeakUsage": {
+        "committed": "81395712",
+        "used": "76840336",
+        "max": "268435456",
+        "init": "0"
+      },
+      "CollectionUsageThresholdExceeded": "false",
+      "Type": "NON_HEAP",
+      "UsageThresholdSupported": "true",
+      "Valid": "true",
+      "CollectionUsage": {
+        "canonicalKeyPropertyListString": "name=Metaspace,type=MemoryPool",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "name": "Metaspace",
+          "type": "MemoryPool"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.lang:name=Metaspace,type=MemoryPool",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=MemoryPool,name=Metaspace",
+        "domain": "java.lang"
+      },
+      "UsageThreshold": "0"
+    },
+    "AOS:name=CPU SERVICE  StatisticsHandler introspect,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "64",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=HttpClientConnectionPoolWatcher newConnection ssl,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.06",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "17.0",
+      "Count": "4",
+      "Min": "0"
+    },
+    "AOS:name=CfmHealthCheck warn,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request PeerHandler,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.03",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "47.0",
+      "Max": "47",
+      "Frequency": "34.5",
+      "Count": "2",
+      "Min": "47"
+    },
+    "AOS:name=SERVICE wireSize response StatisticsHandler getTimers,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU StaticResourcesAction dispatchRequest,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request HealthHandler,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.04",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "2.0",
+      "Max": "2",
+      "Frequency": "22.67",
+      "Count": "3",
+      "Min": "2"
+    },
+    "AOS:name=SERVICE wireSize response AdminServiceHandler getThreadDump,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response DevelopmentCacheHandler introspect,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=parseMinuteCache,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "0",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "2000",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=SERVICE wireSize request service provider anonymous getLocalConfigurationMetadata,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.03",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "47.0",
+      "Max": "47",
+      "Frequency": "34.5",
+      "Count": "2",
+      "Min": "47"
+    },
+    "AOS:name=BlackWordServiceImpl,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.03",
+      "Type": "LOAD",
+      "Load": "0.0",
+      "Average": "0.5",
+      "Max": "1",
+      "Frequency": "33.5",
+      "Count": "2",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request HealthHandler runAllChecks,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.01",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "2.0",
+      "Max": "2",
+      "Frequency": "68.0",
+      "Count": "1",
+      "Min": "2"
+    },
+    "AOS:name=SERVICE wireSize response PeerHandler,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.03",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "3374.0",
+      "Max": "3374",
+      "Frequency": "34.5",
+      "Count": "2",
+      "Min": "3374"
+    },
+    "AOS:name=CPU SERVICE View,type=Timer": {
+      "PerSecond": "0.38",
+      "Load": "0.0",
+      "Total": "63",
+      "Average": "2.63",
+      "Max": "48",
+      "Frequency": "2.63",
+      "Duration": "63",
+      "Count": "24",
+      "Min": "0"
+    },
+    "AOS:name=healthcheck ClientTimeoutCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  AdminServiceHandler getThreadDump,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  DevelopmentCacheHandler dump,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=service provider anonymous,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.03",
+      "Type": "LOAD",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "1",
+      "Frequency": "34.5",
+      "Count": "2",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  AdminServiceHandler getUrlPatterns,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "60",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU SERVICE  ConfigServiceHandler getPackagedFileContents,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "60",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ResourceManager,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "20",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "100",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=jetty connection closeprimary,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response service provider anonymous,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.03",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "3374.0",
+      "Max": "3374",
+      "Frequency": "34.5",
+      "Count": "2",
+      "Min": "3374"
+    },
+    "AOS:name=ASCallable time com apple store toolkit cache CFMListenerImpl anonymous,type=Timer": {
+      "PerSecond": "0.11",
+      "Load": "0.0",
+      "Total": "3",
+      "Average": "0.43",
+      "Max": "2",
+      "Frequency": "9.0",
+      "Duration": "63",
+      "Count": "7",
+      "Min": "0"
+    },
+    "AOS:name=BeanCache service trace ServiceTraceConfiguration,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "0",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "400",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "java.lang:name=PS Survivor Space,type=MemoryPool": {
+      "MemoryManagerNames": [
+        "PS MarkSweep",
+        "PS Scavenge"
+      ],
+      "Name": "PS Survivor Space",
+      "UsageThresholdExceeded": "0",
+      "CollectionUsageThresholdCount": {
+        "committed": "41418752",
+        "used": "5618856",
+        "max": "41418752",
+        "init": "44564480"
+      },
+      "CollectionUsageThreshold": {
+        "committed": "41418752",
+        "used": "5618856",
+        "max": "41418752",
+        "init": "44564480"
+      },
+      "UsageThresholdCount": "false",
+      "PeakUsage": {
+        "committed": "44564480",
+        "used": "44559320",
+        "max": "44564480",
+        "init": "44564480"
+      },
+      "CollectionUsageThresholdExceeded": "true",
+      "Type": "HEAP",
+      "UsageThresholdSupported": "0",
+      "Valid": "true",
+      "CollectionUsage": {
+        "canonicalKeyPropertyListString": "name=PS Survivor Space,type=MemoryPool",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "name": "PS Survivor Space",
+          "type": "MemoryPool"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=MemoryPool,name=PS Survivor Space",
+        "domain": "java.lang"
+      },
+      "UsageThreshold": "false"
+    },
+    "AOS:name=service provider anonymous getLocalConfigurationMetadata,type=Timer": {
+      "PerSecond": "0.03",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "34.5",
+      "Duration": "69",
+      "Count": "2",
+      "Min": "0"
+    },
+    "AOS:name=jetty connection closesecure,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.22",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "4.53",
+      "Count": "15",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response service provider InvalidCharacterService textContainsInvalidCharacters,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=WOComponent DebugMenu,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=WOComponent ASCDebugPageWrapper,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "63",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response AdminServiceHandler info,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=serviceFailedNoRetry CacheFlushManager,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request AdminServiceHandler getLogs,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ASCallable delay com apple store toolkit cache CFMListenerImpl anonymous,type=Timer": {
+      "PerSecond": "0.11",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "9.0",
+      "Duration": "63",
+      "Count": "7",
+      "Min": "0"
+    },
+    "AOS:name=healthcheck TLSCertificateExpirationCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=HealthHandler,type=Timer": {
+      "PerSecond": "0.05",
+      "Load": "0.0",
+      "Total": "26",
+      "Average": "8.67",
+      "Max": "24",
+      "Frequency": "20.67",
+      "Duration": "62",
+      "Count": "3",
+      "Min": "1"
+    },
+    "AOS:name=healthcheck DebugServerHealthCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=BlackWordServiceImpl introspect,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "68",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ConfigListener old urls debug,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "1",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "400",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=HttpClientConnectionPoolWatcher idleKeptAliveConnections,type=Gauge": {
+      "Level": "3",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "3.0",
+      "Max": "3",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "3"
+    },
+    "AOS:name=ConfigListener old url parameter types,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "1",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "400",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "java.lang:type=Threading": {
+      "ThreadAllocatedMemorySupported": "true",
+      "ThreadContentionMonitoringEnabled": "false",
+      "CurrentThreadUserTime": "0",
+      "CurrentThreadCpuTime": "9430865",
+      "ThreadCount": "107",
+      "TotalStartedThreadCount": "5694",
+      "AllThreadIds": [
+        "5722",
+        "5721",
+        "5720",
+        "5719",
+        "5718",
+        "5717",
+        "5716",
+        "5713",
+        "5710",
+        "5704",
+        "5701",
+        "5695",
+        "5687",
+        "5684",
+        "5681",
+        "5677",
+        "5670",
+        "5667",
+        "5661",
+        "5656",
+        "5640",
+        "5636",
+        "5630",
+        "5617",
+        "5610",
+        "5590",
+        "5461",
+        "5451",
+        "4570",
+        "4568",
+        "2201",
+        "2200",
+        "167",
+        "156",
+        "155",
+        "147",
+        "145",
+        "144",
+        "140",
+        "138",
+        "135",
+        "131",
+        "130",
+        "129",
+        "128",
+        "127",
+        "126",
+        "125",
+        "124",
+        "123",
+        "122",
+        "121",
+        "120",
+        "118",
+        "117",
+        "115",
+        "116",
+        "114",
+        "113",
+        "112",
+        "111",
+        "109",
+        "108",
+        "107",
+        "105",
+        "103",
+        "101",
+        "100",
+        "82",
+        "81",
+        "80",
+        "79",
+        "78",
+        "77",
+        "76",
+        "75",
+        "73",
+        "72",
+        "71",
+        "70",
+        "67",
+        "66",
+        "65",
+        "64",
+        "63",
+        "62",
+        "61",
+        "60",
+        "58",
+        "57",
+        "54",
+        "53",
+        "52",
+        "50",
+        "49",
+        "48",
+        "28",
+        "21",
+        "19",
+        "18",
+        "17",
+        "15",
+        "6",
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
+      "DaemonThreadCount": "48",
+      "ThreadCpuTimeEnabled": "true",
+      "ThreadContentionMonitoringSupported": "true",
+      "ObjectMonitorUsageSupported": "true",
+      "ThreadAllocatedMemoryEnabled": "true",
+      "ObjectName": {
+        "canonicalKeyPropertyListString": "type=Threading",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "type": "Threading"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.lang:type=Threading",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=Threading",
+        "domain": "java.lang"
+      },
+      "SynchronizerUsageSupported": "true",
+      "CurrentThreadCpuTimeSupported": "true",
+      "PeakThreadCount": "116",
+      "ThreadCpuTimeSupported": "true"
+    },
+    "AOS:name=SERVICE wireSize request DevelopmentCacheHandler,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "java.lang:name=Code Cache,type=MemoryPool": {
+      "MemoryManagerNames": [
+        "CodeCacheManager"
+      ],
+      "Name": "Code Cache",
+      "UsageThresholdExceeded": "false",
+      "CollectionUsageThresholdCount": {
+        "committed": "74317824",
+        "used": "73519808",
+        "max": "251658240",
+        "init": "2555904"
+      },
+      "CollectionUsageThreshold": "<null>",
+      "UsageThresholdCount": "0",
+      "PeakUsage": {
+        "committed": "74317824",
+        "used": "73611584",
+        "max": "251658240",
+        "init": "2555904"
+      },
+      "CollectionUsageThresholdExceeded": "false",
+      "Type": "NON_HEAP",
+      "UsageThresholdSupported": "true",
+      "Valid": "true",
+      "CollectionUsage": {
+        "canonicalKeyPropertyListString": "name=Code Cache,type=MemoryPool",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "name": "Code Cache",
+          "type": "MemoryPool"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.lang:name=Code Cache,type=MemoryPool",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=MemoryPool,name=Code Cache",
+        "domain": "java.lang"
+      },
+      "UsageThreshold": "0"
+    },
+    "AOS:name=PAGE  ShowConfigurationNamespaces,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "67",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request AdminServiceHandler getLocalConfigHashUnstructured,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=service provider InvalidCharacterService checkMultipleContent,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LOAD",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request StatisticsHandler getTimers,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "java.lang:name=Metaspace Manager,type=MemoryManager": {
+      "Name": "Metaspace Manager",
+      "MemoryPoolNames": [
+        "Metaspace",
+        "Compressed Class Space"
+      ],
+      "Valid": "true",
+      "ObjectName": {
+        "canonicalKeyPropertyListString": "name=Metaspace Manager,type=MemoryManager",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "name": "Metaspace Manager",
+          "type": "MemoryManager"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.lang:name=Metaspace Manager,type=MemoryManager",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=MemoryManager,name=Metaspace Manager",
+        "domain": "java.lang"
+      }
+    },
+    "AOS:name=GarbageCollectionTime PS Scavenge,type=Gauge": {
+      "Level": "28856",
+      "PerSecond": "0.0",
+      "Type": "METER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "com.sun.management:type=DiagnosticCommand": {},
+    "AOS:name=SERVICE wireSize response HealthHandler runAllChecks,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.01",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "648.0",
+      "Max": "648",
+      "Frequency": "68.0",
+      "Count": "1",
+      "Min": "648"
+    },
+    "AOS:name=healthcheck RootDiskSpaceCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ActionRequestHandler generateResponse,type=Timer": {
+      "PerSecond": "0.38",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "2.63",
+      "Duration": "63",
+      "Count": "24",
+      "Min": "0"
+    },
+    "AOS:name=CacheHandler getCacheSummary,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "65",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=default Config Resource Cache,type=Cache": {
+      "Misses": "3417",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "100",
+      "Hits": "0",
+      "PerSecond": "52.5692",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "0.0",
+      "GarbageCollections": "0",
+      "Size": "100",
+      "Replacements": "3416",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=ConfigListener old urls service,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "1",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "400",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=healthcheck BlackWordCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "java.lang:type=Memory": {
+      "HeapMemoryUsage": {
+        "committed": "1018167296",
+        "used": "616485208",
+        "max": "1029177344",
+        "init": "1073741824"
+      },
+      "ObjectPendingFinalizationCount": "0",
+      "ObjectName": {
+        "canonicalKeyPropertyListString": "type=Memory",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "type": "Memory"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.lang:type=Memory",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=Memory",
+        "domain": "java.lang"
+      },
+      "Verbose": "true",
+      "NonHeapMemoryUsage": {
+        "committed": "165281792",
+        "used": "158869696",
+        "max": "780140544",
+        "init": "2555904"
+      }
+    },
+    "AOS:name=service provider InvalidCharacterService textContainsInvalidCharacters,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LOAD",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU PAGE  ShowConfigurationNamespaces,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "67",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response service provider anonymous getLocalConfigurationMetadata,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.03",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "3374.0",
+      "Max": "3374",
+      "Frequency": "34.5",
+      "Count": "2",
+      "Min": "3374"
+    },
+    "AOS:name=RequestInterceptor didDispatchRequest,type=Timer": {
+      "PerSecond": "0.39",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "2.58",
+      "Duration": "62",
+      "Count": "24",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response InvalidCharacterServiceImpl,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request service provider InvalidCharacterService checkMultipleContent,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=URLPatterns urls service,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "1",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "500",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=CPU ConfigurationWatcherTimerTask,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "64",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=BlackWordService sendRequest,type=Timer": {
+      "PerSecond": "0.04",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "22.33",
+      "Duration": "67",
+      "Count": "3",
+      "Min": "0"
+    },
+    "AOS:name=GarbageCollectionTime PS MarkSweep,type=Gauge": {
+      "Level": "890",
+      "PerSecond": "0.0",
+      "Type": "METER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=HealthHandler runCheck,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "64",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU service provider InvalidCharacterService textContainsInvalidCharacters,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "63",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=BeanCache DiskSpaceInstrument Configuration,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "1",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "400",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "java.lang:type=Runtime": {
+      "BootClassPathSupported": "true",
+      "VmName": "Java HotSpot(TM) 64-Bit Server VM",
+      "StartTime": "1548875117781",
+      "BootClassPath": "/usr/java/jdk64-1.8.0_171/jre/lib/resources.jar:/usr/java/jdk64-1.8.0_171/jre/lib/rt.jar:/usr/java/jdk64-1.8.0_171/jre/lib/sunrsasign.jar:/usr/java/jdk64-1.8.0_171/jre/lib/jsse.jar:/usr/java/jdk64-1.8.0_171/jre/lib/jce.jar:/usr/java/jdk64-1.8.0_171/jre/lib/charsets.jar:/usr/java/jdk64-1.8.0_171/jre/lib/jfr.jar:/usr/java/jdk64-1.8.0_171/jre/classes:/Local/ThirdParty/appdynamics/AppServerAgent-4.3.8.3/javaagent.jar",
+      "SystemProperties": {
+        "com.webobjects.classpath": {
+          "value": "file:/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/BlackWordService-2019.3debugPage-SNAPSHOT.jar",
+          "key": "com.webobjects.classpath"
+        },
+        "java.net.preferIPv4Stack": {
+          "value": "true",
+          "key": "java.net.preferIPv4Stack"
+        },
+        "WOFrameworksBaseURL": {
+          "value": "/WebObjects/Frameworks",
+          "key": "WOFrameworksBaseURL"
+        },
+        "_WebServiceRequestHandlerKey": {
+          "value": "ws",
+          "key": "_WebServiceRequestHandlerKey"
+        },
+        "sun.os.patch.level": {
+          "value": "unknown",
+          "key": "sun.os.patch.level"
+        },
+        "java.vm.vendor": {
+          "value": "Oracle Corporation",
+          "key": "java.vm.vendor"
+        },
+        "_WOSessionReclaimingInterval": {
+          "value": "60",
+          "key": "_WOSessionReclaimingInterval"
+        },
+        "java.vm.specification.vendor": {
+          "value": "Oracle Corporation",
+          "key": "java.vm.specification.vendor"
+        },
+        "context.partition": {
+          "value": "ww",
+          "key": "context.partition"
+        },
+        "_DirectActionRequestHandlerKey": {
+          "value": "wa",
+          "key": "_DirectActionRequestHandlerKey"
+        },
+        "java.version": {
+          "value": "1.8.0_171",
+          "key": "java.version"
+        },
+        "WOGenerateWSDL": {
+          "value": "true",
+          "key": "WOGenerateWSDL"
+        },
+        "java.library.path": {
+          "value": "/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib",
+          "key": "java.library.path"
+        },
+        "context.app": {
+          "value": "BlackWordService",
+          "key": "context.app"
+        },
+        "log4j.shorthost": {
+          "value": "rn-aosd-d01-lapp13",
+          "key": "log4j.shorthost"
+        },
+        "WOMaxIOBufferSize": {
+          "value": "8196",
+          "key": "WOMaxIOBufferSize"
+        },
+        "WOIncludeCommentsInResponse": {
+          "value": "true",
+          "key": "WOIncludeCommentsInResponse"
+        },
+        "com.webobjects.pid": {
+          "value": "35873",
+          "key": "com.webobjects.pid"
+        },
+        "java.ext.dirs": {
+          "value": "/usr/java/jdk64-1.8.0_171/jre/lib/ext:/usr/java/packages/lib/ext",
+          "key": "java.ext.dirs"
+        },
+        "WOLocalRootDirectory": {
+          "value": "/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7",
+          "key": "WOLocalRootDirectory"
+        },
+        "WOAutoOpenInBrowser": {
+          "value": "false",
+          "key": "WOAutoOpenInBrowser"
+        },
+        "WOMonitorEnabled": {
+          "value": "false",
+          "key": "WOMonitorEnabled"
+        },
+        "java.vm.specification.version": {
+          "value": "1.8",
+          "key": "java.vm.specification.version"
+        },
+        "sun.arch.data.model": {
+          "value": "64",
+          "key": "sun.arch.data.model"
+        },
+        "java.vendor": {
+          "value": "Oracle Corporation",
+          "key": "java.vendor"
+        },
+        "WOAdditionalAdaptors": {
+          "value": "()",
+          "key": "WOAdditionalAdaptors"
+        },
+        "file.encoding.pkg": {
+          "value": "sun.io",
+          "key": "file.encoding.pkg"
+        },
+        "java.security.egd": {
+          "value": "file:///dev/urandom",
+          "key": "java.security.egd"
+        },
+        "sun.cpu.isalist": {
+          "value": "",
+          "key": "sun.cpu.isalist"
+        },
+        "user.timezone": {
+          "value": "America/Los_Angeles",
+          "key": "user.timezone"
+        },
+        "java.awt.headless": {
+          "value": "true",
+          "key": "java.awt.headless"
+        },
+        "WOAdaptorURL": {
+          "value": "http://localhost/BlackWordService/WebObjects",
+          "key": "WOAdaptorURL"
+        },
+        "WOAdaptor": {
+          "value": "WOClassicAdaptor",
+          "key": "WOAdaptor"
+        },
+        "sun.jnu.encoding": {
+          "value": "ANSI_X3.4-1968",
+          "key": "sun.jnu.encoding"
+        },
+        "java.io.tmpdir": {
+          "value": "/tmp",
+          "key": "java.io.tmpdir"
+        },
+        "_AjaxRequestHandlerKey": {
+          "value": "ja",
+          "key": "_AjaxRequestHandlerKey"
+        },
+        "java.vm.version": {
+          "value": "25.171-b11",
+          "key": "java.vm.version"
+        },
+        "path.separator": {
+          "value": ":",
+          "key": "path.separator"
+        },
+        "sun.java.command": {
+          "value": "com.apple.store.application.textvalidation.Application XX:+PrintHeapAtGC -startedBySentinelService BlackWordService-ww -WOPort 8542",
+          "key": "sun.java.command"
+        },
+        "sun.io.unicode.encoding": {
+          "value": "UnicodeLittle",
+          "key": "sun.io.unicode.encoding"
+        },
+        "line.separator": {
+          "value": "\n",
+          "key": "line.separator"
+        },
+        "appdynamic.dtd.provider.class": {
+          "value": "com.singularity.ee.agent.appagent.kernel.boot.JavaAgentBootExtension",
+          "key": "appdynamic.dtd.provider.class"
+        },
+        "user.name": {
+          "value": "worun",
+          "key": "user.name"
+        },
+        "WOSocketMonitorSleepTime": {
+          "value": "50",
+          "key": "WOSocketMonitorSleepTime"
+        },
+        "WOAllowsCacheControlHeader": {
+          "value": "true",
+          "key": "WOAllowsCacheControlHeader"
+        },
+        "java.vm.specification.name": {
+          "value": "Java Virtual Machine Specification",
+          "key": "java.vm.specification.name"
+        },
+        "appdynamics.agent.tierName": {
+          "value": "BlackWordService",
+          "key": "appdynamics.agent.tierName"
+        },
+        "WOWorkerThreadCountMax": {
+          "value": "256",
+          "key": "WOWorkerThreadCountMax"
+        },
+        "WOApplicationBaseURL": {
+          "value": "/WebObjects",
+          "key": "WOApplicationBaseURL"
+        },
+        "WODisplayExceptionPages": {
+          "value": "true",
+          "key": "WODisplayExceptionPages"
+        },
+        "log4j.configuration": {
+          "value": "file:///Local/AS/Configuration/log4j/log4j_nonprod.xml",
+          "key": "log4j.configuration"
+        },
+        "java.specification.vendor": {
+          "value": "Oracle Corporation",
+          "key": "java.specification.vendor"
+        },
+        "WOCachingEnabled": {
+          "value": "true",
+          "key": "WOCachingEnabled"
+        },
+        "WOListenQueueSize": {
+          "value": "128",
+          "key": "WOListenQueueSize"
+        },
+        "WOLifebeatInterval": {
+          "value": "30",
+          "key": "WOLifebeatInterval"
+        },
+        "user.country": {
+          "value": "US",
+          "key": "user.country"
+        },
+        "sun.boot.class.path": {
+          "value": "/usr/java/jdk64-1.8.0_171/jre/lib/resources.jar:/usr/java/jdk64-1.8.0_171/jre/lib/rt.jar:/usr/java/jdk64-1.8.0_171/jre/lib/sunrsasign.jar:/usr/java/jdk64-1.8.0_171/jre/lib/jsse.jar:/usr/java/jdk64-1.8.0_171/jre/lib/jce.jar:/usr/java/jdk64-1.8.0_171/jre/lib/charsets.jar:/usr/java/jdk64-1.8.0_171/jre/lib/jfr.jar:/usr/java/jdk64-1.8.0_171/jre/classes:/Local/ThirdParty/appdynamics/AppServerAgent-4.3.8.3/javaagent.jar",
+          "key": "sun.boot.class.path"
+        },
+        "WOSessionTimeOut": {
+          "value": "3600",
+          "key": "WOSessionTimeOut"
+        },
+        "java.specification.version": {
+          "value": "1.8",
+          "key": "java.specification.version"
+        },
+        "_StreamActionRequestHandlerKey": {
+          "value": "wis",
+          "key": "_StreamActionRequestHandlerKey"
+        },
+        "WOMissingResourceSearchEnabled": {
+          "value": "true",
+          "key": "WOMissingResourceSearchEnabled"
+        },
+        "WODebuggingEnabled": {
+          "value": "false",
+          "key": "WODebuggingEnabled"
+        },
+        "java.vm.name": {
+          "value": "Java HotSpot(TM) 64-Bit Server VM",
+          "key": "java.vm.name"
+        },
+        "symbolicConfigurationPath": {
+          "value": "/Local/AS/Configuration/current",
+          "key": "symbolicConfigurationPath"
+        },
+        "WOLaunchdEnabled": {
+          "value": "false",
+          "key": "WOLaunchdEnabled"
+        },
+        "WOAutoOpenClientApplication": {
+          "value": "false",
+          "key": "WOAutoOpenClientApplication"
+        },
+        "jetty.git.hash": {
+          "value": "d5fc0523cfa96bfebfbda19606cad384d772f04c",
+          "key": "jetty.git.hash"
+        },
+        "Undefined": {
+          "value": "false",
+          "key": "Undefined"
+        },
+        "_WOHTMLParserClassName": {
+          "value": "WOHTMLTemplateParser",
+          "key": "_WOHTMLParserClassName"
+        },
+        "WOMaxHeaders": {
+          "value": "200",
+          "key": "WOMaxHeaders"
+        },
+        "org.terracotta.quartz.skipUpdateCheck": {
+          "value": "true",
+          "key": "org.terracotta.quartz.skipUpdateCheck"
+        },
+        "java.runtime.version": {
+          "value": "1.8.0_171-b11",
+          "key": "java.runtime.version"
+        },
+        "sun.management.compiler": {
+          "value": "HotSpot 64-Bit Tiered Compilers",
+          "key": "sun.management.compiler"
+        },
+        "WOServlet": {
+          "value": "true",
+          "key": "WOServlet"
+        },
+        "WOContextClassName": {
+          "value": "com.webobjects.jspservlet.WOServletContext",
+          "key": "WOContextClassName"
+        },
+        "WODirectConnectEnabled": {
+          "value": "true",
+          "key": "WODirectConnectEnabled"
+        },
+        "java.endorsed.dirs": {
+          "value": "/usr/java/jdk64-1.8.0_171/jre/lib/endorsed",
+          "key": "java.endorsed.dirs"
+        },
+        "java.vendor.url.bug": {
+          "value": "http://bugreport.sun.com/bugreport/",
+          "key": "java.vendor.url.bug"
+        },
+        "WODefaultUndoStackLimit": {
+          "value": "10",
+          "key": "WODefaultUndoStackLimit"
+        },
+        "WOStatisticsStoreSessionMax": {
+          "value": "50",
+          "key": "WOStatisticsStoreSessionMax"
+        },
+        "java.home": {
+          "value": "/usr/java/jdk64-1.8.0_171/jre",
+          "key": "java.home"
+        },
+        "user.dir": {
+          "value": "/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7",
+          "key": "user.dir"
+        },
+        "_ComponentRequestHandlerKey": {
+          "value": "wo",
+          "key": "_ComponentRequestHandlerKey"
+        },
+        "WOWorkerThreadCountMin": {
+          "value": "16",
+          "key": "WOWorkerThreadCountMin"
+        },
+        "java.awt.printerjob": {
+          "value": "sun.print.PSPrinterJob",
+          "key": "java.awt.printerjob"
+        },
+        "context.region": {
+          "value": "ww",
+          "key": "context.region"
+        },
+        "WOMaxSocketIdleTime": {
+          "value": "180000",
+          "key": "WOMaxSocketIdleTime"
+        },
+        "user.home": {
+          "value": "/home/worun",
+          "key": "user.home"
+        },
+        "WOLifebeatDestinationPort": {
+          "value": "1085",
+          "key": "WOLifebeatDestinationPort"
+        },
+        "os.version": {
+          "value": "3.10.0-862.14.4.el7.x86_64",
+          "key": "os.version"
+        },
+        "WOLifebeatEnabled": {
+          "value": "false",
+          "key": "WOLifebeatEnabled"
+        },
+        "NSProjectSearchPath": {
+          "value": "(\"..\")",
+          "key": "NSProjectSearchPath"
+        },
+        "java.vm.info": {
+          "value": "mixed mode",
+          "key": "java.vm.info"
+        },
+        "WOSMTPHost": {
+          "value": "smtp",
+          "key": "WOSMTPHost"
+        },
+        "sun.cpu.endian": {
+          "value": "little",
+          "key": "sun.cpu.endian"
+        },
+        "WOAcceptMalformedCookies": {
+          "value": "false",
+          "key": "WOAcceptMalformedCookies"
+        },
+        "context.host": {
+          "value": "rn-aosd-d01-lapp13.rno.apple.com",
+          "key": "context.host"
+        },
+        "java.awt.graphicsenv": {
+          "value": "sun.awt.X11GraphicsEnvironment",
+          "key": "java.awt.graphicsenv"
+        },
+        "sun.boot.library.path": {
+          "value": "/usr/java/jdk64-1.8.0_171/jre/lib/amd64",
+          "key": "sun.boot.library.path"
+        },
+        "_ResourceRequestHandlerKey": {
+          "value": "wr",
+          "key": "_ResourceRequestHandlerKey"
+        },
+        "WOWebObjectsVersion": {
+          "value": "5.4",
+          "key": "WOWebObjectsVersion"
+        },
+        "NSStats.className": {
+          "value": "com.webobjects.appserver.stats.WOStatistics",
+          "key": "NSStats.className"
+        },
+        "java.specification.name": {
+          "value": "Java Platform API Specification",
+          "key": "java.specification.name"
+        },
+        "shortHostName": {
+          "value": "rn-aosd-d01-lapp13",
+          "key": "shortHostName"
+        },
+        "java.class.version": {
+          "value": "52.0",
+          "key": "java.class.version"
+        },
+        "WOSessionStoreClassName": {
+          "value": "WOServerSessionStore",
+          "key": "WOSessionStoreClassName"
+        },
+        "java.runtime.name": {
+          "value": "Java(TM) SE Runtime Environment",
+          "key": "java.runtime.name"
+        },
+        "file.separator": {
+          "value": "/",
+          "key": "file.separator"
+        },
+        "java.class.path": {
+          "value": "lib/ASWebToolkit-2019.3-SNAPSHOT.jar:lib/BlackWordService-2019.3debugPage-SNAPSHOT.jar:lib/BlackWordServiceClient-2019.2.0.jar:lib/HikariCP-java6-2.3.13.jar:lib/JavaEOControl-5.4.6.8.jar:lib/JavaFoundation-5.4.6.8.jar:lib/JavaWOExtensions-5.4.6.8.jar:lib/JavaWebObjects-5.4.6.8b-AOS-release1.jar:lib/RevisionServiceClient-19.2.0.jar:lib/animal-sniffer-annotations-1.17.jar:lib/as-apply-2019.3-SNAPSHOT.jar:lib/as-codec-2019.3-SNAPSHOT.jar:lib/as-collections-2019.3-SNAPSHOT.jar:lib/as-config-2019.3-SNAPSHOT.jar:lib/as-convert-2019.3-SNAPSHOT.jar:lib/as-environment-2019.3-SNAPSHOT.jar:lib/as-filter-2019.3-SNAPSHOT.jar:lib/as-io-2019.3-SNAPSHOT.jar:lib/as-kvc-2019.3-SNAPSHOT.jar:lib/as-manifest-2019.3-SNAPSHOT.jar:lib/as-plist-2019.3-SNAPSHOT.jar:lib/as-query-2019.3-SNAPSHOT.jar:lib/as-service-2019.3-SNAPSHOT.jar:lib/as-service-client-2019.3-SNAPSHOT.jar:lib/as-test-junit3-2019.3-SNAPSHOT.jar:lib/as-test-logging-2019.3-SNAPSHOT.jar:lib/as-testing-2019.2.1.jar:lib/as-text-2019.3-SNAPSHOT.jar:lib/as-time-2019.3-SNAPSHOT.jar:lib/as-toolkit-2019.3-SNAPSHOT.jar:lib/as-toolkit-test-2019.3-SNAPSHOT.jar:lib/as-version-2019.3-SNAPSHOT.jar:lib/asm-6.2.1.jar:lib/c3p0-0.9.5.2.jar:lib/checker-qual-2.5.2.jar:lib/commons-beanutils-1.9.3.jar:lib/commons-codec-1.11.jar:lib/commons-collections4-4.1.jar:lib/commons-io-2.5.jar:lib/commons-lang3-3.8.jar:lib/commons-math3-3.6.1.jar:lib/commons-text-1.4.jar:lib/content-systems-toolkit-19.2.0.jar:lib/content-tenant-toolkit-19.2.0.jar:lib/error_prone_annotations-2.2.0.jar:lib/failureaccess-1.0.jar:lib/guava-27.0-jre.jar:lib/hamcrest-core-1.3.jar:lib/httpclient-4.5.6.jar:lib/httpcore-4.4.10.jar:lib/httpcore-nio-4.4.10.jar:lib/httpmime-4.5.6.jar:lib/hubble-2019.3-SNAPSHOT.jar:lib/hubbleagent-17.3.jar:lib/imq-4.5.2.jar:lib/j2objc-annotations-1.1.jar:lib/jackson-annotations-2.9.0.jar:lib/jackson-core-2.9.7.jar:lib/jackson-core-asl-1.9.13.jar:lib/jackson-databind-2.9.7.jar:lib/jackson-datatype-jdk8-2.9.7.jar:lib/jackson-datatype-json-org-2.9.7.jar:lib/jackson-mapper-asl-1.9.13.jar:lib/janino-2.4.3.jar:lib/javassist-3.22.0-GA.jar:lib/javax.inject-1.jar:lib/javax.jms-api-2.0.1.jar:lib/javax.servlet-api-4.0.1.jar:lib/jcip-annotations-1.0.jar:lib/jdom-2.0.2.jar:lib/jetty-http-9.4.11.v20180605.jar:lib/jetty-io-9.4.11.v20180605.jar:lib/jetty-server-9.4.11.v20180605.jar:lib/jetty-util-9.4.11.v20180605.jar:lib/joda-time-2.10.jar:lib/json-20180813.jar:lib/jsr305-3.0.2.jar:lib/junit-4.12.jar:lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:lib/log4j-1.2.17.jar:lib/magic-beans-2019.3-SNAPSHOT.jar:lib/magic-beans-api-2019.3-SNAPSHOT.jar:lib/magic-beans-wo-2019.3-SNAPSHOT.jar:lib/mchange-commons-java-0.2.11.jar:lib/mongo-java-driver-3.8.1.jar:lib/netty-3.6.5.Final.jar:lib/oauthprovider-toolkit-19.2.0.jar:lib/ognl-2.7.2.AS4.jar:lib/quartz-2.3.0.jar:lib/slf4j-api-1.7.25.jar:lib/slf4j-log4j12-1.7.25.jar:lib/spring-aop-5.1.2.RELEASE.jar:lib/spring-beans-5.1.2.RELEASE.jar:lib/spring-context-5.1.2.RELEASE.jar:lib/spring-context-support-5.1.2.RELEASE.jar:lib/spring-core-5.1.2.RELEASE.jar:lib/spring-data-commons-2.1.2.RELEASE.jar:lib/spring-expression-5.1.2.RELEASE.jar:lib/spring-jcl-5.1.2.RELEASE.jar:lib/spring-security-config-5.0.7.RELEASE.jar:lib/spring-security-core-5.0.7.RELEASE.jar:lib/spring-security-oauth2-2.3.4.RELEASE.jar:lib/spring-security-web-5.0.7.RELEASE.jar:lib/spring-web-5.1.2.RELEASE.jar:lib/spring-webmvc-5.1.2.RELEASE.jar:lib/spymemcached-2.12.3.jar:lib/ssp-alert-escalation-service-client-2019.3-SNAPSHOT.jar:lib/ssp-client-2019.3-SNAPSHOT.jar:lib/store-front-service-client-19.2.1.jar:lib/xercesImpl-2.12.0.jar:lib/xml-apis-1.4.01.jar:/Local/ThirdParty/appdynamics/java-agent/javaagent.jar",
+          "key": "java.class.path"
+        },
+        "file.encoding": {
+          "value": "ANSI_X3.4-1968",
+          "key": "file.encoding"
+        },
+        "WOPort": {
+          "value": "8542",
+          "key": "WOPort"
+        },
+        "WOSocketCacheSize": {
+          "value": "100",
+          "key": "WOSocketCacheSize"
+        },
+        "user.language": {
+          "value": "en",
+          "key": "user.language"
+        },
+        "java.vendor.url": {
+          "value": "http://java.oracle.com/",
+          "key": "java.vendor.url"
+        },
+        "context.masterApp": {
+          "value": "BlackWordService",
+          "key": "context.masterApp"
+        },
+        "context.disableRemoteConfiguration": {
+          "value": "true",
+          "key": "context.disableRemoteConfiguration"
+        },
+        "awt.toolkit": {
+          "value": "sun.awt.X11.XToolkit",
+          "key": "awt.toolkit"
+        },
+        "WOAllowsConcurrentRequestHandling": {
+          "value": "true",
+          "key": "WOAllowsConcurrentRequestHandling"
+        },
+        "appdynamics.agent.nodeName": {
+          "value": "rn-aosd-d01-lapp13.BlackWordService-ww:8542",
+          "key": "appdynamics.agent.nodeName"
+        },
+        "os.name": {
+          "value": "Linux",
+          "key": "os.name"
+        },
+        "sun.java.launcher": {
+          "value": "SUN_STANDARD",
+          "key": "sun.java.launcher"
+        },
+        "WOWorkerThreadCount": {
+          "value": "8",
+          "key": "WOWorkerThreadCount"
+        },
+        "os.arch": {
+          "value": "amd64",
+          "key": "os.arch"
+        },
+        "WOAllowRapidTurnaround": {
+          "value": "false",
+          "key": "WOAllowRapidTurnaround"
+        }
+      },
+      "SpecVersion": "1.8",
+      "ManagementSpecVersion": "1.2",
+      "ClassPath": "lib/ASWebToolkit-2019.3-SNAPSHOT.jar:lib/BlackWordService-2019.3debugPage-SNAPSHOT.jar:lib/BlackWordServiceClient-2019.2.0.jar:lib/HikariCP-java6-2.3.13.jar:lib/JavaEOControl-5.4.6.8.jar:lib/JavaFoundation-5.4.6.8.jar:lib/JavaWOExtensions-5.4.6.8.jar:lib/JavaWebObjects-5.4.6.8b-AOS-release1.jar:lib/RevisionServiceClient-19.2.0.jar:lib/animal-sniffer-annotations-1.17.jar:lib/as-apply-2019.3-SNAPSHOT.jar:lib/as-codec-2019.3-SNAPSHOT.jar:lib/as-collections-2019.3-SNAPSHOT.jar:lib/as-config-2019.3-SNAPSHOT.jar:lib/as-convert-2019.3-SNAPSHOT.jar:lib/as-environment-2019.3-SNAPSHOT.jar:lib/as-filter-2019.3-SNAPSHOT.jar:lib/as-io-2019.3-SNAPSHOT.jar:lib/as-kvc-2019.3-SNAPSHOT.jar:lib/as-manifest-2019.3-SNAPSHOT.jar:lib/as-plist-2019.3-SNAPSHOT.jar:lib/as-query-2019.3-SNAPSHOT.jar:lib/as-service-2019.3-SNAPSHOT.jar:lib/as-service-client-2019.3-SNAPSHOT.jar:lib/as-test-junit3-2019.3-SNAPSHOT.jar:lib/as-test-logging-2019.3-SNAPSHOT.jar:lib/as-testing-2019.2.1.jar:lib/as-text-2019.3-SNAPSHOT.jar:lib/as-time-2019.3-SNAPSHOT.jar:lib/as-toolkit-2019.3-SNAPSHOT.jar:lib/as-toolkit-test-2019.3-SNAPSHOT.jar:lib/as-version-2019.3-SNAPSHOT.jar:lib/asm-6.2.1.jar:lib/c3p0-0.9.5.2.jar:lib/checker-qual-2.5.2.jar:lib/commons-beanutils-1.9.3.jar:lib/commons-codec-1.11.jar:lib/commons-collections4-4.1.jar:lib/commons-io-2.5.jar:lib/commons-lang3-3.8.jar:lib/commons-math3-3.6.1.jar:lib/commons-text-1.4.jar:lib/content-systems-toolkit-19.2.0.jar:lib/content-tenant-toolkit-19.2.0.jar:lib/error_prone_annotations-2.2.0.jar:lib/failureaccess-1.0.jar:lib/guava-27.0-jre.jar:lib/hamcrest-core-1.3.jar:lib/httpclient-4.5.6.jar:lib/httpcore-4.4.10.jar:lib/httpcore-nio-4.4.10.jar:lib/httpmime-4.5.6.jar:lib/hubble-2019.3-SNAPSHOT.jar:lib/hubbleagent-17.3.jar:lib/imq-4.5.2.jar:lib/j2objc-annotations-1.1.jar:lib/jackson-annotations-2.9.0.jar:lib/jackson-core-2.9.7.jar:lib/jackson-core-asl-1.9.13.jar:lib/jackson-databind-2.9.7.jar:lib/jackson-datatype-jdk8-2.9.7.jar:lib/jackson-datatype-json-org-2.9.7.jar:lib/jackson-mapper-asl-1.9.13.jar:lib/janino-2.4.3.jar:lib/javassist-3.22.0-GA.jar:lib/javax.inject-1.jar:lib/javax.jms-api-2.0.1.jar:lib/javax.servlet-api-4.0.1.jar:lib/jcip-annotations-1.0.jar:lib/jdom-2.0.2.jar:lib/jetty-http-9.4.11.v20180605.jar:lib/jetty-io-9.4.11.v20180605.jar:lib/jetty-server-9.4.11.v20180605.jar:lib/jetty-util-9.4.11.v20180605.jar:lib/joda-time-2.10.jar:lib/json-20180813.jar:lib/jsr305-3.0.2.jar:lib/junit-4.12.jar:lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:lib/log4j-1.2.17.jar:lib/magic-beans-2019.3-SNAPSHOT.jar:lib/magic-beans-api-2019.3-SNAPSHOT.jar:lib/magic-beans-wo-2019.3-SNAPSHOT.jar:lib/mchange-commons-java-0.2.11.jar:lib/mongo-java-driver-3.8.1.jar:lib/netty-3.6.5.Final.jar:lib/oauthprovider-toolkit-19.2.0.jar:lib/ognl-2.7.2.AS4.jar:lib/quartz-2.3.0.jar:lib/slf4j-api-1.7.25.jar:lib/slf4j-log4j12-1.7.25.jar:lib/spring-aop-5.1.2.RELEASE.jar:lib/spring-beans-5.1.2.RELEASE.jar:lib/spring-context-5.1.2.RELEASE.jar:lib/spring-context-support-5.1.2.RELEASE.jar:lib/spring-core-5.1.2.RELEASE.jar:lib/spring-data-commons-2.1.2.RELEASE.jar:lib/spring-expression-5.1.2.RELEASE.jar:lib/spring-jcl-5.1.2.RELEASE.jar:lib/spring-security-config-5.0.7.RELEASE.jar:lib/spring-security-core-5.0.7.RELEASE.jar:lib/spring-security-oauth2-2.3.4.RELEASE.jar:lib/spring-security-web-5.0.7.RELEASE.jar:lib/spring-web-5.1.2.RELEASE.jar:lib/spring-webmvc-5.1.2.RELEASE.jar:lib/spymemcached-2.12.3.jar:lib/ssp-alert-escalation-service-client-2019.3-SNAPSHOT.jar:lib/ssp-client-2019.3-SNAPSHOT.jar:lib/store-front-service-client-19.2.1.jar:lib/xercesImpl-2.12.0.jar:lib/xml-apis-1.4.01.jar:/Local/ThirdParty/appdynamics/java-agent/javaagent.jar",
+      "VmVersion": "25.171-b11",
+      "SpecName": "Java Virtual Machine Specification",
+      "Uptime": "112137977",
+      "ObjectName": {
+        "canonicalKeyPropertyListString": "type=Runtime",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "type": "Runtime"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "java.lang:type=Runtime",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=Runtime",
+        "domain": "java.lang"
+      },
+      "Name": "35873@rn-aosd-d01-lapp13.rno.apple.com",
+      "VmVendor": "Oracle Corporation",
+      "LibraryPath": "/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib",
+      "InputArguments": [
+        "-Xms1g",
+        "-Xmx1g",
+        "-Xss512k",
+        "-XX:+UseLinuxPosixThreadCPUClocks",
+        "-XX:NewSize=256m",
+        "-XX:MaxNewSize=256m",
+        "-XX:SurvivorRatio=4",
+        "-XX:MaxMetaspaceSize=256m",
+        "-XX:CMSInitiatingOccupancyFraction=70",
+        "-XX:+UseCMSInitiatingOccupancyOnly",
+        "-XX:+HeapDumpOnOutOfMemoryError",
+        "-XX:HeapDumpPath=/Local/AS/Logs/heapdump/BlackWordService-ww-rn-aosd-d01-lapp13-8542_heapdump.hprof",
+        "-XX:OnOutOfMemoryError=/Local/AS/Configuration/GenericOutOfMemoryHandler/outOfMemoryHandlerMail --pid %p --email AOS_OOM_Notify_Nonprod@group.apple.com",
+        "-XX:+PrintGC",
+        "-XX:+PrintGCDetails",
+        "-XX:+PrintGCDateStamps",
+        "-XX:+PrintGCTimeStamps",
+        "-XX:+PrintTenuringDistribution",
+        "-XX:+UseGCLogFileRotation",
+        "-XX:GCLogFileSize=700M",
+        "-XX:NumberOfGCLogFiles=1",
+        "-Xloggc:/Local/AS/Logs/gc/BlackWordService-ww-rn-aosd-d01-lapp13-8542_GC.log",
+        "-XX:+UnlockCommercialFeatures",
+        "-XX:+FlightRecorder",
+        "-XX:FlightRecorderOptions=defaultrecording=true,dumponexit=true,dumponexitpath=/Local/AS/Logs/heapdump/BlackWordService-ww-rn-aosd-d01-lapp13-8542_flightdump.jfr,settings=default",
+        "-verbose:gc",
+        "-javaagent:/Local/ThirdParty/appdynamics/java-agent/javaagent.jar",
+        "-DWOAllowRapidTurnaround=false",
+        "-DWOAllowsConcurrentRequestHandling=true",
+        "-DWOAutoOpenInBrowser=false",
+        "-DWOCachingEnabled=true",
+        "-DWODebuggingEnabled=false",
+        "-DWODirectConnectEnabled=true",
+        "-DWOLifebeatEnabled=false",
+        "-DWOLocalRootDirectory=/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7",
+        "-DWOMonitorEnabled=false",
+        "-DWOPort=8542",
+        "-DWOWorkerThreadCountMax=256",
+        "-Dappdynamics.agent.nodeName=rn-aosd-d01-lapp13.BlackWordService-ww:8542",
+        "-Dappdynamics.agent.tierName=BlackWordService",
+        "-Dcom.webobjects.pid=35873",
+        "-Dcontext.app=BlackWordService",
+        "-Dcontext.host=rn-aosd-d01-lapp13.rno.apple.com",
+        "-Dcontext.masterApp=BlackWordService",
+        "-Dcontext.partition=ww",
+        "-Dcontext.region=ww",
+        "-Djava.awt.headless=true",
+        "-Djava.net.preferIPv4Stack=true",
+        "-Djava.security.egd=file:///dev/urandom",
+        "-Dlog4j.configuration=file:///Local/AS/Configuration/log4j/log4j_nonprod.xml",
+        "-Dlog4j.shorthost=rn-aosd-d01-lapp13",
+        "-DshortHostName=rn-aosd-d01-lapp13",
+        "-DsymbolicConfigurationPath=/Local/AS/Configuration/current"
+      ],
+      "SpecVendor": "Oracle Corporation"
+    },
+    "AOS:name=SERVICE wireSize response HealthHandler getEvents,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.01",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "91414.0",
+      "Max": "91414",
+      "Frequency": "68.0",
+      "Count": "1",
+      "Min": "91414"
+    },
+    "AOS:name=HealthHandler runAllChecks,type=Timer": {
+      "PerSecond": "0.01",
+      "Load": "0.0",
+      "Total": "24",
+      "Average": "24.0",
+      "Max": "24",
+      "Frequency": "68.0",
+      "Duration": "68",
+      "Count": "1",
+      "Min": "24"
+    },
+    "AOS:name=WOComponent ShowConfigurationNamespaces,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "67",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=anonymous sendRequest,type=Timer": {
+      "PerSecond": "0.06",
+      "Load": "0.0",
+      "Total": "20",
+      "Average": "5.0",
+      "Max": "7",
+      "Frequency": "16.75",
+      "Duration": "67",
+      "Count": "4",
+      "Min": "4"
+    },
+    "AOS:name=healthcheck HealthCheckManagerHeartbeatCheck,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "LEVEL",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=service provider anonymous,type=Timer": {
+      "PerSecond": "0.03",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "34.5",
+      "Duration": "69",
+      "Count": "2",
+      "Min": "0"
+    },
+    "AOS:name=CFMClient IgnoringEarlierStampedPollResult,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CacheHandler getCacheManagerConfig,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response AdminServiceHandler getConfiguration,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request InvalidCharacterAdminServiceImpl ping,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=HealthHandler getHeartbeats,type=Timer": {
+      "PerSecond": "0.01",
+      "Load": "0.0",
+      "Total": "1",
+      "Average": "1.0",
+      "Max": "1",
+      "Frequency": "68.0",
+      "Duration": "68",
+      "Count": "1",
+      "Min": "1"
+    },
+    "com.sun.management:type=HotSpotDiagnostic": {
+      "DiagnosticOptions": [
+        {
+          "writeable": "true",
+          "value": "false",
+          "name": "HeapDumpBeforeFullGC",
+          "origin": "DEFAULT"
+        },
+        {
+          "writeable": "true",
+          "value": "false",
+          "name": "HeapDumpAfterFullGC",
+          "origin": "DEFAULT"
+        },
+        {
+          "writeable": "true",
+          "value": "true",
+          "name": "HeapDumpOnOutOfMemoryError",
+          "origin": "VM_CREATION"
+        },
+        {
+          "writeable": "true",
+          "value": "/Local/AS/Logs/heapdump/BlackWordService-ww-rn-aosd-d01-lapp13-8542_heapdump.hprof",
+          "name": "HeapDumpPath",
+          "origin": "VM_CREATION"
+        },
+        {
+          "writeable": "true",
+          "value": "100",
+          "name": "CMSAbortablePrecleanWaitMillis",
+          "origin": "DEFAULT"
+        },
+        {
+          "writeable": "true",
+          "value": "2000",
+          "name": "CMSWaitDuration",
+          "origin": "DEFAULT"
+        },
+        {
+          "writeable": "true",
+          "value": "-1",
+          "name": "CMSTriggerInterval",
+          "origin": "DEFAULT"
+        },
+        {
+          "writeable": "true",
+          "value": "true",
+          "name": "PrintGC",
+          "origin": "VM_CREATION"
+        },
+        {
+          "writeable": "true",
+          "value": "true",
+          "name": "PrintGCDetails",
+          "origin": "VM_CREATION"
+        },
+        {
+          "writeable": "true",
+          "value": "true",
+          "name": "PrintGCDateStamps",
+          "origin": "VM_CREATION"
+        },
+        {
+          "writeable": "true",
+          "value": "true",
+          "name": "PrintGCTimeStamps",
+          "origin": "VM_CREATION"
+        },
+        {
+          "writeable": "true",
+          "value": "false",
+          "name": "PrintGCID",
+          "origin": "DEFAULT"
+        },
+        {
+          "writeable": "true",
+          "value": "false",
+          "name": "PrintClassHistogramBeforeFullGC",
+          "origin": "DEFAULT"
+        },
+        {
+          "writeable": "true",
+          "value": "false",
+          "name": "PrintClassHistogramAfterFullGC",
+          "origin": "DEFAULT"
+        },
+        {
+          "writeable": "true",
+          "value": "false",
+          "name": "PrintClassHistogram",
+          "origin": "DEFAULT"
+        },
+        {
+          "writeable": "true",
+          "value": "0",
+          "name": "MinHeapFreeRatio",
+          "origin": "DEFAULT"
+        },
+        {
+          "writeable": "true",
+          "value": "100",
+          "name": "MaxHeapFreeRatio",
+          "origin": "DEFAULT"
+        },
+        {
+          "writeable": "true",
+          "value": "false",
+          "name": "PrintConcurrentLocks",
+          "origin": "DEFAULT"
+        },
+        {
+          "writeable": "true",
+          "value": "false",
+          "name": "UseAppCDS",
+          "origin": "DEFAULT"
+        },
+        {
+          "writeable": "true",
+          "value": "true",
+          "name": "FlightRecorder",
+          "origin": "MANAGEMENT"
+        },
+        {
+          "writeable": "true",
+          "value": "",
+          "name": "StartFlightRecording",
+          "origin": "DEFAULT"
+        },
+        {
+          "writeable": "true",
+          "value": "none",
+          "name": "MemoryRestriction",
+          "origin": "DEFAULT"
+        },
+        {
+          "writeable": "true",
+          "value": "false",
+          "name": "ResourceManagement",
+          "origin": "DEFAULT"
+        },
+        {
+          "writeable": "true",
+          "value": "-1",
+          "name": "ResourceManagementSampleInterval",
+          "origin": "DEFAULT"
+        }
+      ],
+      "ObjectName": {
+        "canonicalKeyPropertyListString": "type=HotSpotDiagnostic",
+        "propertyPattern": "false",
+        "keyPropertyList": {
+          "type": "HotSpotDiagnostic"
+        },
+        "domainPattern": "false",
+        "propertyListPattern": "false",
+        "canonicalName": "com.sun.management:type=HotSpotDiagnostic",
+        "propertyValuePattern": "false",
+        "pattern": "false",
+        "keyPropertyListString": "type=HotSpotDiagnostic",
+        "domain": "com.sun.management"
+      }
+    },
+    "AOS:name=CPU SERVICE  StatisticsHandler getCaches,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "66",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=CPU service provider InvalidCharacterService checkMultipleContent,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "65",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=URLPatterns urls debug,type=Cache": {
+      "Misses": "0",
+      "Invalidations": "0",
+      "StaleHits": "0",
+      "NearMisses": "0",
+      "NearHits": "0",
+      "Rewarms": "0",
+      "Count": "1",
+      "Hits": "0",
+      "PerSecond": "0.0",
+      "NearHitRate": "NaN",
+      "NearCount": "0",
+      "Refetches": "0",
+      "HitRate": "NaN",
+      "GarbageCollections": "0",
+      "Size": "500",
+      "Replacements": "0",
+      "NearMemory": "0",
+      "Expirations": "0"
+    },
+    "AOS:name=ConfigurationWatcher addEntryRejectedDuplicate,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize response StatisticsHandler getMBeans,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.02",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "158221.0",
+      "Max": "158221",
+      "Frequency": "63.0",
+      "Count": "1",
+      "Min": "158221"
+    },
+    "AOS:name=SERVICE wireSize request service provider InvalidCharacterService textContainsInvalidCharacters,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request DevelopmentCacheHandler dump,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=ActionRequestHander beforeDispatch,type=Timer": {
+      "PerSecond": "0.42",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "2.38",
+      "Duration": "62",
+      "Count": "26",
+      "Min": "0"
+    },
+    "AOS:name=StaticResourcesAction dispatchRequest,type=Timer": {
+      "PerSecond": "0.0",
+      "Load": "0.0",
+      "Total": "0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Duration": "62",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request StatisticsHandler,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.02",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "2.0",
+      "Max": "2",
+      "Frequency": "66.0",
+      "Count": "1",
+      "Min": "2"
+    },
+    "AOS:name=cert validate header,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "COUNTER",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    },
+    "AOS:name=SERVICE wireSize request AdminServiceHandler ping,type=Gauge": {
+      "Level": "0",
+      "PerSecond": "0.0",
+      "Type": "EVENT",
+      "Load": "0.0",
+      "Average": "0.0",
+      "Max": "0",
+      "Frequency": "0.0",
+      "Count": "0",
+      "Min": "0"
+    }
+  },
+  "_expire": "-1",
+  "host": {
+    "servicePort": "18542",
+    "address": "17.122.26.17",
+    "pid": "35873",
+    "maxMemory": "1029177344",
+    "host": "rn-aosd-d01-lapp13.rno.apple.com",
+    "configContextInfo": {
+      "partition": "ww",
+      "container": "webobjects",
+      "port": "8542",
+      "webFramework": "webobjects",
+      "app": "BlackWordService",
+      "host": "rn-aosd-d01-lapp13.rno.apple.com"
+    },
+    "threadName": "qtp616443292 BlackWordService_secure-5716",
+    "uptime": "112125",
+    "app": "BlackWordService",
+    "timeSinceReset": "112125",
+    "partition": "ww",
+    "port": "8542",
+    "totalMemory": "1018167296",
+    "freeMemory": "400956256"
+  }
+}

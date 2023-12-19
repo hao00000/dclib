@@ -1,0 +1,14 @@
+{
+  "BeanCache interceptor InterceptorConfiguration": {
+    "bb2a6c9087deb13ce34a3b8f5042c752": {
+      "hits": "79",
+      "data": "com.apple.store.toolkit.config.AbstractContextAwareFactory$Entry@2a1e15fb",
+      "created": "1552450509170",
+      "gcd": "false",
+      "expiration": "Wed Dec 31 16:00:00 PST 1969",
+      "invalidationKeys": [],
+      "expired": "false"
+    }
+  },
+  "_expire": "-1"
+}

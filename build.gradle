@@ -1,0 +1,94 @@
+#!groovy
+
+buildscript {
+    // Get artifactory details
+    if (!project.hasProperty("artifactory_username")) {
+        ext.artifactory_username = System.getenv("ARTIFACTORY_USR");
+    }
+    if (!project.hasProperty("artifactory_apikey")) {
+        ext.artifactory_apikey = System.getenv("ARTIFACTORY_PSW");
+    }
+    if (!project.hasProperty("artifactory_url")) {
+        ext.artifactory_url = System.getenv("ARTIFACTORY_URL");
+    }
+    if (!project.hasProperty("artifactory_base")) {
+        ext.artifactory_base = System.getenv("ARTIFACTORY_BASE");
+    }
+    if (!project.hasProperty("nexusUsername")) {
+        ext.nexusUsername = System.getenv("NEXUS_USR")
+    }
+    if (!project.hasProperty("nexusPassword")) {
+        ext.nexusPassword = System.getenv("NEXUS_PSW")
+    }
+    if (!project.hasProperty("nexusBase")) {
+        ext.nexusBase = System.getenv("NEXUS_BASE")
+    }
+
+    repositories {
+        maven {
+            credentials {
+                username = artifactory_username
+                password = artifactory_apikey
+            }
+            url artifactory_url
+        }
+    }
+    dependencies {
+        classpath 'com.moowork.gradle:gradle-node-plugin:1.2.0'
+        classpath 'com.bmuschko:gradle-nexus-plugin:2.3.1'
+        classpath 'org.jfrog.buildinfo:build-info-extractor-gradle:4.7.5'
+    }
+}
+
+apply plugin: 'maven-publish'
+apply plugin: 'com.bmuschko.nexus'
+apply plugin: 'com.moowork.node'
+
+def targetFolder = project.property('name') + "-" + project.property('version')
+def targetFile = targetFolder + '.jar'
+def srcFolder = System.getProperty("user.dir")+"/"+"dist"
+def PUBLISHING_VERSION = project.property('version')
+def PUBLISHING_FILENAME = project.property('name')
+
+node {
+  download = true
+}
+
+task configureNode(type: Exec) {
+  executable 'bash'
+  args '-c', '--registry https://npm.apple.com'
+}
+
+task yarnInstall (type: Exec) {
+    executable 'bash'
+    args '-c', 'yarn install'
+  }
+
+task yarnBuild(type: Exec) {
+    executable 'bash'
+    args '-c', 'yarn build'
+  }
+
+task copyProjectBinaries(type: Copy){
+  from "${srcFolder}/"
+  into "${buildDir}/${project.name}/${targetFolder}"
+
+}
+
+task yarnVersion(type: Exec){
+  executable 'bash'
+  args '-c', 'yarn --version'
+}
+
+task yarnPublish(type: Exec){
+  executable 'bash'
+  args '-c', 'yarn publish ${PUBLISHING_VERSION}'
+}
+
+clean.dependsOn(npm_cache_clean)
+clean.delete << file('node_modules')
+yarnInstall.dependsOn(yarnVersion)
+yarnBuild.dependsOn(yarnInstall)
+build.dependsOn(yarnBuild)
+yarnPublish.dependsOn(yarnBuild)
+publish.dependsOn(yarnPublish)

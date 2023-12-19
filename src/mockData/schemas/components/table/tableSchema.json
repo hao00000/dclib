@@ -1,0 +1,148 @@
+{
+  "pageMeta": {
+    "pageController": "controllers/tableSchemaController.js",
+    "loadAction": {
+      "type": "xhr",
+      "url": "/src/mockData/schemas/components/table/sampleData/1.json",
+      "method": "GET",
+      "onSuccess": {
+        "message": "",
+        "targetDataStore": "tableSchema",
+        "targetDataField": "tableSchema"
+      },
+      "onFailure": {
+        "message": "",
+        "errorMessageField": "error."
+      }
+    }
+  },
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Basic table",
+      "columns": [
+        {
+          "accessor": "firstName",
+          "Header": "FName"
+        },
+        {
+          "accessor": "lastName",
+          "Header": "LName"
+        },
+        {
+          "accessor": "email",
+          "Header": "Email"
+        },
+        {
+          "accessor": "bio",
+          "Header": "Biography"
+        },
+        {
+          "accessor": "password",
+          "Header": "Secured Password"
+        }
+      ],
+      "tableSettings": {
+        "showPagination": true,
+        "defaultPageSize": 5
+      },
+      "sourceDataStore": "tableSchema",
+      "sourceDataField": "tableSchema.basicTable",
+      "footer": "NOTE: Tables can also have loadAction at section levels"
+    },
+    {
+      "type": "TABLE",
+      "title": "Table with vertical header",
+      "verticalHeader": true,
+      "data": {
+        "id": 1,
+        "first_name": "Gibby",
+        "last_name": "Varnam",
+        "email": "gvarnam0@weibo.com",
+        "gender": "Male",
+        "ip_address": "214.182.98.67"
+      },
+      "columns": [
+        { "accessor": "firstName", "Header": "FName" },
+        { "accessor": "lastName", "Header": "LName" },
+        { "accessor": "email", "Header": "Email" },
+        { "accessor": "bio", "Header": "Biography" },
+        { "accessor": "password", "Header": "Secured Password" }
+      ],
+      "tableSettings": {
+        "defaultPageSize": 5,
+        "showPagination": false
+      }
+    },
+    {
+      "type": "TABLE",
+      "title": "Table with vertical header (v2)",
+      "verticalHeader": true,
+      "columns": [
+        { "accessor": "firstName", "Header": "FName" },
+        { "accessor": "lastName", "Header": "LName" },
+        { "accessor": "email", "Header": "Email" },
+        { "accessor": "bio", "Header": "Biography" },
+        { "accessor": "password", "Header": "Secured Password" }
+      ],
+      "tableSettings": {
+        "defaultPageSize": 5,
+        "showPagination": false
+      },
+      "data": [
+        {
+          "_id": "5bee693a8a32cf26ad431e03",
+          "firstName": "Jennifer",
+          "lastName": "Lawrence",
+          "email": "jlawrence@gmail.com",
+          "bio": "Kentucky-born actress Jennifer Lawrence began her career as a teenager, appearing on shows like Monk and The Bill Engvall Show from 2006 through 2009",
+          "password": "*****"
+        },
+        {
+          "_id": "5bee69418a32cf26ad431e04",
+          "firstName": "Johnny",
+          "lastName": "Deep",
+          "email": "jdeep@gmail.com",
+          "bio": "His numerous collaborations with director Tim Burton, as well as solid performances in a number of critically acclaimed films, have allowed Depp to carve a niche for himself as a serious, if idiosyncratic performer, a real-life role that has continuously surprised critics intent on writing him off as just another photogenic Tiger Beat casualty",
+          "password": "*****"
+        }
+      ]
+    },
+    {
+      "type": "TABLE",
+      "title": "Table with Controllers",
+      "onClickRow": "onClickMyRow",
+      "onClickCell": "onClickMyCell",
+      "columns": [
+        {
+          "accessor": "firstName",
+          "Header": "FName"
+        },
+        {
+          "accessor": "lastName",
+          "Header": "LName"
+        },
+        {
+          "accessor": "email",
+          "Header": "Email"
+        },
+        {
+          "accessor": "bio",
+          "Header": "Biography"
+        },
+        {
+          "accessor": "password",
+          "Header": "Secured Password"
+        }
+      ],
+      "tableSettings": {
+        "showPagination": true,
+        "defaultPageSize": 5
+      },
+      "sourceDataStore": "tableSchema",
+      "sourceDataField": "tableSchema.basicTable",
+      "footer": "NOTE: Both basic table and vertical table can have controllers"
+    }
+  ],
+  "pageWrapper": "Page2Wrapper to enhance look and feel of the Page, add Header/Footer/Banner or anything wrapping the page of sections"
+}

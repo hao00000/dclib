@@ -1,0 +1,126 @@
+{
+  "pageMeta": {
+    "pageController": "controllers/viewInfoController.js",
+    "loadAction": [
+      {
+        "type": "xhr",
+        "method": "GET",
+        "url": "/src/mockData/schemas/viewInfo/pageSchemas/sectionSchemas/toolkitConfigs.json",
+        "data": {
+          "method": "getConfiguration"
+        },
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "appInfoPage",
+          "targetDataField": "appInfoPage.configResponse",
+          "successHandler": "configDataHandler"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "page error.",
+          "failureHandler": "myPageFailureHandler"
+        }
+      },
+      {
+        "type": "xhr",
+        "method": "GET",
+        "url": "/src/mockData/schemas/viewInfo/pageSchemas/sectionSchemas/toolkitMBeans.json",
+        "data": {
+          "method": "getMBeans"
+        },
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "appInfoPage",
+          "targetDataField": "mbeansResponse",
+          "successHandler": "mbeansDataHandler"
+        },
+        "onFailure": {
+          "message": "",
+          "failureHandler": "myPageFailureHandler"
+        }
+      },
+      {
+        "type": "xhr",
+        "method": "GET",
+        "url": "/src/mockData/schemas/viewInfo/pageSchemas/sectionSchemas/toolkitPs.json",
+        "data": {
+          "method": "extendedInfo"
+        },
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "appInfoPage",
+          "targetDataField": "psResponse",
+          "successHandler": "psDataHandler"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "page error.",
+          "failureHandler": "myPageFailureHandler"
+        }
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "FORM",
+      "title": "Application Information",
+      "classNames": "ui-no-submit",
+      "sourceDataStore": "appInfoPage",
+      "structure": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "psResponse.host": {
+              "title": "Host",
+              "type": "string"
+            },
+            "psResponse.uptime": {
+              "title": "Uptime",
+              "type": "string"
+            },
+            "psResponse.path": {
+              "title": "Path",
+              "type": "string"
+            },
+            "psResponse.javaVersion": {
+              "title": "JVM",
+              "type": "string"
+            },
+            "mbeansResponse.mbeanArguments": {
+              "title": "Arguments (as reported by the MBean)",
+              "type": "array"
+            },
+            "psResponse.arguments": {
+              "title": "Arguments (as reported by 'ps')",
+              "type": "array"
+            }
+          }
+        },
+        "uiSchema": {
+          "ui:field": "bindFormFieldList"
+        }
+      }
+    },
+    {
+      "type": "TABLE",
+      "title": "Configuration Context",
+      "titleRenderFunction": "appInfoTitleRenderFunction",
+      "columns": [
+        {
+          "accessor": "name",
+          "Header": "Name"
+        },
+        {
+          "accessor": "status",
+          "Header": "Status"
+        }
+      ],
+      "tableSettings": {
+        "showPagination": true,
+        "defaultPageSize": 5
+      },
+      "sourceDataStore": "appInfoPage",
+      "sourceDataField": "configResponse"
+    }
+  ]
+}

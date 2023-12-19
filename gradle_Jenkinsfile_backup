@@ -1,0 +1,41 @@
+pipeline {
+
+  agent {
+    docker {
+      image 'aos-bint.corp.apple.com/base/ol-java8-node10-gradle:10.15.0'
+      label 'tool08'
+      args '-v /ngs/app/rosd/.npm:/opt/rosd/.npm -v /ngs/app/rosd/tmp:/tmp -v /ngs/app/rosd/.gradle:/opt/rosd/.gradle'
+    }
+  }
+
+  options {
+    timeout(time: 30,unit: 'MINUTES')
+    disableConcurrentBuilds()
+  }
+
+  stages {
+    stage('build') {
+      steps {
+        script {
+          sh "node -v"
+          def branch_name = "${env.BRANCH_NAME}"
+          if (branch_name.contains('master') || branch_name.contains('release/') || branch_name.contains('develop')){
+            sh "npm install --verbose"
+            sh 'gradle publish'
+          }
+          else {
+            sh 'gradle build'
+          }
+        }
+      }
+    }
+  }
+
+  post {
+    failure {
+        emailext attachLog: true, body: """FAILED: Job Check console output at '${env.BUILD_URL}';""",
+        recipientProviders: [[$class: 'CulpritsRecipientProvider'], [$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'"
+    }
+  }
+
+}

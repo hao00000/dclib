@@ -1,0 +1,12 @@
+[
+  {
+    "version": "2019.5.0-SNAPSHOT",
+    "createTime": 1559654378733,
+    "current": false
+  },
+  {
+    "version": "2019.6.0-SNAPSHOT",
+    "createTime": 1559654378734,
+    "current": true
+  }
+]

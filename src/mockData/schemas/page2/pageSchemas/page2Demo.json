@@ -1,0 +1,499 @@
+{
+  "pageMeta": {
+    "pageController": "controllers/page2DemoController.js"
+  },
+  "sections": [
+    {
+      "type": "LIST",
+      "title": "employee list",
+      "data": [
+        "debugMenu - /<APPHOSTANDADMINPORT>/debug",
+        "WOAdaptors - /<APPHOSTANDADMINPORT>/debug/application/WOAdaptors",
+        "healthDebugger - /<APPHOSTANDADMINPORT>/debug/application/health"
+      ],
+      "renderHandler": "employeeListRenderer"
+    },
+    {
+      "type": "TABLE",
+      "title": "employee table",
+      "titleRenderFunction": "myTitleRenderFunction",
+      "sourceDataStore": "page2Source",
+      "sourceDataField": "page2Source.employeeSheet.employeeList",
+      "loadAction": {
+        "type": "xhr",
+        "url": "/src/mockData/schemas/page1/pageSchemas/sectionSchemas/sectionEmployeeTable.json",
+        "method": "GET",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "page2Source",
+          "targetDataField": "page2Source.employeeSheet"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "error."
+        }
+      },
+      "columns": [
+        {
+          "accessor": "firstName",
+          "Header": "FName"
+        },
+        {
+          "accessor": "lastName",
+          "Header": "LName"
+        },
+        {
+          "accessor": "email",
+          "Header": "Email"
+        },
+        {
+          "accessor": "bio",
+          "Header": "Biography"
+        },
+        {
+          "accessor": "password",
+          "Header": "Secured Password"
+        }
+      ],
+      "tableSettings": {
+        "showPagination": false
+      },
+      "footer": "** The \"Near Cache\" statistics may lag by a few seconds. NearCache statistics are only supported by CCCache, not MemcachedCache or the old HazelcastCache. *** By default, the \"Remote Count\" is not supported by CCCache, being very expensive on the server side."
+    },
+    {
+      "type": "FORM",
+      "title": "Employee entry form",
+      "actions": [
+        {
+          "type": "LINK",
+          "label": "View Namespaces All",
+          "classNames": "position-left",
+          "config": {
+            "targetURL": "/debug/admin/:appContext.serviceName/:appContext.host/:appContext.port/:source.page2Source.employeeSheet.companyName/:query.handlerName/:query.methodName",
+            "target": "_blank | _self"
+          }
+        },
+        {
+          "type": "BUTTON",
+          "classNames": "position-right",
+          "label": "Refetch",
+          "config": {
+            "events": {
+              "onClick": "myClickHandlerFunction"
+            }
+          }
+        },
+        {
+          "type": "DIRECT_PATH",
+          "classNames": "position-right",
+          "label": "GoTo",
+          "config": {
+            "events": {
+              "targeturl": "/DSS/Cache/page1Demo",
+              "pagesource": "/src/mockData/schemas/page1/pageSchemas/page1Demo.json",
+              "color": "link"
+            }
+          }
+        }
+      ],
+      "sectionWrapper": "Specify PATH to a wrapper container by title to wrap around the rendered section. This allows Tab/Collapse/Accordion to be implemented",
+      "sourceDataStore": "page2Source",
+      "sourceDataField": "employeeData.employeeEntry",
+      "loadAction": {
+        "type": "xhr",
+        "url": "/src/mockData/schemas/page1/pageSchemas/sectionSchemas/sectionEmployeeForm.json",
+        "method": "GET",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "page2Source",
+          "targetDataField": "page2Source.employeeData"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "error."
+        }
+      },
+      "data": {
+        "firstName": "",
+        "lastName": "",
+        "age": "",
+        "bio": "",
+        "password": ""
+      },
+      "structure": {
+        "schema": {
+          "title": "A regular form",
+          "description": "A form description example",
+          "type": "object",
+          "required": [
+            "firstName",
+            "lastName"
+          ],
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "title": "First name"
+            },
+            "lastName": {
+              "type": "string",
+              "title": "Last name"
+            },
+            "email": {
+              "type": "string",
+              "title": "Email"
+            },
+            "bio": {
+              "type": "string",
+              "title": "Bio"
+            },
+            "password": {
+              "type": "string",
+              "title": "Password",
+              "minLength": 3
+            }
+          }
+        },
+        "uiSchema": {
+          "firstName": {
+            "ui:emptyValue": "",
+            "ui:placeholder": "Enter your first name"
+          },
+          "lastName": {
+            "ui:emptyValue": "",
+            "ui:placeholder": "Enter your last name"
+          },
+          "email": {
+            "ui:emptyValue": "",
+            "ui:title": "Email",
+            "ui:description": "(Only @gmail, @mail, @hotmail, @apple are allowed)",
+            "ui:placeholder": "Enter your email"
+          },
+          "bio": {
+            "ui:widget": "textarea",
+            "ui:placeholder": "Enter your bio"
+          },
+          "password": {
+            "ui:widget": "password",
+            "ui:help": "Hint: Make it strong!",
+            "ui:placeholder": "Enter your password"
+          }
+        }
+      }
+    },
+    {
+      "type": "TABLE",
+      "title": "employee table",
+      "data": [
+        {
+          "id": 1,
+          "first_name": "Gibby",
+          "last_name": "Varnam",
+          "email": "gvarnam0@weibo.com",
+          "gender": "Male",
+          "ip_address": "214.182.98.67"
+        },
+        {
+          "id": 2,
+          "first_name": "Sharity",
+          "last_name": "Ferrige",
+          "email": "sferrige1@marketwatch.com",
+          "gender": "Female",
+          "ip_address": "145.78.176.179"
+        },
+        {
+          "id": 3,
+          "first_name": "Lonnard",
+          "last_name": "Yakobovitz",
+          "email": "lyakobovitz2@census.gov",
+          "gender": "Male",
+          "ip_address": "195.217.173.251"
+        }
+      ],
+      "tableSettings": {
+        "defaultPageSize": 5
+      }
+    },
+    {
+      "type": "JSON",
+      "title": "Thread Dump JSON",
+      "desc": "extra description",
+      "data": [
+        {
+          "id": 1,
+          "first_name": "Gibby",
+          "last_name": "Varnam",
+          "email": "gvarnam0@weibo.com",
+          "gender": "Male",
+          "ip_address": "214.182.98.67"
+        },
+        {
+          "id": 2,
+          "first_name": "Sharity",
+          "last_name": "Ferrige",
+          "email": "sferrige1@marketwatch.com",
+          "gender": "Female",
+          "ip_address": "145.78.176.179"
+        },
+        {
+          "id": 3,
+          "first_name": "Lonnard",
+          "last_name": "Yakobovitz",
+          "email": "lyakobovitz2@census.gov",
+          "gender": "Male",
+          "ip_address": "195.217.173.251"
+        }
+      ]
+    },
+    {
+      "type": "LIST",
+      "title": "List section - simplest use case",
+      "data": [
+        "debugMenu - /<APPHOSTANDADMINPORT>/debug",
+        "WOAdaptors - /<APPHOSTANDADMINPORT>/debug/application/WOAdaptors",
+        "healthDebugger - /<APPHOSTANDADMINPORT>/debug/application/health"
+      ]
+    },
+    {
+      "type": "PRE",
+      "title": "Pre View",
+      "desc": "extra description",
+      "data": [
+        {
+          "id": 1,
+          "first_name": "Gibby",
+          "last_name": "Varnam",
+          "email": "gvarnam0@weibo.com",
+          "gender": "Male",
+          "ip_address": "214.182.98.67"
+        },
+        {
+          "id": 2,
+          "first_name": "Sharity",
+          "last_name": "Ferrige",
+          "email": "sferrige1@marketwatch.com",
+          "gender": "Female",
+          "ip_address": "145.78.176.179"
+        },
+        {
+          "id": 3,
+          "first_name": "Lonnard",
+          "last_name": "Yakobovitz",
+          "email": "lyakobovitz2@census.gov",
+          "gender": "Male",
+          "ip_address": "195.217.173.251"
+        }
+      ]
+    },
+    {
+      "type": "CHART",
+      "title": "Series Chart (simplest use case with loadAction)",
+      "sourceDataStore": "page2Source",
+      "sourceDataField": "page2Source.chartData.otherData",
+      "loadAction": {
+        "type": "xhr",
+        "url": "/src/mockData/schemas/page2/pageSchemas/sectionSchemas/sectionChartData.json",
+        "method": "GET",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "page2Source",
+          "targetDataField": "page2Source.chartData"
+        },
+        "onFailure": {
+          "message": "",
+          "targetDataStore": "page2Source",
+          "targetDataField": "page2Source.chartData",
+          "errorMessageField": "error."
+        }
+      },
+      "chartSettings": [
+        {
+          "type": "LINE",
+          "classNames": "ui-line-chart",
+          "styles": {
+            "width": 700,
+            "height": 300,
+            "marginTop": 5,
+            "marginRight": 30,
+            "marginBottom": 5,
+            "marginLeft": 20
+          },
+          "projectile": {
+            "xAxis": {
+              "dataKey": "name"
+            }
+          },
+          "strokeDasharray": "3 3",
+          "lines": [
+            {
+              "type": "monotone",
+              "stroke": "#41f48c",
+              "activeDot": {
+                "r": 8
+              },
+              "dataKey": "pv"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "CHART",
+      "title": "Series Chart (custom use case, multiple charts)",
+      "sourceDataStore": "page2Source",
+      "sourceDataField": "page2Source.chartData.genericData",
+      "multiple": "dropdown | spreaded checkboxes ",
+      "loadAction": {
+        "type": "xhr",
+        "url": "/src/mockData/schemas/page2/pageSchemas/sectionSchemas/sectionChartData.json",
+        "method": "GET",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "page2Source",
+          "targetDataField": "page2Source.chartData"
+        },
+        "onFailure": {
+          "message": "",
+          "targetDataStore": "page2Source",
+          "targetDataField": "page2Source.chartData",
+          "errorMessageField": "error."
+        }
+      },
+      "chartSettings": [
+        {
+          "type": "LINE",
+          "title": "without styles, using default styles",
+          "classNames": "ui-line-chart",
+          "projectile": {
+            "xAxis": {
+              "dataKey": "name"
+            }
+          },
+          "strokeDasharray": "3 3",
+          "lines": [
+            {
+              "type": "monotone",
+              "stroke": "darkgoldenrod",
+              "activeDot": {
+                "r": 6
+              },
+              "dataKey": "pv"
+            }
+          ],
+          "data": []
+        },
+        {
+          "type": "LINE",
+          "title": "user'overwritten set of styles",
+          "classNames": "ui-line-chart",
+          "styles": {
+            "width": 900,
+            "height": 350,
+            "marginTop": 5,
+            "marginRight": 30,
+            "marginBottom": 5,
+            "marginLeft": 20
+          },
+          "projectile": {
+            "xAxis": {
+              "dataKey": "name"
+            }
+          },
+          "strokeDasharray": "3 3",
+          "lines": [
+            {
+              "type": "monotone",
+              "stroke": "#f44274",
+              "activeDot": {
+                "r": 6
+              },
+              "dataKey": "pv"
+            }
+          ],
+          "data": []
+        },
+        {
+          "type": "AREA",
+          "title": "area chart title with predefined data",
+          "classNames": "ui-area-chart",
+          "projectile": {
+            "xAxis": {
+              "dataKey": "name"
+            }
+          },
+          "areas": [
+            {
+              "type": "monotone",
+              "dataKey": "pv",
+              "stroke": "#8884d8",
+              "fill": "#8884d8"
+            }
+          ],
+          "strokeDasharray": "3 3",
+          "data": []
+        },
+        {
+          "type": "BAR",
+          "title": "bar chart title with predefined data",
+          "classNames": "ui-bar-chart",
+          "projectile": {
+            "xAxis": {
+              "dataKey": "name"
+            }
+          },
+          "bars": [
+            {
+              "dataKey": "pv",
+              "fill": "#8884d8"
+            }
+          ],
+          "strokeDasharray": "3 3",
+          "data": []
+        },
+        {
+          "type": "PIE",
+          "title": "pie chart title with predefined data",
+          "classNames": "ui-pie-chart",
+          "pieSettings": {
+            "dataKey": "pv",
+            "cx": 100,
+            "cy": 100,
+            "outerRadius": 60,
+            "fill": "#8884d8"
+          },
+          "data": []
+        },
+        {
+          "type": "SCATTER",
+          "title": "scatter chart title with predefined data",
+          "classNames": "ui-scatter-chart",
+          "projectile": {
+            "xAxis": {
+              "type": "category",
+              "dataKey": "name",
+              "name": "name"
+            },
+            "yAxis": {
+              "type": "number",
+              "dataKey": "pv",
+              "name": "value"
+            }
+          },
+          "dotColor": "#8884d8",
+          "data": []
+        },
+        {
+          "type": "SINGLESTATS",
+          "title": "single-stats chart title with predefined data",
+          "classNames": "ui-single-stats-chart",
+          "data": []
+        }
+      ]
+    },
+    {
+      "type": "CUSTOM",
+      "sectionContainer": "a custom Container to build out the entire section your way, that section will be nested in the app, inherit the SideBar and feature as an option in there",
+      "title": "Custom Container"
+    }
+  ],
+  "pageWrapper": "Page2Wrapper to enhance look and feel of the Page, add Header/Footer/Banner or anything wrapping the page of sections"
+}

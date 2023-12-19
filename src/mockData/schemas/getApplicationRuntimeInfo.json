@@ -1,0 +1,12 @@
+{
+  "partition": "ww",
+  "healthStatus": "OK",
+  "freeMemory": "1807242632",
+  "runtimeId": "35482@rn-aosd-d01-lapp20.rno.apple.com",
+  "uptime": "13353",
+  "container": "jetty",
+  "toolkitCompatibilityVersion": "2019.6.2",
+  "totalMemory": "2147483648",
+  "_expire": "-1",
+  "threadCount": "192"
+}

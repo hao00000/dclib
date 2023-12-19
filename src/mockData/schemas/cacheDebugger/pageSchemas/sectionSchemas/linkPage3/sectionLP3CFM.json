@@ -1,0 +1,9 @@
+{
+  "impl": "com.apple.store.toolkit.cache.cfm.spi_impl.CFMClientImpl_V1(sla=null)",
+  "_expire": "-1",
+  "health": {
+    "inGracePeriod": "false",
+    "statusMessage": "{=OK(Cache doesn't yet exist), ResourceManager=OK(null), client:anonymous=OK(null)}",
+    "status": "OK"
+  }
+}

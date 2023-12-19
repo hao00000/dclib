@@ -1,0 +1,28 @@
+.table-with-vertical-header {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+
+  .rt-table {
+    .rt-thead.-header {
+      display: none;
+    }
+    .rt-thead {
+      .rt-tr {
+        .rt-th:first-child {
+          flex: 20 0 auto !important;
+        }
+      }
+    }
+    .rt-tbody {
+      .rt-tr-group {
+        .rt-tr > .rt-td:first-child {
+          flex: 20 0 auto !important;
+          text-transform: capitalize;
+          background-color: rgba(0, 0, 0, 0.03);
+        }
+      }
+    }
+  }
+}

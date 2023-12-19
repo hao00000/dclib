@@ -1,0 +1,3680 @@
+{
+  "result": [
+    {
+      "definition": {
+        "dispatch": {
+          "action": "page",
+          "page": "DebugMenu"
+        },
+        "url": "<DEBUG>",
+        "description": "Main application debugging console",
+        "example": "/debug",
+        "title": "Main Menu",
+        "parameters": [
+          {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          }
+        ],
+        "showInMenu": "false"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "DebugMenu"
+      },
+      "userInfo": {},
+      "name": "debugMenu",
+      "example": "/<APPHOSTANDADMINPORT>/debug",
+      "pathTokens": [
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        }
+      }
+    },
+    {
+      "definition": {
+        "url": "<DEBUG>/application/JettyServers",
+        "group": "Runtime",
+        "showInMenu": "true",
+        "dispatch": {
+          "action": "page",
+          "page": "JettyServerDebugger"
+        },
+        "description": "Show Jetty Server information"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "JettyServerDebugger"
+      },
+      "userInfo": {},
+      "name": "JettyServers",
+      "example": "/<APPHOSTANDADMINPORT>/debug/application/JettyServers",
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        }
+      }
+    },
+    {
+      "definition": {
+        "url": "<DEBUG>/application/health",
+        "group": "Health",
+        "showInMenu": "false",
+        "dispatch": {
+          "action": "page",
+          "page": "HealthDebugger"
+        },
+        "description": "show application health"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "HealthDebugger"
+      },
+      "userInfo": {},
+      "name": "healthDebugger",
+      "example": "/<APPHOSTANDADMINPORT>/debug/application/health",
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        }
+      }
+    },
+    {
+      "definition": {
+        "description": "show application health",
+        "dispatch": {
+          "page": "HealthDebugger",
+          "class": "com.apple.store.webtoolkit.debug.app.RunHealthCheckAction"
+        },
+        "url": "<DEBUG>/application/health/<HEALTH_CHECK_NAME>",
+        "group": "Health"
+      },
+      "dispatch": {
+        "page": "HealthDebugger",
+        "class": "com.apple.store.webtoolkit.debug.app.RunHealthCheckAction"
+      },
+      "userInfo": {},
+      "name": "runHealthCheck",
+      "example": "/<APPHOSTANDADMINPORT>/debug/application/health/<HEALTHCHECKNAME>",
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "healthCheckName": {
+          "type": "String",
+          "required": "false",
+          "definition": {
+            "name": "healthCheckName",
+            "type": "String"
+          },
+          "example": "<HEALTHCHECKNAME>",
+          "name": "healthCheckName",
+          "writer": {},
+          "reader": {}
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        }
+      }
+    },
+    {
+      "definition": {
+        "description": "show application information",
+        "dispatch": {
+          "action": "page",
+          "page": "ApplicationInformationDebugger"
+        },
+        "url": "<DEBUG>/application/info",
+        "group": "Runtime"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "ApplicationInformationDebugger"
+      },
+      "userInfo": {},
+      "name": "applicationInformation",
+      "example": "/<APPHOSTANDADMINPORT>/debug/application/info",
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        }
+      }
+    },
+    {
+      "definition": {
+        "url": "<DEBUG>/application/peerSubjects",
+        "parameters": [
+          {
+            "form": "url",
+            "name": "currentUrl",
+            "type": "CurrentUrl"
+          }
+        ],
+        "group": "Peer",
+        "dispatch": {
+          "action": "page",
+          "page": "PeerSubjectsDebugger"
+        },
+        "description": "show similar peers"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "PeerSubjectsDebugger"
+      },
+      "userInfo": {},
+      "name": "peerSubjects",
+      "example": "/<APPHOSTANDADMINPORT>/debug/application/peerSubjects",
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "currentUrl": {
+          "reader": {},
+          "definition": {
+            "form": "url",
+            "name": "currentUrl",
+            "type": "CurrentUrl"
+          },
+          "name": "currentUrl",
+          "writer": {},
+          "required": "false",
+          "type": "CurrentUrl",
+          "example": "<CURRENTURL>",
+          "formKey": "url"
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        }
+      }
+    },
+    {
+      "definition": {
+        "url": "<DEBUG>/application/peers",
+        "parameters": [
+          {
+            "form": "subject",
+            "name": "subject",
+            "type": "String"
+          },
+          {
+            "form": "url",
+            "name": "currentUrl",
+            "type": "CurrentUrl"
+          }
+        ],
+        "group": "Peer",
+        "dispatch": {
+          "action": "page",
+          "page": "PeerListDebugger"
+        },
+        "description": "show application peers"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "PeerListDebugger"
+      },
+      "userInfo": {},
+      "name": "peerList",
+      "example": "/<APPHOSTANDADMINPORT>/debug/application/peers",
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "currentUrl": {
+          "reader": {},
+          "definition": {
+            "form": "url",
+            "name": "currentUrl",
+            "type": "CurrentUrl"
+          },
+          "name": "currentUrl",
+          "writer": {},
+          "required": "false",
+          "type": "CurrentUrl",
+          "example": "<CURRENTURL>",
+          "formKey": "url"
+        },
+        "subject": {
+          "reader": {},
+          "definition": {
+            "form": "subject",
+            "name": "subject",
+            "type": "String"
+          },
+          "name": "subject",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<SUBJECT>",
+          "formKey": "subject"
+        },
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        }
+      }
+    },
+    {
+      "definition": {
+        "description": "cache debugger",
+        "dispatch": {
+          "action": "page",
+          "page": "CacheDebugger"
+        },
+        "group": "Cache",
+        "parameters": [
+          {
+            "form": "cache",
+            "name": "cacheName",
+            "type": "String"
+          },
+          {
+            "form": "key",
+            "name": "key",
+            "type": "String"
+          },
+          {
+            "form": "script",
+            "name": "script",
+            "type": "String"
+          }
+        ],
+        "url": "<DEBUG>/cache",
+        "example": "/debug/cache"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "CacheDebugger"
+      },
+      "userInfo": {},
+      "name": "cacheDebugger",
+      "example": "/<APPHOSTANDADMINPORT>/debug/cache",
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "script": {
+          "reader": {},
+          "definition": {
+            "form": "script",
+            "name": "script",
+            "type": "String"
+          },
+          "name": "script",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<SCRIPT>",
+          "formKey": "script"
+        },
+        "cacheName": {
+          "reader": {},
+          "definition": {
+            "form": "cache",
+            "name": "cacheName",
+            "type": "String"
+          },
+          "name": "cacheName",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<CACHENAME>",
+          "formKey": "cache"
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "key": {
+          "reader": {},
+          "definition": {
+            "form": "key",
+            "name": "key",
+            "type": "String"
+          },
+          "name": "key",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<KEY>",
+          "formKey": "key"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        }
+      }
+    },
+    {
+      "definition": {
+        "description": "Entry point into configuration visualizer.",
+        "dispatch": {
+          "action": "page",
+          "page": "ShowConfigurationNamespaces"
+        },
+        "group": "Configuration",
+        "parameters": [
+          {
+            "name": "scope",
+            "type": "String",
+            "value": "local"
+          }
+        ],
+        "url": "<DEBUG>/configuration",
+        "example": "/debug/configuration"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "ShowConfigurationNamespaces"
+      },
+      "userInfo": {},
+      "name": "viewNamespaces",
+      "example": "/<APPHOSTANDADMINPORT>/debug/configuration",
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "scope": {
+          "type": "String",
+          "required": "false",
+          "definition": {
+            "name": "scope",
+            "type": "String",
+            "value": "local"
+          },
+          "example": "<SCOPE>",
+          "name": "scope",
+          "writer": {},
+          "reader": {}
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        }
+      }
+    },
+    {
+      "definition": {
+        "url": "<DEBUG>/configuration/all",
+        "parameters": [
+          {
+            "name": "scope",
+            "type": "String",
+            "value": "all"
+          }
+        ],
+        "group": "Configuration",
+        "dispatch": {
+          "action": "page",
+          "page": "ShowConfigurationNamespaces"
+        },
+        "description": "view all namespaces (from viewNamespaces)"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "ShowConfigurationNamespaces"
+      },
+      "userInfo": {},
+      "name": "viewNamespacesAll",
+      "example": "/<APPHOSTANDADMINPORT>/debug/configuration/all",
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "scope": {
+          "type": "String",
+          "required": "false",
+          "definition": {
+            "name": "scope",
+            "type": "String",
+            "value": "all"
+          },
+          "example": "<SCOPE>",
+          "name": "scope",
+          "writer": {},
+          "reader": {}
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        }
+      }
+    },
+    {
+      "definition": {
+        "description": "view single namespace, e.g. app",
+        "dispatch": {
+          "action": "page",
+          "page": "ShowConfigurationNamespace"
+        },
+        "group": "Configuration",
+        "parameters": [
+          {
+            "form": "raw",
+            "name": "raw",
+            "type": "String"
+          },
+          {
+            "form": "debug",
+            "name": "debug",
+            "type": "String"
+          },
+          {
+            "form": "context",
+            "name": "context",
+            "type": "Map"
+          },
+          {
+            "form": "ambiguityCheck",
+            "name": "ambiguityCheck",
+            "type": "String"
+          }
+        ],
+        "url": "<DEBUG>/configuration/view/<NAMESPACE>",
+        "example": "/debug/configuration/view/app"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "ShowConfigurationNamespace"
+      },
+      "userInfo": {},
+      "name": "viewConfiguration",
+      "example": "/<APPHOSTANDADMINPORT>/debug/configuration/view/<NAMESPACE>",
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "context": {
+          "reader": {},
+          "definition": {
+            "form": "context",
+            "name": "context",
+            "type": "Map"
+          },
+          "name": "context",
+          "writer": {},
+          "required": "false",
+          "type": "Map",
+          "example": "<CONTEXT>",
+          "formKey": "context"
+        },
+        "raw": {
+          "reader": {},
+          "definition": {
+            "form": "raw",
+            "name": "raw",
+            "type": "String"
+          },
+          "name": "raw",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<RAW>",
+          "formKey": "raw"
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "debug": {
+          "reader": {},
+          "definition": {
+            "form": "debug",
+            "name": "debug",
+            "type": "String"
+          },
+          "name": "debug",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<DEBUG>",
+          "formKey": "debug"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "ambiguityCheck": {
+          "reader": {},
+          "definition": {
+            "form": "ambiguityCheck",
+            "name": "ambiguityCheck",
+            "type": "String"
+          },
+          "name": "ambiguityCheck",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<AMBIGUITYCHECK>",
+          "formKey": "ambiguityCheck"
+        },
+        "namespace": {
+          "type": "String",
+          "required": "true",
+          "definition": {
+            "name": "namespace",
+            "type": "String",
+            "required": "true"
+          },
+          "example": "<NAMESPACE>",
+          "name": "namespace",
+          "writer": {},
+          "reader": {}
+        }
+      }
+    },
+    {
+      "definition": {
+        "url": "<DEBUG>/logs",
+        "example": "/debug/logs",
+        "parameters": [],
+        "dispatch": {
+          "action": "page",
+          "page": "LogTailerPage"
+        },
+        "description": "Log Tail For This Service"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "LogTailerPage"
+      },
+      "userInfo": {},
+      "name": "logsPage",
+      "example": "/<APPHOSTANDADMINPORT>/debug/logs",
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        }
+      }
+    },
+    {
+      "definition": {
+        "description": "view single mbean",
+        "dispatch": {
+          "action": "page",
+          "page": "DebugMBean"
+        },
+        "showInMenu": "false",
+        "group": "Runtime",
+        "url": "<DEBUG>/mbeans/<MBEAN_NAME>",
+        "example": "/debug/mbeans/java.lang:type=Runtime"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "DebugMBean"
+      },
+      "userInfo": {},
+      "name": "viewMBean",
+      "example": "/<APPHOSTANDADMINPORT>/debug/mbeans/<OBJECTNAME>",
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "objectName": {
+          "type": "ObjectName",
+          "required": "true",
+          "definition": {
+            "name": "objectName",
+            "type": "ObjectName",
+            "required": "true"
+          },
+          "example": "<OBJECTNAME>",
+          "name": "objectName",
+          "writer": {},
+          "reader": {}
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        }
+      }
+    },
+    {
+      "definition": {
+        "description": "list of mbeans",
+        "dispatch": {
+          "action": "page",
+          "page": "DebugMBeanList"
+        },
+        "group": "Runtime",
+        "parameters": [
+          {
+            "form": "q",
+            "name": "filter",
+            "type": "Pattern"
+          }
+        ],
+        "title": "MBean List",
+        "url": "<DEBUG>/mbeans/list"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "DebugMBeanList"
+      },
+      "userInfo": {},
+      "name": "mbeanList",
+      "example": "/<APPHOSTANDADMINPORT>/debug/mbeans/list",
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "filter": {
+          "reader": {},
+          "definition": {
+            "form": "q",
+            "name": "filter",
+            "type": "Pattern"
+          },
+          "name": "filter",
+          "writer": {},
+          "required": "false",
+          "type": "Pattern",
+          "example": "<FILTER>",
+          "formKey": "q"
+        },
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        }
+      }
+    },
+    {
+      "definition": {
+        "url": "<DEBUG>/netstat",
+        "title": "netstat",
+        "group": "Runtime",
+        "dispatch": {
+          "action": "page",
+          "page": "DebugNetstat"
+        },
+        "description": "netstat on the host"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "DebugNetstat"
+      },
+      "userInfo": {},
+      "name": "netstat",
+      "example": "/<APPHOSTANDADMINPORT>/debug/netstat",
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        }
+      }
+    },
+    {
+      "definition": {
+        "description": "Document Database Query",
+        "dispatch": {
+          "action": "page",
+          "page": "com.apple.store.library.database.debug.cql.DefaultDebugViewer"
+        },
+        "group": "Database",
+        "parameters": [],
+        "title": "Document Database Query",
+        "url": "<DEBUG>/query"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "com.apple.store.library.database.debug.cql.DefaultDebugViewer"
+      },
+      "userInfo": {},
+      "name": "query",
+      "example": "/<APPHOSTANDADMINPORT>/debug/query",
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        }
+      }
+    },
+    {
+      "definition": {
+        "description": "Debug service handlers",
+        "dispatch": {
+          "action": "page",
+          "page": "ServiceHandlerDebugger"
+        },
+        "group": "Handlers",
+        "parameters": [
+          {
+            "form": "k",
+            "name": "serviceHandlerKey",
+            "type": "String"
+          },
+          {
+            "form": "m",
+            "name": "serviceHandlerMethod",
+            "type": "String"
+          },
+          {
+            "form": "r",
+            "name": "serviceHandlerRequest",
+            "type": "String"
+          },
+          {
+            "form": "a",
+            "name": "action",
+            "type": "String"
+          }
+        ],
+        "url": "<DEBUG>/serviceHandlers",
+        "example": "/debug/serviceHandlers"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "ServiceHandlerDebugger"
+      },
+      "userInfo": {},
+      "name": "serviceHandlerDebugger",
+      "example": "/<APPHOSTANDADMINPORT>/debug/serviceHandlers",
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "serviceHandlerMethod": {
+          "reader": {},
+          "definition": {
+            "form": "m",
+            "name": "serviceHandlerMethod",
+            "type": "String"
+          },
+          "name": "serviceHandlerMethod",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<SERVICEHANDLERMETHOD>",
+          "formKey": "m"
+        },
+        "serviceHandlerRequest": {
+          "reader": {},
+          "definition": {
+            "form": "r",
+            "name": "serviceHandlerRequest",
+            "type": "String"
+          },
+          "name": "serviceHandlerRequest",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<SERVICEHANDLERREQUEST>",
+          "formKey": "r"
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "serviceHandlerKey": {
+          "reader": {},
+          "definition": {
+            "form": "k",
+            "name": "serviceHandlerKey",
+            "type": "String"
+          },
+          "name": "serviceHandlerKey",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<SERVICEHANDLERKEY>",
+          "formKey": "k"
+        },
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "action": {
+          "reader": {},
+          "definition": {
+            "form": "a",
+            "name": "action",
+            "type": "String"
+          },
+          "name": "action",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<ACTION>",
+          "formKey": "a"
+        }
+      }
+    },
+    {
+      "definition": {
+        "url": "<DEBUG>/stats/caches",
+        "parameters": [
+          {
+            "name": "collectorType",
+            "type": "String",
+            "value": "Cache"
+          },
+          "<STATISTICS_VIEW_PARAMETERS>"
+        ],
+        "group": "Runtime",
+        "dispatch": {
+          "action": "page",
+          "page": "StatisticsDebugger"
+        },
+        "description": "Cache statistics"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "StatisticsDebugger"
+      },
+      "userInfo": {},
+      "name": "caches",
+      "example": "/<APPHOSTANDADMINPORT>/debug/stats/caches",
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "period": {
+          "reader": {},
+          "definition": {
+            "type": "String",
+            "value": "60 min",
+            "name": "period",
+            "form": "p"
+          },
+          "name": "period",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PERIOD>",
+          "formKey": "p"
+        },
+        "sortKey": {
+          "reader": {},
+          "definition": {
+            "form": "s",
+            "name": "sortKey",
+            "type": "String"
+          },
+          "name": "sortKey",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<SORTKEY>",
+          "formKey": "s"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "qualifier": {
+          "reader": {},
+          "definition": {
+            "form": "q",
+            "name": "qualifier",
+            "type": "String"
+          },
+          "name": "qualifier",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<QUALIFIER>",
+          "formKey": "q"
+        },
+        "collectorType": {
+          "type": "String",
+          "required": "false",
+          "definition": {
+            "name": "collectorType",
+            "type": "String",
+            "value": "Cache"
+          },
+          "example": "<COLLECTORTYPE>",
+          "name": "collectorType",
+          "writer": {},
+          "reader": {}
+        },
+        "fuzzy": {
+          "reader": {},
+          "definition": {
+            "form": "fz",
+            "name": "fuzzy",
+            "type": "String"
+          },
+          "name": "fuzzy",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<FUZZY>",
+          "formKey": "fz"
+        },
+        "namePattern": {
+          "reader": {},
+          "definition": {
+            "form": "n",
+            "name": "namePattern",
+            "type": "String"
+          },
+          "name": "namePattern",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<NAMEPATTERN>",
+          "formKey": "n"
+        },
+        "namespace": {
+          "reader": {},
+          "definition": {
+            "type": "String",
+            "value": "default",
+            "name": "namespace",
+            "form": "ns"
+          },
+          "name": "namespace",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<NAMESPACE>",
+          "formKey": "ns"
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "sortDirection": {
+          "reader": {},
+          "definition": {
+            "type": "String",
+            "value": "descending",
+            "name": "sortDirection",
+            "form": "d"
+          },
+          "name": "sortDirection",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<SORTDIRECTION>",
+          "formKey": "d"
+        }
+      }
+    },
+    {
+      "definition": {
+        "url": "<DEBUG>/stats/gauges",
+        "parameters": [
+          {
+            "name": "collectorType",
+            "type": "String",
+            "value": "Gauge"
+          },
+          "<STATISTICS_VIEW_PARAMETERS>"
+        ],
+        "group": "Runtime",
+        "dispatch": {
+          "action": "page",
+          "page": "StatisticsDebugger"
+        },
+        "description": "Gauge statistics"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "StatisticsDebugger"
+      },
+      "userInfo": {},
+      "name": "gauges",
+      "example": "/<APPHOSTANDADMINPORT>/debug/stats/gauges",
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "period": {
+          "reader": {},
+          "definition": {
+            "type": "String",
+            "value": "60 min",
+            "name": "period",
+            "form": "p"
+          },
+          "name": "period",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PERIOD>",
+          "formKey": "p"
+        },
+        "sortKey": {
+          "reader": {},
+          "definition": {
+            "form": "s",
+            "name": "sortKey",
+            "type": "String"
+          },
+          "name": "sortKey",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<SORTKEY>",
+          "formKey": "s"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "qualifier": {
+          "reader": {},
+          "definition": {
+            "form": "q",
+            "name": "qualifier",
+            "type": "String"
+          },
+          "name": "qualifier",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<QUALIFIER>",
+          "formKey": "q"
+        },
+        "collectorType": {
+          "type": "String",
+          "required": "false",
+          "definition": {
+            "name": "collectorType",
+            "type": "String",
+            "value": "Gauge"
+          },
+          "example": "<COLLECTORTYPE>",
+          "name": "collectorType",
+          "writer": {},
+          "reader": {}
+        },
+        "fuzzy": {
+          "reader": {},
+          "definition": {
+            "form": "fz",
+            "name": "fuzzy",
+            "type": "String"
+          },
+          "name": "fuzzy",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<FUZZY>",
+          "formKey": "fz"
+        },
+        "namePattern": {
+          "reader": {},
+          "definition": {
+            "form": "n",
+            "name": "namePattern",
+            "type": "String"
+          },
+          "name": "namePattern",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<NAMEPATTERN>",
+          "formKey": "n"
+        },
+        "namespace": {
+          "reader": {},
+          "definition": {
+            "type": "String",
+            "value": "default",
+            "name": "namespace",
+            "form": "ns"
+          },
+          "name": "namespace",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<NAMESPACE>",
+          "formKey": "ns"
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "sortDirection": {
+          "reader": {},
+          "definition": {
+            "type": "String",
+            "value": "descending",
+            "name": "sortDirection",
+            "form": "d"
+          },
+          "name": "sortDirection",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<SORTDIRECTION>",
+          "formKey": "d"
+        }
+      }
+    },
+    {
+      "definition": {
+        "description": "experimental time series stats",
+        "dispatch": {
+          "action": "page",
+          "page": "DebugTimeSeries"
+        },
+        "group": "Runtime",
+        "parameters": [
+          {
+            "type": "String",
+            "value": "fast",
+            "name": "type",
+            "form": "type"
+          },
+          {
+            "type": "String",
+            "value": "0",
+            "name": "refresh",
+            "form": "refresh"
+          }
+        ],
+        "url": "<DEBUG>/stats/series",
+        "example": "/debug/stats/series"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "DebugTimeSeries"
+      },
+      "userInfo": {},
+      "name": "timeSeriesStats",
+      "example": "/<APPHOSTANDADMINPORT>/debug/stats/series",
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "type": {
+          "reader": {},
+          "definition": {
+            "type": "String",
+            "value": "fast",
+            "name": "type",
+            "form": "type"
+          },
+          "name": "type",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<TYPE>",
+          "formKey": "type"
+        },
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "refresh": {
+          "reader": {},
+          "definition": {
+            "type": "String",
+            "value": "0",
+            "name": "refresh",
+            "form": "refresh"
+          },
+          "name": "refresh",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REFRESH>",
+          "formKey": "refresh"
+        }
+      }
+    },
+    {
+      "definition": {
+        "url": "<DEBUG>/stats/timers",
+        "parameters": [
+          {
+            "name": "collectorType",
+            "type": "String",
+            "value": "Timer"
+          },
+          "<STATISTICS_VIEW_PARAMETERS>"
+        ],
+        "group": "Runtime",
+        "dispatch": {
+          "action": "page",
+          "page": "StatisticsDebugger"
+        },
+        "description": "Timer statistics"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "StatisticsDebugger"
+      },
+      "userInfo": {},
+      "name": "timers",
+      "example": "/<APPHOSTANDADMINPORT>/debug/stats/timers",
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "period": {
+          "reader": {},
+          "definition": {
+            "type": "String",
+            "value": "60 min",
+            "name": "period",
+            "form": "p"
+          },
+          "name": "period",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PERIOD>",
+          "formKey": "p"
+        },
+        "sortKey": {
+          "reader": {},
+          "definition": {
+            "form": "s",
+            "name": "sortKey",
+            "type": "String"
+          },
+          "name": "sortKey",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<SORTKEY>",
+          "formKey": "s"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "qualifier": {
+          "reader": {},
+          "definition": {
+            "form": "q",
+            "name": "qualifier",
+            "type": "String"
+          },
+          "name": "qualifier",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<QUALIFIER>",
+          "formKey": "q"
+        },
+        "collectorType": {
+          "type": "String",
+          "required": "false",
+          "definition": {
+            "name": "collectorType",
+            "type": "String",
+            "value": "Timer"
+          },
+          "example": "<COLLECTORTYPE>",
+          "name": "collectorType",
+          "writer": {},
+          "reader": {}
+        },
+        "fuzzy": {
+          "reader": {},
+          "definition": {
+            "form": "fz",
+            "name": "fuzzy",
+            "type": "String"
+          },
+          "name": "fuzzy",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<FUZZY>",
+          "formKey": "fz"
+        },
+        "namePattern": {
+          "reader": {},
+          "definition": {
+            "form": "n",
+            "name": "namePattern",
+            "type": "String"
+          },
+          "name": "namePattern",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<NAMEPATTERN>",
+          "formKey": "n"
+        },
+        "namespace": {
+          "reader": {},
+          "definition": {
+            "type": "String",
+            "value": "default",
+            "name": "namespace",
+            "form": "ns"
+          },
+          "name": "namespace",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<NAMESPACE>",
+          "formKey": "ns"
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "sortDirection": {
+          "reader": {},
+          "definition": {
+            "type": "String",
+            "value": "descending",
+            "name": "sortDirection",
+            "form": "d"
+          },
+          "name": "sortDirection",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<SORTDIRECTION>",
+          "formKey": "d"
+        }
+      }
+    },
+    {
+      "definition": {
+        "url": "<DEBUG>/threads",
+        "parameters": [
+          {
+            "form": "filterBacktrace",
+            "name": "filterBacktrace",
+            "type": "String"
+          },
+          {
+            "form": "filterThreadName",
+            "name": "filterThreadName",
+            "type": "String"
+          },
+          {
+            "form": "showLocks",
+            "name": "showLocks",
+            "type": "String"
+          }
+        ],
+        "group": "Runtime",
+        "dispatch": {
+          "action": "page",
+          "page": "ThreadDumpDebugger"
+        },
+        "description": "thread dump"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "ThreadDumpDebugger"
+      },
+      "userInfo": {},
+      "name": "threadDumpDebugger",
+      "example": "/<APPHOSTANDADMINPORT>/debug/threads",
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "filterThreadName": {
+          "reader": {},
+          "definition": {
+            "form": "filterThreadName",
+            "name": "filterThreadName",
+            "type": "String"
+          },
+          "name": "filterThreadName",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<FILTERTHREADNAME>",
+          "formKey": "filterThreadName"
+        },
+        "filterBacktrace": {
+          "reader": {},
+          "definition": {
+            "form": "filterBacktrace",
+            "name": "filterBacktrace",
+            "type": "String"
+          },
+          "name": "filterBacktrace",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<FILTERBACKTRACE>",
+          "formKey": "filterBacktrace"
+        },
+        "showLocks": {
+          "reader": {},
+          "definition": {
+            "form": "showLocks",
+            "name": "showLocks",
+            "type": "String"
+          },
+          "name": "showLocks",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<SHOWLOCKS>",
+          "formKey": "showLocks"
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        }
+      }
+    },
+    {
+      "definition": {
+        "dispatch": {
+          "action": "page",
+          "page": "URLDoc"
+        },
+        "url": "<DEBUG>/urldoc",
+        "description": "url documentation",
+        "example": "/debug/urldoc",
+        "title": "URL Documentation",
+        "group": "Documentation",
+        "showInMenu": "false"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "URLDoc"
+      },
+      "userInfo": {},
+      "name": "urldocEntry",
+      "example": "/<APPHOSTANDADMINPORT>/debug/urldoc",
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        }
+      }
+    },
+    {
+      "definition": {
+        "description": "url documentation for a particular namespace, e.g. urls-debug",
+        "dispatch": {
+          "action": "page",
+          "page": "URLDoc"
+        },
+        "group": "Documentation",
+        "title": "URL Documentation",
+        "url": "<DEBUG>/urldoc/<NAMESPACE>",
+        "example": "/debug/urldoc/urls-debug"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "URLDoc"
+      },
+      "userInfo": {},
+      "name": "urldoc",
+      "example": "/<APPHOSTANDADMINPORT>/debug/urldoc/<NAMESPACE>",
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "namespace": {
+          "type": "String",
+          "required": "true",
+          "definition": {
+            "name": "namespace",
+            "type": "String",
+            "required": "true"
+          },
+          "example": "<NAMESPACE>",
+          "name": "namespace",
+          "writer": {},
+          "reader": {}
+        }
+      }
+    },
+    {
+      "definition": {
+        "dispatch": {
+          "action": "page",
+          "page": "URLDebugger"
+        },
+        "description": "url debugger",
+        "example": "/debug/urls",
+        "title": "URL Debugger",
+        "parameters": [
+          {
+            "form": "url",
+            "name": "url",
+            "type": "String"
+          },
+          {
+            "form": "patterns",
+            "name": "patterns",
+            "type": "String"
+          },
+          {
+            "form": "namespace",
+            "name": "namespace",
+            "type": "String"
+          }
+        ],
+        "group": "URL",
+        "url": "<DEBUG>/urls"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "URLDebugger"
+      },
+      "userInfo": {},
+      "name": "urlDebugger",
+      "example": "/<APPHOSTANDADMINPORT>/debug/urls",
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "namespace": {
+          "reader": {},
+          "definition": {
+            "form": "namespace",
+            "name": "namespace",
+            "type": "String"
+          },
+          "name": "namespace",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<NAMESPACE>",
+          "formKey": "namespace"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "url": {
+          "reader": {},
+          "definition": {
+            "form": "url",
+            "name": "url",
+            "type": "String"
+          },
+          "name": "url",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<URL>",
+          "formKey": "url"
+        },
+        "patterns": {
+          "reader": {},
+          "definition": {
+            "form": "patterns",
+            "name": "patterns",
+            "type": "String"
+          },
+          "name": "patterns",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PATTERNS>",
+          "formKey": "patterns"
+        }
+      }
+    },
+    {
+      "definition": {
+        "url": "<DEBUG>/viewConfigurationFile",
+        "parameters": [
+          {
+            "form": "filename",
+            "name": "filename",
+            "type": "String"
+          }
+        ],
+        "group": "HIDDEN",
+        "dispatch": {
+          "action": "page",
+          "page": "DebugViewConfigurationFile"
+        },
+        "description": "Show the actual contents of a deployed configuration file, which must be underneath /Local/AS/Configuration/*Configuration and may not be in SecretConfiguration"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "DebugViewConfigurationFile"
+      },
+      "userInfo": {},
+      "name": "viewConfigurationFile",
+      "example": "/<APPHOSTANDADMINPORT>/debug/viewConfigurationFile",
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "filename": {
+          "reader": {},
+          "definition": {
+            "form": "filename",
+            "name": "filename",
+            "type": "String"
+          },
+          "name": "filename",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<FILENAME>",
+          "formKey": "filename"
+        }
+      }
+    },
+    {
+      "definition": {
+        "description": "Show SHA hashes of locally deployed config directories",
+        "dispatch": {
+          "action": "page",
+          "page": "DebugLocalConfigHash"
+        },
+        "group": "Configuration",
+        "parameters": [
+          {
+            "form": "excludeSvn",
+            "name": "excludeSvn",
+            "type": "String"
+          },
+          {
+            "form": "includeSecret",
+            "name": "includeSecret",
+            "type": "String"
+          },
+          {
+            "form": "uncached",
+            "name": "uncached",
+            "type": "String"
+          },
+          {
+            "form": "verbose",
+            "name": "verbose",
+            "type": "String"
+          },
+          {
+            "form": "plainText",
+            "name": "plainText",
+            "type": "String"
+          }
+        ],
+        "url": "<DEBUG>/viewLocalConfigFileHashes",
+        "example": "/debug/viewLocalConfigFileHashes"
+      },
+      "dispatch": {
+        "action": "page",
+        "page": "DebugLocalConfigHash"
+      },
+      "userInfo": {},
+      "name": "viewLocalConfigFileHashes",
+      "example": "/<APPHOSTANDADMINPORT>/debug/viewLocalConfigFileHashes",
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "includeSecret": {
+          "reader": {},
+          "definition": {
+            "form": "includeSecret",
+            "name": "includeSecret",
+            "type": "String"
+          },
+          "name": "includeSecret",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<INCLUDESECRET>",
+          "formKey": "includeSecret"
+        },
+        "pubversion": {
+          "reader": {},
+          "definition": {
+            "form": "pubversion",
+            "name": "pubversion",
+            "type": "String"
+          },
+          "name": "pubversion",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PUBVERSION>",
+          "formKey": "pubversion"
+        },
+        "excludeSvn": {
+          "reader": {},
+          "definition": {
+            "form": "excludeSvn",
+            "name": "excludeSvn",
+            "type": "String"
+          },
+          "name": "excludeSvn",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<EXCLUDESVN>",
+          "formKey": "excludeSvn"
+        },
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "revision",
+            "name": "revision",
+            "type": "String"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<REVISION>",
+          "formKey": "revision"
+        },
+        "uncached": {
+          "reader": {},
+          "definition": {
+            "form": "uncached",
+            "name": "uncached",
+            "type": "String"
+          },
+          "name": "uncached",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<UNCACHED>",
+          "formKey": "uncached"
+        },
+        "verbose": {
+          "reader": {},
+          "definition": {
+            "form": "verbose",
+            "name": "verbose",
+            "type": "String"
+          },
+          "name": "verbose",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<VERBOSE>",
+          "formKey": "verbose"
+        },
+        "plainText": {
+          "reader": {},
+          "definition": {
+            "form": "plainText",
+            "name": "plainText",
+            "type": "String"
+          },
+          "name": "plainText",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<PLAINTEXT>",
+          "formKey": "plainText"
+        }
+      }
+    },
+    {
+      "definition": {
+        "dispatch": {
+          "action": "staticresources"
+        },
+        "showInMenu": "false",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "Path",
+            "value": "favicon.ico"
+          }
+        ],
+        "url": "<ROOT>/favicon.ico"
+      },
+      "dispatch": {
+        "action": "staticresources"
+      },
+      "userInfo": {},
+      "name": "favicon",
+      "example": "/<APPHOSTANDADMINPORT>/favicon.ico",
+      "pathTokens": [
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "path": {
+          "type": "Path",
+          "required": "false",
+          "definition": {
+            "name": "path",
+            "type": "Path",
+            "value": "favicon.ico"
+          },
+          "example": "<PATH>",
+          "name": "path",
+          "writer": {},
+          "reader": {}
+        },
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        }
+      }
+    },
+    {
+      "definition": {
+        "dispatch": {
+          "action": "staticresources"
+        },
+        "showInMenu": "false",
+        "url": "<ROOT>/r/<RESOURCE_PATH>"
+      },
+      "dispatch": {
+        "action": "staticresources"
+      },
+      "userInfo": {},
+      "name": "resource",
+      "example": "/<APPHOSTANDADMINPORT>/r/<PATH>",
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "queryTokens": [],
+      "parameters": {
+        "path": {
+          "type": "Path",
+          "required": "false",
+          "definition": {
+            "name": "path",
+            "type": "Path"
+          },
+          "example": "<PATH>",
+          "name": "path",
+          "writer": {},
+          "reader": {}
+        },
+        "appHostAndAdminPort": {
+          "type": "OptionalAppHostAndAdminPort",
+          "required": "false",
+          "definition": {
+            "type": "OptionalAppHostAndAdminPort",
+            "value": "false",
+            "required": "false",
+            "name": "appHostAndAdminPort"
+          },
+          "example": "<APPHOSTANDADMINPORT>",
+          "name": "appHostAndAdminPort",
+          "writer": {},
+          "reader": {}
+        }
+      }
+    },
+    {
+      "userInfo": {},
+      "definition": {
+        "url": "<TOOLS_VIP>/ImageDemo/dep/<MODULE_NAME>/<MODULE_VERSION>"
+      },
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "example": "/<HOST>/ImageDemo/dep/<MODULE>/<VERSION>",
+      "parameters": {
+        "module": {
+          "type": "String",
+          "required": "false",
+          "definition": {
+            "name": "module",
+            "type": "String"
+          },
+          "example": "<MODULE>",
+          "name": "module",
+          "writer": {},
+          "reader": {}
+        },
+        "host": {
+          "type": "Host",
+          "required": "true",
+          "definition": {
+            "type": "Host",
+            "value": "http://tools.storedev01.rno.apple.com",
+            "required": "true",
+            "name": "host"
+          },
+          "example": "<HOST>",
+          "name": "host",
+          "writer": {},
+          "reader": {}
+        },
+        "version": {
+          "type": "String",
+          "required": "false",
+          "definition": {
+            "name": "version",
+            "type": "String"
+          },
+          "example": "<VERSION>",
+          "name": "version",
+          "writer": {},
+          "reader": {}
+        }
+      },
+      "name": "moduleDependencies",
+      "queryTokens": []
+    },
+    {
+      "userInfo": {},
+      "definition": {
+        "parameters": [
+          {
+            "form": "pathrev",
+            "name": "revision",
+            "type": "Integer"
+          }
+        ],
+        "url": "<SVNHOST>/cgi-bin/viewvc.cgi/aos/<REPOSITORY_PATH>"
+      },
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "example": "/<HOST>/cgi-bin/viewvc.cgi/aos/<REPOSITORY>",
+      "parameters": {
+        "host": {
+          "type": "Host",
+          "required": "true",
+          "definition": {
+            "type": "Host",
+            "value": "http://storesvn.apple.com",
+            "required": "true",
+            "name": "host"
+          },
+          "example": "<HOST>",
+          "name": "host",
+          "writer": {},
+          "reader": {}
+        },
+        "repository": {
+          "type": "Path",
+          "required": "false",
+          "definition": {
+            "name": "repository",
+            "type": "Path"
+          },
+          "example": "<REPOSITORY>",
+          "name": "repository",
+          "writer": {},
+          "reader": {}
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "pathrev",
+            "name": "revision",
+            "type": "Integer"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "Integer",
+          "example": "<REVISION>",
+          "formKey": "pathrev"
+        }
+      },
+      "name": "viewvc",
+      "queryTokens": []
+    },
+    {
+      "userInfo": {},
+      "definition": {
+        "parameters": [
+          {
+            "form": "showid",
+            "name": "revision",
+            "type": "Integer"
+          }
+        ],
+        "url": "<CRUCIBLE_HOST>/fisheye/changelog/StoreSVN/<REPOSITORY_PATH>"
+      },
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "example": "/<HOST>/fisheye/changelog/StoreSVN/<REPOSITORY>",
+      "parameters": {
+        "host": {
+          "type": "Host",
+          "required": "true",
+          "definition": {
+            "type": "Host",
+            "value": "http://storedev-tools.corp.apple.com",
+            "required": "true",
+            "name": "host"
+          },
+          "example": "<HOST>",
+          "name": "host",
+          "writer": {},
+          "reader": {}
+        },
+        "repository": {
+          "type": "Path",
+          "required": "false",
+          "definition": {
+            "name": "repository",
+            "type": "Path"
+          },
+          "example": "<REPOSITORY>",
+          "name": "repository",
+          "writer": {},
+          "reader": {}
+        },
+        "revision": {
+          "reader": {},
+          "definition": {
+            "form": "showid",
+            "name": "revision",
+            "type": "Integer"
+          },
+          "name": "revision",
+          "writer": {},
+          "required": "false",
+          "type": "Integer",
+          "example": "<REVISION>",
+          "formKey": "showid"
+        }
+      },
+      "name": "crucible",
+      "queryTokens": []
+    },
+    {
+      "userInfo": {},
+      "definition": {
+        "url": "<INFRARED_VIP>/infrared/fleetGrid/<APP_NAME>"
+      },
+      "pathTokens": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "example": "/<HOST>/infrared/fleetGrid/<APP>",
+      "parameters": {
+        "app": {
+          "type": "String",
+          "required": "false",
+          "definition": {
+            "name": "app",
+            "type": "String"
+          },
+          "example": "<APP>",
+          "name": "app",
+          "writer": {},
+          "reader": {}
+        },
+        "host": {
+          "type": "Host",
+          "required": "true",
+          "definition": {
+            "type": "Host",
+            "value": "http://",
+            "required": "true",
+            "name": "host"
+          },
+          "example": "<HOST>",
+          "name": "host",
+          "writer": {},
+          "reader": {}
+        }
+      },
+      "name": "fleetGrid",
+      "queryTokens": []
+    },
+    {
+      "userInfo": {},
+      "definition": {
+        "parameters": [
+          {
+            "type": "String",
+            "required": "true",
+            "name": "class",
+            "form": "name"
+          }
+        ],
+        "url": "<TOOLS>/javadoc/jump.cgi"
+      },
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "example": "/<HOST>/javadoc/jump.cgi",
+      "parameters": {
+        "host": {
+          "type": "Host",
+          "required": "false",
+          "definition": {
+            "description": "Prefix for tools box.",
+            "type": "Host",
+            "value": "http://storedev-tools.corp.apple.com",
+            "name": "host"
+          },
+          "example": "<HOST>",
+          "name": "host",
+          "writer": {},
+          "reader": {}
+        },
+        "class": {
+          "reader": {},
+          "definition": {
+            "type": "String",
+            "required": "true",
+            "name": "class",
+            "form": "name"
+          },
+          "name": "class",
+          "writer": {},
+          "required": "true",
+          "type": "String",
+          "example": "<CLASS>",
+          "formKey": "name"
+        }
+      },
+      "name": "javadoc",
+      "queryTokens": []
+    },
+    {
+      "userInfo": {},
+      "definition": {
+        "description": "Hook to opengrok to search by class name.",
+        "parameters": [
+          {
+            "type": "String",
+            "required": "true",
+            "name": "class",
+            "form": "defs"
+          },
+          {
+            "type": "Constant",
+            "value": "aos",
+            "name": "project",
+            "form": "project"
+          }
+        ],
+        "url": "<TOOLS>/opengrok/search"
+      },
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "example": "/<HOST>/opengrok/search",
+      "parameters": {
+        "host": {
+          "type": "Host",
+          "required": "false",
+          "definition": {
+            "description": "Prefix for tools box.",
+            "type": "Host",
+            "value": "http://storedev-tools.corp.apple.com",
+            "name": "host"
+          },
+          "example": "<HOST>",
+          "name": "host",
+          "writer": {},
+          "reader": {}
+        },
+        "project": {
+          "reader": {},
+          "definition": {
+            "type": "Constant",
+            "value": "aos",
+            "name": "project",
+            "form": "project"
+          },
+          "name": "project",
+          "writer": {},
+          "required": "false",
+          "type": "Constant",
+          "example": "<PROJECT>",
+          "formKey": "project"
+        },
+        "class": {
+          "reader": {},
+          "definition": {
+            "type": "String",
+            "required": "true",
+            "name": "class",
+            "form": "defs"
+          },
+          "name": "class",
+          "writer": {},
+          "required": "true",
+          "type": "String",
+          "example": "<CLASS>",
+          "formKey": "defs"
+        }
+      },
+      "name": "lxrClass",
+      "queryTokens": []
+    },
+    {
+      "userInfo": {},
+      "definition": {
+        "description": "Hook to opengrok to search by file name.",
+        "parameters": [
+          {
+            "type": "String",
+            "required": "true",
+            "name": "file",
+            "form": "path"
+          },
+          {
+            "type": "Constant",
+            "value": "aos",
+            "name": "project",
+            "form": "project"
+          }
+        ],
+        "url": "<TOOLS>/opengrok/search"
+      },
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "example": "/<HOST>/opengrok/search",
+      "parameters": {
+        "file": {
+          "reader": {},
+          "definition": {
+            "type": "String",
+            "required": "true",
+            "name": "file",
+            "form": "path"
+          },
+          "name": "file",
+          "writer": {},
+          "required": "true",
+          "type": "String",
+          "example": "<FILE>",
+          "formKey": "path"
+        },
+        "host": {
+          "type": "Host",
+          "required": "false",
+          "definition": {
+            "description": "Prefix for tools box.",
+            "type": "Host",
+            "value": "http://storedev-tools.corp.apple.com",
+            "name": "host"
+          },
+          "example": "<HOST>",
+          "name": "host",
+          "writer": {},
+          "reader": {}
+        },
+        "project": {
+          "reader": {},
+          "definition": {
+            "type": "Constant",
+            "value": "aos",
+            "name": "project",
+            "form": "project"
+          },
+          "name": "project",
+          "writer": {},
+          "required": "false",
+          "type": "Constant",
+          "example": "<PROJECT>",
+          "formKey": "project"
+        }
+      },
+      "name": "lxrFile",
+      "queryTokens": []
+    },
+    {
+      "userInfo": {},
+      "definition": {
+        "parameters": [
+          {
+            "form": "serviceUrl",
+            "name": "url",
+            "type": "String"
+          },
+          {
+            "form": "serviceName",
+            "name": "serviceNAME",
+            "type": "String"
+          },
+          {
+            "form": "serviceDirectoryUrl",
+            "name": "serviceDirectoryURL",
+            "type": "String"
+          },
+          {
+            "form": "methodName",
+            "name": "methodNAME",
+            "type": "String"
+          },
+          {
+            "form": "serviceHandler",
+            "name": "serviceHANDLER",
+            "type": "String"
+          }
+        ],
+        "url": "<SERVICEBROWSER>/wa/callService"
+      },
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "example": "/<SERVICEBROWSERURL>/wa/callService",
+      "parameters": {
+        "serviceHANDLER": {
+          "reader": {},
+          "definition": {
+            "form": "serviceHandler",
+            "name": "serviceHANDLER",
+            "type": "String"
+          },
+          "name": "serviceHANDLER",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<SERVICEHANDLER>",
+          "formKey": "serviceHandler"
+        },
+        "serviceDirectoryURL": {
+          "reader": {},
+          "definition": {
+            "form": "serviceDirectoryUrl",
+            "name": "serviceDirectoryURL",
+            "type": "String"
+          },
+          "name": "serviceDirectoryURL",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<SERVICEDIRECTORYURL>",
+          "formKey": "serviceDirectoryUrl"
+        },
+        "methodNAME": {
+          "reader": {},
+          "definition": {
+            "form": "methodName",
+            "name": "methodNAME",
+            "type": "String"
+          },
+          "name": "methodNAME",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<METHODNAME>",
+          "formKey": "methodName"
+        },
+        "url": {
+          "reader": {},
+          "definition": {
+            "form": "serviceUrl",
+            "name": "url",
+            "type": "String"
+          },
+          "name": "url",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<URL>",
+          "formKey": "serviceUrl"
+        },
+        "serviceBrowserUrl": {
+          "type": "Host",
+          "required": "true",
+          "definition": {
+            "type": "Host",
+            "value": "https://storetest-tools.corp.apple.com/Apple/WebObjects/ServiceBrowser-DC1-QA1.woa",
+            "required": "true",
+            "name": "serviceBrowserUrl"
+          },
+          "example": "<SERVICEBROWSERURL>",
+          "name": "serviceBrowserUrl",
+          "writer": {},
+          "reader": {}
+        },
+        "serviceNAME": {
+          "reader": {},
+          "definition": {
+            "form": "serviceName",
+            "name": "serviceNAME",
+            "type": "String"
+          },
+          "name": "serviceNAME",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<SERVICENAME>",
+          "formKey": "serviceName"
+        }
+      },
+      "name": "serviceBrowserRetrieveOrder",
+      "queryTokens": []
+    },
+    {
+      "userInfo": {},
+      "definition": {
+        "parameters": [
+          {
+            "form": "serviceUrl",
+            "name": "url",
+            "type": "String"
+          },
+          {
+            "form": "serviceName",
+            "name": "name",
+            "type": "String"
+          },
+          {
+            "form": "serviceDirectoryUrl",
+            "name": "serviceDirectoryURL",
+            "type": "String"
+          }
+        ],
+        "url": "<SERVICEBROWSER>/wa/viewService"
+      },
+      "pathTokens": [
+        {},
+        {},
+        {}
+      ],
+      "example": "/<SERVICEBROWSERURL>/wa/viewService",
+      "parameters": {
+        "url": {
+          "reader": {},
+          "definition": {
+            "form": "serviceUrl",
+            "name": "url",
+            "type": "String"
+          },
+          "name": "url",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<URL>",
+          "formKey": "serviceUrl"
+        },
+        "name": {
+          "reader": {},
+          "definition": {
+            "form": "serviceName",
+            "name": "name",
+            "type": "String"
+          },
+          "name": "name",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<NAME>",
+          "formKey": "serviceName"
+        },
+        "serviceBrowserUrl": {
+          "type": "Host",
+          "required": "true",
+          "definition": {
+            "type": "Host",
+            "value": "https://storetest-tools.corp.apple.com/Apple/WebObjects/ServiceBrowser-DC1-QA1.woa",
+            "required": "true",
+            "name": "serviceBrowserUrl"
+          },
+          "example": "<SERVICEBROWSERURL>",
+          "name": "serviceBrowserUrl",
+          "writer": {},
+          "reader": {}
+        },
+        "serviceDirectoryURL": {
+          "reader": {},
+          "definition": {
+            "form": "serviceDirectoryUrl",
+            "name": "serviceDirectoryURL",
+            "type": "String"
+          },
+          "name": "serviceDirectoryURL",
+          "writer": {},
+          "required": "false",
+          "type": "String",
+          "example": "<SERVICEDIRECTORYURL>",
+          "formKey": "serviceDirectoryUrl"
+        }
+      },
+      "name": "serviceBrowser",
+      "queryTokens": []
+    }
+  ],
+  "_expire": "-1"
+}

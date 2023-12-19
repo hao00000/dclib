@@ -1,0 +1,8 @@
+{
+  "fruit": "Sample App-level data set",
+  "flower": [
+    "debugABC - /<APPHOSTANDADMINPORT>/debug",
+    "WXYZAdaptors - /<APPHOSTANDADMINPORT>/debug/application/WOAdaptors",
+    "ABChealthDebugger - /<APPHOSTANDADMINPORT>/debug/application/health"
+  ]
+}

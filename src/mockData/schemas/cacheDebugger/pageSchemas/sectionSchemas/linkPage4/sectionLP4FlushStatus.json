@@ -1,0 +1,27 @@
+{
+  "BeanCache MemCached MemCachedConfiguration": {
+    "effectiveSoftFlushDate": {
+      "audit": {
+        "auditTimestamp": "1552450509194",
+        "comment": "Not flushed"
+      },
+      "softFlushTimestamp": "0"
+    },
+    "cacheCfmHealth": {
+      "inGracePeriod": "false",
+      "statusMessage": "Blacklisted",
+      "status": "OFF"
+    },
+    "hardFlushDebugInfo": {
+      "changeDate": {
+        "audit": {
+          "auditTimestamp": "1552450509194",
+          "comment": "Not hard-flushed"
+        },
+        "softFlushTimestamp": "1552450509194"
+      },
+      "state": "NEVER_FLUSHED"
+    }
+  },
+  "_expire": "-1"
+}

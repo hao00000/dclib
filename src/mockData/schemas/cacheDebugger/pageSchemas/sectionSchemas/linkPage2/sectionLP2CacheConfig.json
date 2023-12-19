@@ -1,0 +1,12 @@
+{
+  "timeout": "1m",
+  "sourceType": "beanCache",
+  "kind": "contextAware",
+  "jitter": "0ms",
+  "useHardReferences": "true",
+  "size": "400",
+  "_expire": "-1",
+  "contextKeys": ["app", "layer"],
+  "name": "BeanCache interceptor InterceptorConfiguration",
+  "maximumStaleness": "0ms"
+}

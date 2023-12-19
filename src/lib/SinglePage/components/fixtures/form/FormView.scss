@@ -1,0 +1,150 @@
+//@if not-imported("/src/lib/styles/import-once") { @import "/src/lib/styles/import-once"; }
+//@if not-imported('~bootstrap/scss/bootstrap.scss') { @import '~bootstrap/scss/bootstrap.scss'; }
+@import '~bootstrap/scss/bootstrap';
+
+// Attempted to import the only necessary styles
+//@import '~bootstrap/scss/_functions.scss';
+//@import '~bootstrap/scss/_variables.scss';
+//@import '~bootstrap/scss/_forms.scss';
+
+.ui-no-submit {
+  form {
+    margin-left: 2%;
+
+    div > fieldset > .form-group {
+      margin-bottom: 0;
+    }
+
+    div > fieldset > .form-group,
+    p {
+      margin-left: 0;
+    }
+  }
+  button[type='submit'] {
+    display: none;
+  }
+}
+
+.form-field-list {
+  ul {
+    padding-left: 0;
+    margin-bottom: 3px;
+
+    .form-field-list-title {
+      margin-bottom: 3px;
+      font-weight: bold;
+      @extend .col-sm-3;
+
+      li {
+        margin-left: 5px;
+        padding: 0 0 0 2px;
+      }
+    }
+
+    .form-field-list-body-array {
+      margin-left: 15px;
+      padding-left: 0;
+      word-break: break-all;
+    }
+
+    .form-field-list-body-string {
+      padding-left: 0;
+      word-break: break-all;
+    }
+  }
+}
+
+#form-input-left {
+  margin-left: 0;
+  width: 90%;
+}
+
+.form-input-container {
+  margin-bottom: 0.5rem !important;
+
+  .form-input-row {
+    .ui-readonly-field {
+      .form-input-row {
+        padding: 0;
+      }
+
+      .form-input-title {
+        word-break: break-all;
+        padding-left: 20px;
+      }
+
+      .form-control[readonly] {
+        background-color: white;
+        border: none;
+        padding: 0 0 10px 0;
+      }
+    }
+
+    .form-input {
+      padding: 0;
+
+      #root__title {
+        margin: 0;
+      }
+
+      #root__description {
+        margin-bottom: 10px;
+      }
+
+      .form-control {
+        @extend .col-sm-10;
+        font-size: 11px;
+        height: 25px;
+      }
+
+      .form-input-row {
+        .form-input-title {
+          @extend .col-sm-5;
+          word-break: break-all;
+          padding-left: 5px !important;
+        }
+        .form-input {
+          @extend .col-sm-7;
+        }
+      }
+    }
+
+    .field-description {
+      margin: 0;
+    }
+  }
+}
+
+.form-view,
+.form-view-expand {
+  .form-wrapper {
+    width: 80%;
+    .form-input-row {
+      width: auto !important;
+      .form-input-title.col {
+        display: none;
+      }
+      .form-input.col {
+        .field-string, .field-integer {
+          .form-input-title.col {
+            display: block;
+          }
+        }
+      }
+    }
+    > div:nth-child(2) {
+      text-align: right;
+      width: 72%;
+      margin-left: 2px;
+      .btn-info {
+        position: relative;
+        margin: 10px 0px;
+      }
+    }
+  }
+}
+.form-view-expand {
+  #form-input-left {
+    max-height: none;
+  }
+}

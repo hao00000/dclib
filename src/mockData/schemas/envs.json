@@ -1,0 +1,53 @@
+{
+  "environmentURLs": {
+    "non_prod_xe": {
+      "XE03": "https://tools.storexe03.rno.apple.com/servicedebugger/index.html",
+      "XE04": "https://tools.storexe04.rno.apple.com/servicedebugger/index.html",
+      "XE05": "https://tools.storexe05.rno.apple.com/servicedebugger/index.html",
+      "XE05A":"https://tools.xe05a-us-west-2.ucp.apple.com/servicedebugger/index.html",
+      "XE01": "https://tools.storexe01.rno.apple.com/servicedebugger/index.html",
+      "XE02": "https://tools.storexe02.rno.apple.com/servicedebugger/index.html"
+    },
+    "stage": {
+      "NWK-STAGE": "https://new-tools.nwk-storesupp.apple.com/servicedebugger/index.html",
+      "MDN-STAGE": ""
+    },
+    "prod": {
+      "MDN": "https://nc1-store-tools.apple.com/servicedebugger/index.html",
+      "NWK": "https://nwk-store-tools.apple.com/servicedebugger/index.html"
+    },
+    "pod": {
+      "RNO1": "https://rno-store-tools-pod1.apple.com/servicedebugger/index.html",
+      "RNO2": "https://rno-store-tools-pod2.apple.com/servicedebugger/index.html"
+    },
+    "dev": {
+      "DEV01": "https://tools.storedev01.rno.apple.com/servicedebugger/index.html"
+    },
+    "non_prod_ce": {
+      "CE03": "https://tools.storece03.rno.apple.com/servicedebugger/index.html",
+      "CE04": "https://tools.storece04.rno.apple.com/servicedebugger/index.html",
+      "CE05": "https://tools.storece05.rno.apple.com/servicedebugger/index.html",
+      "CE01": "https://tools.storece01.rno.apple.com/servicedebugger/index.html",
+      "CE02": "https://tools.storece02.rno.apple.com/servicedebugger/index.html"
+    }
+  },
+  "vips": {
+    "tools_vip_ce04": "https://tools.storece04.rno.apple.com",
+    "tools_vip_ce05": "https://tools.storece05.rno.apple.com",
+    "tools_vip_dev01": "https://tools.storedev01.rno.apple.com",
+    "tools_vip_xe01": "https://tools.storexe01.rno.apple.com",
+    "tools_vip_xe02": "https://tools.storexe02.rno.apple.com",
+    "tools_vip_xe03": "https://tools.storexe03.rno.apple.com",
+    "tools_vip_xe04": "https://tools.storexe04.rno.apple.com",
+    "tools_vip_xe05": "https://tools.storexe05.rno.apple.com",
+    "tools_vip_rno1": "https://rno-store-tools-pod1.apple.com",
+    "tools_vip_nwk": "https://nwk-store-tools.apple.com",
+    "tools_vip_nwk_stage": "https://new-tools.nwk-storesupp.apple.com",
+    "tools_vip_mdn_stage": "",
+    "tools_vip_mdn": "https://nc1-store-tools.apple.com",
+    "tools_vip_rno2": "https://rno-store-tools-pod2.apple.com",
+    "tools_vip_ce01": "https://tools.storece01.rno.apple.com",
+    "tools_vip_ce02": "https://tools.storece02.rno.apple.com",
+    "tools_vip_ce03": "https://tools.storece03.rno.apple.com"
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "pageMeta": {
+    "pageController": "controllers/cacheDebuggerController.js"
+  },
+  "sections": [
+    {
+      "type": "JSON",
+      "title": "Cache Config",
+      "sourceDataStore": "cacheLP2",
+      "sourceDataField": "cacheLP2.config",
+      "footer": "If this is a service cache the timeout' is ignored. If this is a CCCache, the 'size' is only used when CacheCentral is switched off; the near cache size is configured elsewhere (see Cache Central User's Guide).",
+      "loadAction": {
+        "type": "xhr",
+        "method": "GET",
+        "url": "/src/mockData/schemas/cacheDebugger/pageSchemas/sectionSchemas/linkPage2/sectionLP2CacheConfig.json",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "cacheLP2",
+          "targetDataField": "config"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "page error.",
+          "failureHandler": "myPageFailureHandler"
+        }
+      }
+    },
+    {
+      "type": "TABLE",
+      "title": "Statistics",
+      "sourceDataStore": "cacheLP2",
+      "sourceDataField": "cacheLP2.statistics.tableData",
+      "footer": "This cache (like other ContextAwareCaches) does not record hit/miss statistics. See Cache#setRecordsHits(boolean) for more information.",
+      "loadAction": {
+        "type": "xhr",
+        "method": "GET",
+        "url": "/src/mockData/schemas/cacheDebugger/pageSchemas/sectionSchemas/linkPage2/sectionLP2Stats.json",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "cacheLP2",
+          "targetDataField": "statistics",
+          "successHandler": "statisticsSuccessHandler"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "page error.",
+          "failureHandler": "myPageFailureHandler"
+        }
+      },
+      "columns": [
+        {
+          "accessor": "period",
+          "Header": "Period"
+        },
+        {
+          "accessor": "count",
+          "Header": "Count"
+        },
+        {
+          "accessor": "size",
+          "Header": "Size(Capacity)"
+        },
+        {
+          "accessor": "perSecond",
+          "Header": "Per Second"
+        },
+        {
+          "accessor": "hitRate",
+          "Header": "Hit Rate"
+        },
+        {
+          "accessor": "hits",
+          "Header": "Hits"
+        },
+        {
+          "accessor": "misses",
+          "Header": "Misses"
+        },
+        {
+          "accessor": "expirations",
+          "Header": "Expirations"
+        },
+        {
+          "accessor": "replacements",
+          "Header": "Replacements"
+        },
+        {
+          "accessor": "invalidations",
+          "Header": "Invalidations"
+        },
+        {
+          "accessor": "garbageCollections",
+          "Header": "GCs"
+        }
+      ],
+      "tableSettings": {
+        "showPagination": true,
+        "defaultPageSize": 5
+      }
+    },
+    {
+      "type": "FORM",
+      "title": "Flush statuss",
+      "classNames": "ui-no-submit",
+      "sourceDataStore": "cacheLP2",
+      "sourceDataField": "cacheLP2.flushStatus",
+      "loadAction": {
+        "type": "xhr",
+        "method": "GET",
+        "url": "/src/mockData/schemas/cacheDebugger/pageSchemas/sectionSchemas/linkPage2/sectionLP2FlushStatus.json",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "cacheLP2",
+          "targetDataField": "cacheLP2.flushStatus",
+          "successHandler": "flushStatusSuccessHandler"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "page error.",
+          "failureHandler": "myPageFailureHandler"
+        }
+      },
+      "structure": {
+        "defaultValues": {
+          "state": ""
+        },
+        "schema": {
+          "type": "object",
+          "properties": {
+            "data.effectiveSoftFlushDate.audit.comment": {
+              "title": "Effective (soft flush) date:",
+              "type": "string"
+            },
+            "data.hardFlushDebugInfo.changeDate.audit.comment": {
+              "title": "Hard flush debug info:",
+              "type": "string"
+            },
+            "data.cacheCfmHealth.status": {
+              "title": "Remote control by CFM:",
+              "type": "string"
+            }
+          }
+        },
+        "uiSchema": {
+          "ui:field": "bindFormFieldList"
+        }
+      }
+    },
+    {
+      "type": "TABLE",
+      "title": "Cache Entries",
+      "sourceDataStore": "cacheLP2",
+      "sourceDataField": "cacheLP2.cacheEntry.tableData",
+      "loadAction": {
+        "type": "xhr",
+        "url": "/src/mockData/schemas/cacheDebugger/pageSchemas/sectionSchemas/linkPage2/sectionLP2CacheEntries.json",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "cacheLP2",
+          "targetDataField": "cacheLP2.cacheEntry",
+          "successHandler": "cacheEntrySuccessHandler"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "page error.",
+          "failureHandler": "myPageFailureHandler"
+        }
+      },
+      "columns": [
+        {
+          "accessor": "name",
+          "Header": "Name"
+        },
+        {
+          "accessor": "created",
+          "Header": "Created"
+        },
+        {
+          "accessor": "expiration",
+          "Header": "expiration"
+        },
+        {
+          "accessor": "expired",
+          "Header": "Expired"
+        },
+        {
+          "accessor": "gcd",
+          "Header": "GCd"
+        },
+        {
+          "accessor": "hits",
+          "Header": "Hits"
+        },
+        {
+          "accessor": "invalidationKeys",
+          "Header": "Invalidation Keys"
+        }
+      ],
+      "tableSettings": {
+        "showPagination": true,
+        "defaultPageSize": 5
+      }
+    },
+    {
+      "type": "PRE",
+      "title": "CFMClientSpi implementation",
+      "sourceDataStore": "cacheLP2",
+      "sourceDataField": "cacheLP2.imp",
+      "renderHandler": "cfmClientRender",
+      "loadAction": {
+        "type": "xhr",
+        "method": "GET",
+        "url": "/src/mockData/schemas/cacheDebugger/pageSchemas/sectionSchemas/linkPage2/sectionLP2CFM.json",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "cacheLP2",
+          "targetDataField": "cacheLP2.imp"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "page error.",
+          "failureHandler": "myPageFailureHandler"
+        }
+      }
+    }
+  ]
+}

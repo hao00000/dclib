@@ -1,0 +1,61 @@
+{
+  "result": [
+    {
+      "primaryPort": "8520",
+      "healthStatusSummary": "OK",
+      "adminPort": "13520",
+      "debugPort": "18520",
+      "healthStatus": {
+        "CFMDatabaseSyncCheck": "OK",
+        "LoggedErrorsHigh": "OK",
+        "CfmHealthCheck": "OK",
+        "AdminServerHealthCheck": "OK",
+        "RuntimeOverrideCheck": "OK",
+        "TLSCertificateExpirationCheck": "OK",
+        "DSSClusterCheck_HostLiveness": "OK",
+        "DebugServerHealthCheck": "OK",
+        "RootDiskSpaceCheck": "OK",
+        "LocalConfigurationSmokeCheck": "OK",
+        "HealthCheckManagerHeartbeat": "OK",
+        "PrimaryServerHealthCheck": "OK",
+        "HealthCheckManagerHeartbeatCheck": "OK",
+        "OutOfMemoryCheck": "OK",
+        "LogsDiskSpaceCheck": "OK",
+        "LoggedErrorsLow": "OK",
+        "ConfigurationWatcherHeartbeatCheck2": "OK",
+        "ClientTimeoutCheck": "OK",
+        "VaultHealthCheck": "OK"
+      },
+      "host": "rn-aosd-d01-lapp12.rno.apple.com"
+    },
+    {
+      "primaryPort": "8520",
+      "healthStatusSummary": "OK",
+      "adminPort": "13520",
+      "debugPort": "18520",
+      "healthStatus": {
+        "CFMDatabaseSyncCheck": "OK",
+        "LoggedErrorsHigh": "OK",
+        "CfmHealthCheck": "OK",
+        "AdminServerHealthCheck": "OK",
+        "RuntimeOverrideCheck": "OK",
+        "TLSCertificateExpirationCheck": "OK",
+        "DSSClusterCheck_HostLiveness": "OK",
+        "DebugServerHealthCheck": "OK",
+        "RootDiskSpaceCheck": "OK",
+        "LocalConfigurationSmokeCheck": "OK",
+        "HealthCheckManagerHeartbeat": "OK",
+        "PrimaryServerHealthCheck": "OK",
+        "HealthCheckManagerHeartbeatCheck": "OK",
+        "OutOfMemoryCheck": "OK",
+        "LogsDiskSpaceCheck": "OK",
+        "LoggedErrorsLow": "OK",
+        "ConfigurationWatcherHeartbeatCheck2": "OK",
+        "ClientTimeoutCheck": "OK",
+        "VaultHealthCheck": "OK"
+      },
+      "host": "rn-aosd-d01-lapp13.rno.apple.com"
+    }
+  ],
+  "_expire": "-1"
+}

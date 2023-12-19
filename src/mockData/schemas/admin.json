@@ -1,0 +1,4698 @@
+{
+  "ambiguousConfigWarning": {},
+  "namespace": "urls-debug",
+  "healthStatus": "OK",
+  "_expire": "-1",
+  "matchingResources": [
+    {
+      "locationPriority": "26",
+      "map": {
+        "data": {
+          "data": {
+            "META": {
+              "contextScope": {
+                "app": "/.*/",
+                "user": "/.*/"
+              }
+            },
+            "scriptShell": {}
+          },
+          "meta": {
+            "contextScope": {
+              "app": "/.*/",
+              "user": "/.*/"
+            }
+          },
+          "contextScope": {
+            "app": "/.*/",
+            "user": "/.*/"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.removeGroovyHandler.plist",
+      "encryptedFilename": "e1ee6cf01ebc4bb97d2d0231ab4e344bd9d6f7b1a5c867d774c09a963019a52b854d44d7da770a25e2fbda23dc3fff32465a3b4ad33779f6c270c5e0e3a7f0888f60e500998369ac71db530b198b594da3246f7471bdbff2697610eca69f707d2934ad634dc00a7443e872d6828657d607d3e06be417685149431997b27f6cd318cdfc4255e090780ca8378d9e21f9baa47bf4b1b3d980a26e0075d387913a1b",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/InfrastructureConfiguration/"
+      },
+      "resourcePriority": "2595",
+      "path": "/Local/AS/Configuration/releases/201901311813/InfrastructureConfiguration/urls-debug.removeGroovyHandler.plist"
+    },
+    {
+      "locationPriority": "4",
+      "map": {
+        "data": {
+          "data": {
+            "META": {
+              "contextScope": {
+                "container": "jetty"
+              }
+            },
+            "JettyServers": {
+              "url": "<DEBUG>/application/JettyServers",
+              "group": "Runtime",
+              "showInMenu": "true",
+              "dispatch": {
+                "action": "page",
+                "page": "JettyServerDebugger"
+              },
+              "description": "Show Jetty Server information"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "container": "jetty"
+            }
+          },
+          "contextScope": {
+            "container": "jetty"
+          },
+          "namespace": "urls-debug"
+        }
+      },
+      "filename": "config/urls-debug.jetty.plist",
+      "encryptedFilename": "25bca2128d81498f4305d235c4e8ab3a421f1bb97195bb1d12829c0033a4834e1848c98028d8d988e48d43ce0ac104461e71759d8f7469e6d38e21438b1f6435588d1c2883e1c7d7d9e9f59b43937b23b21d8da5f1ff2b82d9fb34d7c5c54d4350b82710866f3f0c94f3d58e44186295ca9dd7f04f5b923e8a76b17ea2859b54603dc31ddb1ba540e569de42d42b00f0619cbae1cadd44a5d0684c7926eab0243093f649dc88c6d20b590f76590236cb2e6afe25384fe9ac5f92c9c9ef11dc4c6c45c3447a262da3523b86e4d420b233",
+      "location": {
+        "path": "/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/ASWebToolkit-2019.3-SNAPSHOT.jar!config/"
+      },
+      "resourcePriority": "0",
+      "path": "/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/ASWebToolkit-2019.3-SNAPSHOT.jar!config/urls-debug.jetty.plist"
+    },
+    {
+      "locationPriority": "5",
+      "map": {
+        "data": {
+          "data": {
+            "invalidCharacterConfig": {
+              "description": "Provides view of the post-processed config",
+              "example": "/debug/invalidCharacterConfig",
+              "dispatch": {
+                "action": "page",
+                "page": "InvalidCharacterConfigPage"
+              },
+              "url": "<DEBUG>/invalidCharacterConfig"
+            },
+            "META": {
+              "contextScope": {
+                "app": "BlackWordService"
+              }
+            },
+            "checkContent": {
+              "url": "<DEBUG>/checkContent",
+              "example": "/debug/checkContent",
+              "parameters": [
+                {
+                  "form": "handler",
+                  "name": "handler",
+                  "type": "String"
+                },
+                {
+                  "form": "languageCode",
+                  "name": "languageCode",
+                  "type": "String"
+                },
+                {
+                  "optional": "true",
+                  "type": "String",
+                  "name": "countryCode",
+                  "form": "countryCode"
+                },
+                {
+                  "form": "typeName",
+                  "name": "typeName",
+                  "type": "String"
+                },
+                {
+                  "form": "content",
+                  "name": "content",
+                  "type": "String"
+                }
+              ],
+              "dispatch": {
+                "action": "page",
+                "page": "CheckContentPage"
+              },
+              "description": "Lets you test black words interactively"
+            },
+            "blackwordConfig": {
+              "description": "Provides view of the post-processed config",
+              "example": "/debug/blackwordConfig",
+              "dispatch": {
+                "action": "page",
+                "page": "BlackWordConfigPage"
+              },
+              "url": "<DEBUG>/blackwordConfig"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "app": "BlackWordService"
+            }
+          },
+          "contextScope": {
+            "app": "BlackWordService"
+          },
+          "namespace": "urls-debug"
+        }
+      },
+      "filename": "config/urls-debug.plist",
+      "encryptedFilename": "a18f4cbf5d28a5c4ec7e0d02554f8c45aec8e57aeccb8ba64d2811384ce210473587c35d74d01a96f1a6483314733c0c59ddaf4b7e151105cefbbcf04a27d5b77d6db7ee0a5d8554b226d5dc00922762992f3f780d5be29ab9e5cf12cc9f485aac9e53350b02061d598df4c80a3fdad57c6b9ca90e52e9ffdb7b358cdaa5ce56ef087c4e57677404a5047499088762457d191eec4fd8e3297e318becd2bd48877cbe7034daafa8e99f2154a6c099f229a56a49388b2da63e0aaa857f38baf2934f0ab8efc22be35865444b9e04db1761",
+      "location": {
+        "path": "/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/BlackWordService-2019.3debugPage-SNAPSHOT.jar!config/"
+      },
+      "resourcePriority": "0",
+      "path": "/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/BlackWordService-2019.3debugPage-SNAPSHOT.jar!config/urls-debug.plist"
+    },
+    {
+      "locationPriority": "4",
+      "map": {
+        "data": {
+          "data": {
+            "javadoc": {
+              "parameters": [
+                {
+                  "type": "String",
+                  "required": "true",
+                  "name": "class",
+                  "form": "name"
+                }
+              ],
+              "url": "<TOOLS>/javadoc/jump.cgi"
+            },
+            "STATISTICS_VIEW_PARAMETERS": {
+              "parameters": [
+                {
+                  "type": "String",
+                  "value": "default",
+                  "name": "namespace",
+                  "form": "ns"
+                },
+                {
+                  "form": "n",
+                  "name": "namePattern",
+                  "type": "String"
+                },
+                {
+                  "form": "fz",
+                  "name": "fuzzy",
+                  "type": "String"
+                },
+                {
+                  "form": "q",
+                  "name": "qualifier",
+                  "type": "String"
+                },
+                {
+                  "form": "s",
+                  "name": "sortKey",
+                  "type": "String"
+                },
+                {
+                  "type": "String",
+                  "value": "descending",
+                  "name": "sortDirection",
+                  "form": "d"
+                },
+                {
+                  "type": "String",
+                  "value": "60 min",
+                  "name": "period",
+                  "form": "p"
+                }
+              ]
+            },
+            "peerList": {
+              "url": "<DEBUG>/application/peers",
+              "parameters": [
+                {
+                  "form": "subject",
+                  "name": "subject",
+                  "type": "String"
+                },
+                {
+                  "form": "url",
+                  "name": "currentUrl",
+                  "type": "CurrentUrl"
+                }
+              ],
+              "group": "Peer",
+              "dispatch": {
+                "action": "page",
+                "page": "PeerListDebugger"
+              },
+              "description": "show application peers"
+            },
+            "netstat": {
+              "url": "<DEBUG>/netstat",
+              "title": "netstat",
+              "group": "Runtime",
+              "dispatch": {
+                "action": "page",
+                "page": "DebugNetstat"
+              },
+              "description": "netstat on the host"
+            },
+            "INFRARED_VIP": {
+              "parameter": {
+                "type": "Host",
+                "value": "http://${environment.webservers.infrared.virtual}",
+                "required": "true",
+                "name": "host"
+              }
+            },
+            "viewConfiguration": {
+              "description": "view single namespace, e.g. app",
+              "dispatch": {
+                "action": "page",
+                "page": "ShowConfigurationNamespace"
+              },
+              "group": "Configuration",
+              "parameters": [
+                {
+                  "form": "raw",
+                  "name": "raw",
+                  "type": "String"
+                },
+                {
+                  "form": "debug",
+                  "name": "debug",
+                  "type": "String"
+                },
+                {
+                  "form": "context",
+                  "name": "context",
+                  "type": "Map"
+                },
+                {
+                  "form": "ambiguityCheck",
+                  "name": "ambiguityCheck",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/configuration/view/<NAMESPACE>",
+              "example": "/debug/configuration/view/app"
+            },
+            "APP_HOST_ADMIN_PORT": {
+              "parameter": {
+                "type": "OptionalAppHostAndAdminPort",
+                "value": "false",
+                "required": "false",
+                "name": "appHostAndAdminPort"
+              }
+            },
+            "TOOLS": {
+              "parameter": {
+                "description": "Prefix for tools box.",
+                "type": "Host",
+                "value": "http://storedev-tools.corp.apple.com",
+                "name": "host"
+              }
+            },
+            "NAMESPACE": {
+              "parameter": {
+                "name": "namespace",
+                "type": "String",
+                "required": "true"
+              }
+            },
+            "DEBUG": {
+              "fragment": "<APP_HOST_ADMIN_PORT>/debug",
+              "parameters": [
+                {
+                  "form": "revision",
+                  "name": "revision",
+                  "type": "String"
+                },
+                {
+                  "form": "pubversion",
+                  "name": "pubversion",
+                  "type": "String"
+                }
+              ]
+            },
+            "RESOURCE_PATH": {
+              "parameter": {
+                "name": "path",
+                "type": "Path"
+              }
+            },
+            "threadDumpDebugger": {
+              "url": "<DEBUG>/threads",
+              "parameters": [
+                {
+                  "form": "filterBacktrace",
+                  "name": "filterBacktrace",
+                  "type": "String"
+                },
+                {
+                  "form": "filterThreadName",
+                  "name": "filterThreadName",
+                  "type": "String"
+                },
+                {
+                  "form": "showLocks",
+                  "name": "showLocks",
+                  "type": "String"
+                }
+              ],
+              "group": "Runtime",
+              "dispatch": {
+                "action": "page",
+                "page": "ThreadDumpDebugger"
+              },
+              "description": "thread dump"
+            },
+            "caches": {
+              "url": "<DEBUG>/stats/caches",
+              "parameters": [
+                {
+                  "name": "collectorType",
+                  "type": "String",
+                  "value": "Cache"
+                },
+                "<STATISTICS_VIEW_PARAMETERS>"
+              ],
+              "group": "Runtime",
+              "dispatch": {
+                "action": "page",
+                "page": "StatisticsDebugger"
+              },
+              "description": "Cache statistics"
+            },
+            "urldocEntry": {
+              "dispatch": {
+                "action": "page",
+                "page": "URLDoc"
+              },
+              "url": "<DEBUG>/urldoc",
+              "description": "url documentation",
+              "example": "/debug/urldoc",
+              "title": "URL Documentation",
+              "group": "Documentation",
+              "showInMenu": "false"
+            },
+            "MODULE_VERSION": {
+              "parameter": {
+                "name": "version",
+                "type": "String"
+              }
+            },
+            "REPOSITORY_PATH": {
+              "parameter": {
+                "name": "repository",
+                "type": "Path"
+              }
+            },
+            "serviceBrowserRetrieveOrder": {
+              "parameters": [
+                {
+                  "form": "serviceUrl",
+                  "name": "url",
+                  "type": "String"
+                },
+                {
+                  "form": "serviceName",
+                  "name": "serviceNAME",
+                  "type": "String"
+                },
+                {
+                  "form": "serviceDirectoryUrl",
+                  "name": "serviceDirectoryURL",
+                  "type": "String"
+                },
+                {
+                  "form": "methodName",
+                  "name": "methodNAME",
+                  "type": "String"
+                },
+                {
+                  "form": "serviceHandler",
+                  "name": "serviceHANDLER",
+                  "type": "String"
+                }
+              ],
+              "url": "<SERVICEBROWSER>/wa/callService"
+            },
+            "fleetGrid": {
+              "url": "<INFRARED_VIP>/infrared/fleetGrid/<APP_NAME>"
+            },
+            "MODULE_NAME": {
+              "parameter": {
+                "name": "module",
+                "type": "String"
+              }
+            },
+            "applicationInformation": {
+              "description": "show application information",
+              "dispatch": {
+                "action": "page",
+                "page": "ApplicationInformationDebugger"
+              },
+              "url": "<DEBUG>/application/info",
+              "group": "Runtime"
+            },
+            "cacheDebugger": {
+              "description": "cache debugger",
+              "dispatch": {
+                "action": "page",
+                "page": "CacheDebugger"
+              },
+              "group": "Cache",
+              "parameters": [
+                {
+                  "form": "cache",
+                  "name": "cacheName",
+                  "type": "String"
+                },
+                {
+                  "form": "key",
+                  "name": "key",
+                  "type": "String"
+                },
+                {
+                  "form": "script",
+                  "name": "script",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/cache",
+              "example": "/debug/cache"
+            },
+            "CRUCIBLE_HOST": {
+              "parameter": {
+                "type": "Host",
+                "value": "http://${environment.webservers.crucible.virtual}",
+                "required": "true",
+                "name": "host"
+              }
+            },
+            "favicon": {
+              "dispatch": {
+                "action": "staticresources"
+              },
+              "showInMenu": "false",
+              "parameters": [
+                {
+                  "name": "path",
+                  "type": "Path",
+                  "value": "favicon.ico"
+                }
+              ],
+              "url": "<ROOT>/favicon.ico"
+            },
+            "crucible": {
+              "parameters": [
+                {
+                  "form": "showid",
+                  "name": "revision",
+                  "type": "Integer"
+                }
+              ],
+              "url": "<CRUCIBLE_HOST>/fisheye/changelog/StoreSVN/<REPOSITORY_PATH>"
+            },
+            "debugMenu": {
+              "dispatch": {
+                "action": "page",
+                "page": "DebugMenu"
+              },
+              "url": "<DEBUG>",
+              "description": "Main application debugging console",
+              "example": "/debug",
+              "title": "Main Menu",
+              "parameters": [
+                {
+                  "form": "revision",
+                  "name": "revision",
+                  "type": "String"
+                },
+                {
+                  "form": "pubversion",
+                  "name": "pubversion",
+                  "type": "String"
+                }
+              ],
+              "showInMenu": "false"
+            },
+            "ROOT": {
+              "fragment": "<APP_HOST_ADMIN_PORT>"
+            },
+            "peerSubjects": {
+              "url": "<DEBUG>/application/peerSubjects",
+              "parameters": [
+                {
+                  "form": "url",
+                  "name": "currentUrl",
+                  "type": "CurrentUrl"
+                }
+              ],
+              "group": "Peer",
+              "dispatch": {
+                "action": "page",
+                "page": "PeerSubjectsDebugger"
+              },
+              "description": "show similar peers"
+            },
+            "viewLocalConfigFileHashes": {
+              "description": "Show SHA hashes of locally deployed config directories",
+              "dispatch": {
+                "action": "page",
+                "page": "DebugLocalConfigHash"
+              },
+              "group": "Configuration",
+              "parameters": [
+                {
+                  "form": "excludeSvn",
+                  "name": "excludeSvn",
+                  "type": "String"
+                },
+                {
+                  "form": "includeSecret",
+                  "name": "includeSecret",
+                  "type": "String"
+                },
+                {
+                  "form": "uncached",
+                  "name": "uncached",
+                  "type": "String"
+                },
+                {
+                  "form": "verbose",
+                  "name": "verbose",
+                  "type": "String"
+                },
+                {
+                  "form": "plainText",
+                  "name": "plainText",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/viewLocalConfigFileHashes",
+              "example": "/debug/viewLocalConfigFileHashes"
+            },
+            "viewConfigurationContexts2": {
+              "description": "view configuration by context; Completely disabled by default; rdar://28965016"
+            },
+            "viewMBean": {
+              "description": "view single mbean",
+              "dispatch": {
+                "action": "page",
+                "page": "DebugMBean"
+              },
+              "showInMenu": "false",
+              "group": "Runtime",
+              "url": "<DEBUG>/mbeans/<MBEAN_NAME>",
+              "example": "/debug/mbeans/java.lang:type=Runtime"
+            },
+            "lxrFile": {
+              "description": "Hook to opengrok to search by file name.",
+              "parameters": [
+                {
+                  "type": "String",
+                  "required": "true",
+                  "name": "file",
+                  "form": "path"
+                },
+                {
+                  "type": "Constant",
+                  "value": "aos",
+                  "name": "project",
+                  "form": "project"
+                }
+              ],
+              "url": "<TOOLS>/opengrok/search"
+            },
+            "META": {},
+            "viewNamespacesAll": {
+              "url": "<DEBUG>/configuration/all",
+              "parameters": [
+                {
+                  "name": "scope",
+                  "type": "String",
+                  "value": "all"
+                }
+              ],
+              "group": "Configuration",
+              "dispatch": {
+                "action": "page",
+                "page": "ShowConfigurationNamespaces"
+              },
+              "description": "view all namespaces (from viewNamespaces)"
+            },
+            "viewNamespaces": {
+              "description": "Entry point into configuration visualizer.",
+              "dispatch": {
+                "action": "page",
+                "page": "ShowConfigurationNamespaces"
+              },
+              "group": "Configuration",
+              "parameters": [
+                {
+                  "name": "scope",
+                  "type": "String",
+                  "value": "local"
+                }
+              ],
+              "url": "<DEBUG>/configuration",
+              "example": "/debug/configuration"
+            },
+            "timeSeriesStats": {
+              "description": "experimental time series stats",
+              "dispatch": {
+                "action": "page",
+                "page": "DebugTimeSeries"
+              },
+              "group": "Runtime",
+              "parameters": [
+                {
+                  "type": "String",
+                  "value": "fast",
+                  "name": "type",
+                  "form": "type"
+                },
+                {
+                  "type": "String",
+                  "value": "0",
+                  "name": "refresh",
+                  "form": "refresh"
+                }
+              ],
+              "url": "<DEBUG>/stats/series",
+              "example": "/debug/stats/series"
+            },
+            "gauges": {
+              "url": "<DEBUG>/stats/gauges",
+              "parameters": [
+                {
+                  "name": "collectorType",
+                  "type": "String",
+                  "value": "Gauge"
+                },
+                "<STATISTICS_VIEW_PARAMETERS>"
+              ],
+              "group": "Runtime",
+              "dispatch": {
+                "action": "page",
+                "page": "StatisticsDebugger"
+              },
+              "description": "Gauge statistics"
+            },
+            "serviceHandlerDebugger": {
+              "description": "Debug service handlers",
+              "dispatch": {
+                "action": "page",
+                "page": "ServiceHandlerDebugger"
+              },
+              "group": "Handlers",
+              "parameters": [
+                {
+                  "form": "k",
+                  "name": "serviceHandlerKey",
+                  "type": "String"
+                },
+                {
+                  "form": "m",
+                  "name": "serviceHandlerMethod",
+                  "type": "String"
+                },
+                {
+                  "form": "r",
+                  "name": "serviceHandlerRequest",
+                  "type": "String"
+                },
+                {
+                  "form": "a",
+                  "name": "action",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/serviceHandlers",
+              "example": "/debug/serviceHandlers"
+            },
+            "urldoc": {
+              "description": "url documentation for a particular namespace, e.g. urls-debug",
+              "dispatch": {
+                "action": "page",
+                "page": "URLDoc"
+              },
+              "group": "Documentation",
+              "title": "URL Documentation",
+              "url": "<DEBUG>/urldoc/<NAMESPACE>",
+              "example": "/debug/urldoc/urls-debug"
+            },
+            "SVNHOST": {
+              "parameter": {
+                "type": "Host",
+                "value": "http://${environment.webservers.svn.virtual}",
+                "required": "true",
+                "name": "host"
+              }
+            },
+            "TOOLS_VIP": {
+              "parameter": {
+                "type": "Host",
+                "value": "http://${environment.webservers.tools.virtual}",
+                "required": "true",
+                "name": "host"
+              }
+            },
+            "resource": {
+              "dispatch": {
+                "action": "staticresources"
+              },
+              "showInMenu": "false",
+              "url": "<ROOT>/r/<RESOURCE_PATH>"
+            },
+            "timers": {
+              "url": "<DEBUG>/stats/timers",
+              "parameters": [
+                {
+                  "name": "collectorType",
+                  "type": "String",
+                  "value": "Timer"
+                },
+                "<STATISTICS_VIEW_PARAMETERS>"
+              ],
+              "group": "Runtime",
+              "dispatch": {
+                "action": "page",
+                "page": "StatisticsDebugger"
+              },
+              "description": "Timer statistics"
+            },
+            "moduleDependencies": {
+              "url": "<TOOLS_VIP>/ImageDemo/dep/<MODULE_NAME>/<MODULE_VERSION>"
+            },
+            "viewvc": {
+              "parameters": [
+                {
+                  "form": "pathrev",
+                  "name": "revision",
+                  "type": "Integer"
+                }
+              ],
+              "url": "<SVNHOST>/cgi-bin/viewvc.cgi/aos/<REPOSITORY_PATH>"
+            },
+            "logsPage": {
+              "url": "<DEBUG>/logs",
+              "example": "/debug/logs",
+              "parameters": [],
+              "dispatch": {
+                "action": "page",
+                "page": "LogTailerPage"
+              },
+              "description": "Log Tail For This Service"
+            },
+            "urlDebugger": {
+              "dispatch": {
+                "action": "page",
+                "page": "URLDebugger"
+              },
+              "description": "url debugger",
+              "example": "/debug/urls",
+              "title": "URL Debugger",
+              "parameters": [
+                {
+                  "form": "url",
+                  "name": "url",
+                  "type": "String"
+                },
+                {
+                  "form": "patterns",
+                  "name": "patterns",
+                  "type": "String"
+                },
+                {
+                  "form": "namespace",
+                  "name": "namespace",
+                  "type": "String"
+                }
+              ],
+              "group": "URL",
+              "url": "<DEBUG>/urls"
+            },
+            "APP_NAME": {
+              "parameter": {
+                "name": "app",
+                "type": "String"
+              }
+            },
+            "viewConfigurationFile": {
+              "url": "<DEBUG>/viewConfigurationFile",
+              "parameters": [
+                {
+                  "form": "filename",
+                  "name": "filename",
+                  "type": "String"
+                }
+              ],
+              "group": "HIDDEN",
+              "dispatch": {
+                "action": "page",
+                "page": "DebugViewConfigurationFile"
+              },
+              "description": "Show the actual contents of a deployed configuration file, which must be underneath /Local/AS/Configuration/*Configuration and may not be in SecretConfiguration"
+            },
+            "serviceBrowser": {
+              "parameters": [
+                {
+                  "form": "serviceUrl",
+                  "name": "url",
+                  "type": "String"
+                },
+                {
+                  "form": "serviceName",
+                  "name": "name",
+                  "type": "String"
+                },
+                {
+                  "form": "serviceDirectoryUrl",
+                  "name": "serviceDirectoryURL",
+                  "type": "String"
+                }
+              ],
+              "url": "<SERVICEBROWSER>/wa/viewService"
+            },
+            "runHealthCheck": {
+              "description": "show application health",
+              "dispatch": {
+                "page": "HealthDebugger",
+                "class": "com.apple.store.webtoolkit.debug.app.RunHealthCheckAction"
+              },
+              "url": "<DEBUG>/application/health/<HEALTH_CHECK_NAME>",
+              "group": "Health"
+            },
+            "SERVICEBROWSER": {
+              "parameter": {
+                "type": "Host",
+                "value": "${environment.serviceBrowser}",
+                "required": "true",
+                "name": "serviceBrowserUrl"
+              }
+            },
+            "MBEAN_NAME": {
+              "parameter": {
+                "name": "objectName",
+                "type": "ObjectName",
+                "required": "true"
+              }
+            },
+            "healthDebugger": {
+              "url": "<DEBUG>/application/health",
+              "group": "Health",
+              "showInMenu": "false",
+              "dispatch": {
+                "action": "page",
+                "page": "HealthDebugger"
+              },
+              "description": "show application health"
+            },
+            "viewConfigurationContexts": {
+              "description": "view configuration by context (warning); Completely disabled by default; rdar://28965016"
+            },
+            "lxrClass": {
+              "description": "Hook to opengrok to search by class name.",
+              "parameters": [
+                {
+                  "type": "String",
+                  "required": "true",
+                  "name": "class",
+                  "form": "defs"
+                },
+                {
+                  "type": "Constant",
+                  "value": "aos",
+                  "name": "project",
+                  "form": "project"
+                }
+              ],
+              "url": "<TOOLS>/opengrok/search"
+            },
+            "mbeanList": {
+              "description": "list of mbeans",
+              "dispatch": {
+                "action": "page",
+                "page": "DebugMBeanList"
+              },
+              "group": "Runtime",
+              "parameters": [
+                {
+                  "form": "q",
+                  "name": "filter",
+                  "type": "Pattern"
+                }
+              ],
+              "title": "MBean List",
+              "url": "<DEBUG>/mbeans/list"
+            },
+            "HEALTH_CHECK_NAME": {
+              "parameter": {
+                "name": "healthCheckName",
+                "type": "String"
+              }
+            }
+          },
+          "meta": {},
+          "contextScope": {},
+          "namespace": "urls-debug"
+        }
+      },
+      "filename": "config/urls-debug.plist",
+      "encryptedFilename": "7fc7b32e32cad2ba0f3428cec92266e8231a628e7d65693381870fb04f2bb5e5c1397ca2258017b2437294f1664f88a57c747a07617caeb7140416cfbf8a0aa0c78d5899f45bcc52f01d02ce4769f73129b9027ee41dcd442880b6615cd7832526b472c2f87ceaf3454f543ba260d7c7469f3110fddb01cca3790026c0f3d780b5abb291c88f81eb33a3cf4d838171c70c8fc0d0094f8f234a98165add1b7adb1f49b25c89e8ae32ddc0d5805732d9e30a532c16df6ab1c535ebcaa3e66cf128",
+      "location": {
+        "path": "/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/ASWebToolkit-2019.3-SNAPSHOT.jar!config/"
+      },
+      "resourcePriority": "0",
+      "path": "/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/ASWebToolkit-2019.3-SNAPSHOT.jar!config/urls-debug.plist"
+    }
+  ],
+  "searchPath": [
+    "[DELEGATING:EnvironmentDirectory]:null",
+    "[RuntimeOverrideLocation]:RUNTIME",
+    "[CommandLineLocation]:-args",
+    "[DELEGATING:JarDirectory]:/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/ASWebToolkit-2019.3-SNAPSHOT.jar!config/",
+    "[DELEGATING:JarDirectory]:/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/BlackWordService-2019.3debugPage-SNAPSHOT.jar!config/",
+    "[DELEGATING:JarDirectory]:/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/RevisionServiceClient-19.2.0.jar!config/",
+    "[DELEGATING:JarDirectory]:/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/as-collections-2019.3-SNAPSHOT.jar!config/",
+    "[DELEGATING:JarDirectory]:/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/as-query-2019.3-SNAPSHOT.jar!config/",
+    "[DELEGATING:JarDirectory]:/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/as-service-2019.3-SNAPSHOT.jar!config/",
+    "[DELEGATING:JarDirectory]:/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/as-toolkit-2019.3-SNAPSHOT.jar!config/",
+    "[DELEGATING:JarDirectory]:/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/content-tenant-toolkit-19.2.0.jar!config/",
+    "[DELEGATING:JarDirectory]:/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/hubble-2019.3-SNAPSHOT.jar!config/",
+    "[DELEGATING:JarDirectory]:/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/ssp-alert-escalation-service-client-2019.3-SNAPSHOT.jar!config/",
+    "[DELEGATING:JarDirectory]:/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/ssp-client-2019.3-SNAPSHOT.jar!config/",
+    "[DELEGATING:JarDirectory]:/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/store-front-service-client-19.2.1.jar!config/",
+    "[DELEGATING:EnvironmentDirectory]:/Local/AS/Sentinel/bootstrap/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/bootstrap/",
+    "[DELEGATING:Directory]:/path/to/nowhere/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/MonitoringConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/MobileConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/CommunityConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/CommonConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/AnalyticsConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/ContentConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/OrderingConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/InfrastructureConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/OfferConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/CartConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/ChatConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/ShippingConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/OmnitureConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/CheckoutConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/OrderProcessorConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/AddressFormatConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/OrderStatusConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/PaymentConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/CustomerCommsConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/SecretConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/ProductCentralConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/ExperienceManagerConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/IReserveConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/PlatformConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/DigitalAssetConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/EnvironmentConfiguration/",
+    "[DELEGATING:Directory]:/Local/AS/Configuration/releases/201901311813/MarketingConfiguration/"
+  ],
+  "context": {
+    "user": "worun",
+    "layer": "all.dev.integration.dev01",
+    "tlsSupportVersion": "1.3",
+    "channel": "common",
+    "podType": "none",
+    "port": "8542",
+    "region": "ww",
+    "revmode": "stage",
+    "segment": "all",
+    "language": "any",
+    "partition": "ww",
+    "dc": "rnodc1",
+    "app": "BlackWordService",
+    "container": "jetty",
+    "toolkitCompatibilityVersion": "2019.3",
+    "masterApp": "BlackWordService",
+    "webFramework": "ASWebToolkit",
+    "format": "common",
+    "disableRemoteConfiguration": "true",
+    "host": "rn-aosd-d01-lapp13.rno.apple.com"
+  },
+  "resources": [
+    {
+      "locationPriority": "26",
+      "map": {
+        "data": {
+          "data": {
+            "META": {
+              "contextScope": {
+                "layer": "all.prod.live.txn",
+                "host": "/rn2-rosp-.*/",
+                "app": "/(Oscar|GiftStatusService|OrderInductionService|PaymentEligibilityService|SAPCartPricingService)/",
+                "dc": "rno"
+              }
+            },
+            "scriptShell-": ""
+          },
+          "meta": {
+            "contextScope": {
+              "layer": "all.prod.live.txn",
+              "host": "/rn2-rosp-.*/",
+              "app": "/(Oscar|GiftStatusService|OrderInductionService|PaymentEligibilityService|SAPCartPricingService)/",
+              "dc": "rno"
+            }
+          },
+          "contextScope": {
+            "layer": "all.prod.live.txn",
+            "host": "/rn2-rosp-.*/",
+            "app": "/(Oscar|GiftStatusService|OrderInductionService|PaymentEligibilityService|SAPCartPricingService)/",
+            "dc": "rno"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.rno.pod.plist",
+      "encryptedFilename": "8468f042d3db1bb908cdc8a6a11e23d4eb6158f02a7e177504438d337125f0128b2b5f36bf3ebc478f277d765cd5eb5db10a4b2f65e00926987514eec23e475ed49bb59f06831d3f46475b50a92e52047b1f56a84fc03c2c3ae9ac5682d1aba6ae87ab56f19f8fe4e5bbf07269bfe05e10c3a12a5fc0c89a97797a4b2044c8657339faeefe47bf40c78ebbd3dd94ca98ad17aa720569a0a62006ee81afc44ee1",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/InfrastructureConfiguration/"
+      },
+      "resourcePriority": "2596",
+      "path": "/Local/AS/Configuration/releases/201901311813/InfrastructureConfiguration/urls-debug.rno.pod.plist"
+    },
+    {
+      "locationPriority": "26",
+      "map": {
+        "data": {
+          "data": {
+            "META": {
+              "contextScope": {
+                "app": "/.*/",
+                "user": "/.*/"
+              }
+            },
+            "scriptShell": {}
+          },
+          "meta": {
+            "contextScope": {
+              "app": "/.*/",
+              "user": "/.*/"
+            }
+          },
+          "contextScope": {
+            "app": "/.*/",
+            "user": "/.*/"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.removeGroovyHandler.plist",
+      "encryptedFilename": "1fc93619db8d0402d2ee5587d873e7cb7417eb5b16df7a5907050056b247a3ec715cf4415af61f34aacfb3cdc2633f095bd0462f2223b34fe6b3d29fb2eb5be79ba9151ff167c84a33e33cf1b858166e84a151d574f1be02d4c07f6f53f8dc64b2ec7a79a88929e4ac2d8b3e186ff4bc660df6211344ff2a4b532532947472f34540d5fcc47a399e63446483fceaa606f66ddcc45cc735f2516701781aeb0fb9",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/InfrastructureConfiguration/"
+      },
+      "resourcePriority": "2595",
+      "path": "/Local/AS/Configuration/releases/201901311813/InfrastructureConfiguration/urls-debug.removeGroovyHandler.plist"
+    },
+    {
+      "locationPriority": "4",
+      "map": {
+        "data": {
+          "data": {
+            "META": {
+              "contextScope": {
+                "container": "jetty"
+              }
+            },
+            "JettyServers": {
+              "url": "<DEBUG>/application/JettyServers",
+              "group": "Runtime",
+              "showInMenu": "true",
+              "dispatch": {
+                "action": "page",
+                "page": "JettyServerDebugger"
+              },
+              "description": "Show Jetty Server information"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "container": "jetty"
+            }
+          },
+          "contextScope": {
+            "container": "jetty"
+          },
+          "namespace": "urls-debug"
+        }
+      },
+      "filename": "config/urls-debug.jetty.plist",
+      "encryptedFilename": "a012fc69fcbcddceba11bdde6255a9bf57b6eea4dfba15e68975431d311c6e61237efe6f9e83c9b05dff837b069a08afa60e366093cdc3e0d62038f822c6ea84c75b21297f2e23225ae3a8b102b46e207bb2fef51965d0f76a57cc926324a4a6ca648bab830547b7b859727241df4c4b14fbe052b1be632cacdf5c5d73c66d347f4bab2f645ef3bf38f58a693588cd5646419e0451017d9c2838eba98e1c29773b0d2042929840d3c68bf444aad8fd835a15085163d8b75dccf7a453bb09edfd3e0e0ddd31ab0458d5be08d9a3df9fbc",
+      "location": {
+        "path": "/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/ASWebToolkit-2019.3-SNAPSHOT.jar!config/"
+      },
+      "resourcePriority": "0",
+      "path": "/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/ASWebToolkit-2019.3-SNAPSHOT.jar!config/urls-debug.jetty.plist"
+    },
+    {
+      "locationPriority": "4",
+      "map": {
+        "data": {
+          "data": {
+            "WOAdaptors": {
+              "url": "<DEBUG>/application/WOAdaptors",
+              "group": "Runtime",
+              "showInMenu": "true",
+              "dispatch": {
+                "action": "page",
+                "page": "WOAdaptorDebugger"
+              },
+              "description": "Show WOAdaptor information"
+            },
+            "META": {
+              "contextScope": {
+                "container": "webobjects"
+              }
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "container": "webobjects"
+            }
+          },
+          "contextScope": {
+            "container": "webobjects"
+          },
+          "namespace": "urls-debug"
+        }
+      },
+      "filename": "config/urls-debug.webobjects.plist",
+      "encryptedFilename": "475cbbc411c32bc439a3be72bdc7b98592105fe18bb1b9bcc192ca39017bd71262f952e56a4d6f9a0942e9876006de6924d94f7776ad8fcf3e6fb8fb703a0150b557df7ed3c09738bf04cc11995b2813b5beddf3bb9750fb91b8cfbbec761f67c7fb8c152cb8d6eb8c53d488fc43016c108fbe81b2a35b084ba2036c364e744f88ccc281f7c3f9d54296b3e1f6efff5b2f65247d1e543abc7504ff28a152976899c0647b298a9bf6c8e4fa9f23d2b2cd3af82b8eb57588619ff66078f02a448f322c0ec17649defa276a3ddc6f14dda8",
+      "location": {
+        "path": "/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/ASWebToolkit-2019.3-SNAPSHOT.jar!config/"
+      },
+      "resourcePriority": "0",
+      "path": "/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/ASWebToolkit-2019.3-SNAPSHOT.jar!config/urls-debug.webobjects.plist"
+    },
+    {
+      "locationPriority": "24",
+      "map": {
+        "data": {
+          "data": {
+            "META": {
+              "contextScope": {
+                "app": "RevisionService",
+                "partition": "adm-stage",
+                "revmode": "stage"
+              }
+            },
+            "rdsDetail": {
+              "url": "<DEBUG>/rdsDetail",
+              "example": "/debug/rdsDetail",
+              "parameters": [
+                {
+                  "form": "rk",
+                  "name": "revisionKey",
+                  "type": "String"
+                },
+                {
+                  "type": "Integer",
+                  "value": "15",
+                  "name": "refreshRate",
+                  "form": "refreshRate"
+                }
+              ],
+              "dispatch": {
+                "action": "page",
+                "page": "DataServicePage"
+              },
+              "description": "��ber page for RDS debugging"
+            },
+            "rpsDetail": {
+              "url": "<DEBUG>/rpsDetail",
+              "example": "/debug/rpsDetail",
+              "parameters": [
+                {
+                  "form": "revision",
+                  "name": "revision",
+                  "type": "Revision"
+                },
+                {
+                  "type": "Integer",
+                  "value": "15",
+                  "name": "refreshRate",
+                  "form": "refreshRate"
+                },
+                {
+                  "form": "regions",
+                  "name": "regions",
+                  "type": "PushRegion"
+                }
+              ],
+              "dispatch": {
+                "action": "page",
+                "page": "PushServicePage"
+              },
+              "description": "��ber page for RPS debugging"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "app": "RevisionService",
+              "partition": "adm-stage",
+              "revmode": "stage"
+            }
+          },
+          "contextScope": {
+            "app": "RevisionService",
+            "partition": "adm-stage",
+            "revmode": "stage"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.stage.admin.plist",
+      "encryptedFilename": "13122dfe9ad21271b2159adb14c0db84882f0ac7a9de225c33c5b070836c717836fabf64d11f5e56db3b6241e3f42bfb842bee31fd8252fe4c25929ca354d717132c08ad601343f88ebdaac7817109e3d3dfb7c9ca9b7b2d4b09bd8e8c087dc8700f4d0b9a07385193ee1e229d08d97f7b304b3f98122b7d4a7bc76b73004b7a7928f4e9043de932e6bfa0377a6022ed",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/"
+      },
+      "resourcePriority": "2386",
+      "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/urls-debug.stage.admin.plist"
+    },
+    {
+      "locationPriority": "24",
+      "map": {
+        "data": {
+          "data": {
+            "visualDebug": {
+              "description": "Visualize Assets",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.visualization.debug.AssetVisualizationDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/visualDebug",
+              "example": "/debug/visualDebug"
+            },
+            "refreshAheadCacheDebug": {
+              "description": "Refresh Ahead Cache Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "RefreshAheadCacheDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "selectedCacheName",
+                  "name": "selectedCacheName",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/refreshAheadCacheDebug",
+              "example": "/debug/refreshAheadCacheDebug"
+            },
+            "stubImagePushStartDateDebug": {
+              "description": "Stub Image Push Start Date Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "StubImagePushStartDateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "lastImagePushStartDate",
+                  "name": "lastImagePushStartDate",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/stubImagePushStartDateDebug",
+              "example": "/debug/stubImagePushStartDateDebug"
+            },
+            "detectorDebugPage": {
+              "description": "Visualization Detector Debug Page",
+              "dispatch": {
+                "action": "page",
+                "page": "DetectorDebugPage"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "imageId",
+                  "name": "imageId",
+                  "type": "String"
+                },
+                {
+                  "form": "versionCode",
+                  "name": "versionCode",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/detectorDebugPage",
+              "example": "/debug/detectorDebugPage"
+            },
+            "META": {
+              "contextScope": {
+                "app": "AssetService",
+                "layer": "all.dev.integration.pubsysqa.stage"
+              }
+            },
+            "assetStateDebug": {
+              "description": "Determine Asset State",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.debug.AssetStateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                },
+                {
+                  "form": "revisionId",
+                  "name": "revisionId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/assetStateDebug",
+              "example": "/debug/assetStateDebug"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "app": "AssetService",
+              "layer": "all.dev.integration.pubsysqa.stage"
+            }
+          },
+          "contextScope": {
+            "app": "AssetService",
+            "layer": "all.dev.integration.pubsysqa.stage"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.AssetService.pubsysqa.stage.plist",
+      "encryptedFilename": "456c3a75568b7281a3f55a34372a8c4898a46781e0be27d76805f6903c4bb1e5dd04c964e96853e9db09f4c91ba98ec8c96928cc1ef5b6c9a2a2dcc1b5dc98b92927fc71ed31514c6498a237e698a9d98f793a44eabfe09c248fb26c21e20fc3263a38153e56c0bcc64880318a8042adbe2ca789157358891e2ae43f5d31a21b93276fcbc5b796de12d34f3dba6ff3686ce13334dafd4e217eaa5b6c3854e7b1",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/"
+      },
+      "resourcePriority": "2383",
+      "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/urls-debug.AssetService.pubsysqa.stage.plist"
+    },
+    {
+      "locationPriority": "24",
+      "map": {
+        "data": {
+          "data": {
+            "visualDebug": {
+              "description": "Visualize Assets",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.visualization.debug.AssetVisualizationDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/visualDebug",
+              "example": "/debug/visualDebug"
+            },
+            "refreshAheadCacheDebug": {
+              "description": "Refresh Ahead Cache Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "RefreshAheadCacheDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "selectedCacheName",
+                  "name": "selectedCacheName",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/refreshAheadCacheDebug",
+              "example": "/debug/refreshAheadCacheDebug"
+            },
+            "stubImagePushStartDateDebug": {
+              "description": "Stub Image Push Start Date Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "StubImagePushStartDateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "lastImagePushStartDate",
+                  "name": "lastImagePushStartDate",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/stubImagePushStartDateDebug",
+              "example": "/debug/stubImagePushStartDateDebug"
+            },
+            "detectorDebugPage": {
+              "description": "Visualization Detector Debug Page",
+              "dispatch": {
+                "action": "page",
+                "page": "DetectorDebugPage"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "imageId",
+                  "name": "imageId",
+                  "type": "String"
+                },
+                {
+                  "form": "versionCode",
+                  "name": "versionCode",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/detectorDebugPage",
+              "example": "/debug/detectorDebugPage"
+            },
+            "META": {
+              "contextScope": {
+                "app": "AssetService",
+                "layer": "all.dev.integration.pubsysprodsupport.stage"
+              }
+            },
+            "assetStateDebug": {
+              "description": "Determine Asset State",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.debug.AssetStateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                },
+                {
+                  "form": "revisionId",
+                  "name": "revisionId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/assetStateDebug",
+              "example": "/debug/assetStateDebug"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "app": "AssetService",
+              "layer": "all.dev.integration.pubsysprodsupport.stage"
+            }
+          },
+          "contextScope": {
+            "app": "AssetService",
+            "layer": "all.dev.integration.pubsysprodsupport.stage"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.AssetService.pubsysprodsupport.stage.plist",
+      "encryptedFilename": "a06daabbf4d3c34f7c52bf4c5a9f5e34bbbd69a4512892b9a3e2e9c482a4c03669812a7018a49bd6a4096679383b0c06f98fa6c944a15060bb7898d07d412680ab23fba5de42375ea2bdea014876ac9de5aedef1d62791a6de40957cfa05d8642c83664f4f9c54475183ee23e1555ae164c0a83c52a7a7b16558604c1c99d6bb8e8454902b57069550a924cc64344dc77c28d42f4d0c706a6d15213756bbc73401c54fba46599218d85aa30cc698df73",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/"
+      },
+      "resourcePriority": "2382",
+      "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/urls-debug.AssetService.pubsysprodsupport.stage.plist"
+    },
+    {
+      "locationPriority": "24",
+      "map": {
+        "data": {
+          "data": {
+            "visualDebug": {
+              "description": "Visualize Assets",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.visualization.debug.AssetVisualizationDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/visualDebug",
+              "example": "/debug/visualDebug"
+            },
+            "refreshAheadCacheDebug": {
+              "description": "Refresh Ahead Cache Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "RefreshAheadCacheDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "selectedCacheName",
+                  "name": "selectedCacheName",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/refreshAheadCacheDebug",
+              "example": "/debug/refreshAheadCacheDebug"
+            },
+            "stubImagePushStartDateDebug": {
+              "description": "Stub Image Push Start Date Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "StubImagePushStartDateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "lastImagePushStartDate",
+                  "name": "lastImagePushStartDate",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/stubImagePushStartDateDebug",
+              "example": "/debug/stubImagePushStartDateDebug"
+            },
+            "detectorDebugPage": {
+              "description": "Visualization Detector Debug Page",
+              "dispatch": {
+                "action": "page",
+                "page": "DetectorDebugPage"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "imageId",
+                  "name": "imageId",
+                  "type": "String"
+                },
+                {
+                  "form": "versionCode",
+                  "name": "versionCode",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/detectorDebugPage",
+              "example": "/debug/detectorDebugPage"
+            },
+            "META": {
+              "contextScope": {
+                "app": "AssetService",
+                "layer": "all.dev.integration.pubsysdev.stage"
+              }
+            },
+            "assetStateDebug": {
+              "description": "Determine Asset State",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.debug.AssetStateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                },
+                {
+                  "form": "revisionId",
+                  "name": "revisionId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/assetStateDebug",
+              "example": "/debug/assetStateDebug"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "app": "AssetService",
+              "layer": "all.dev.integration.pubsysdev.stage"
+            }
+          },
+          "contextScope": {
+            "app": "AssetService",
+            "layer": "all.dev.integration.pubsysdev.stage"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.AssetService.pubsysdev.stage.plist",
+      "encryptedFilename": "ffb8e0b698385ffa56b510510a64126e89328048ab5b636c3b9aa97714ce5dc735aef820e9411f8365cd98eca1583aa217373adaed7ecc81bce344cf46e1e8b2b23f340ee2f300bc940b0700f8b6a0f3210052fdae76d0c06c17e586197a308703e10d9716e81baabf5a3867997ef8826741d4997c4fb2457b094c0f694df745cbd68668bfb24e2da73bc752ff32ee79ff535081c184ae37b229a98a5afa3ddb5c055d75ac3038b1d5c3be3f4090c105",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/"
+      },
+      "resourcePriority": "2381",
+      "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/urls-debug.AssetService.pubsysdev.stage.plist"
+    },
+    {
+      "locationPriority": "24",
+      "map": {
+        "data": {
+          "data": {
+            "visualDebug": {
+              "description": "Visualize Assets",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.visualization.debug.AssetVisualizationDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/visualDebug",
+              "example": "/debug/visualDebug"
+            },
+            "refreshAheadCacheDebug": {
+              "description": "Refresh Ahead Cache Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "RefreshAheadCacheDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "selectedCacheName",
+                  "name": "selectedCacheName",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/refreshAheadCacheDebug",
+              "example": "/debug/refreshAheadCacheDebug"
+            },
+            "stubImagePushStartDateDebug": {
+              "description": "Stub Image Push Start Date Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "StubImagePushStartDateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "lastImagePushStartDate",
+                  "name": "lastImagePushStartDate",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/stubImagePushStartDateDebug",
+              "example": "/debug/stubImagePushStartDateDebug"
+            },
+            "detectorDebugPage": {
+              "description": "Visualization Detector Debug Page",
+              "dispatch": {
+                "action": "page",
+                "page": "DetectorDebugPage"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "imageId",
+                  "name": "imageId",
+                  "type": "String"
+                },
+                {
+                  "form": "versionCode",
+                  "name": "versionCode",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/detectorDebugPage",
+              "example": "/debug/detectorDebugPage"
+            },
+            "META": {
+              "contextScope": {
+                "app": "AssetService",
+                "layer": "all.test.qa1.stage"
+              }
+            },
+            "assetStateDebug": {
+              "description": "Determine Asset State",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.debug.AssetStateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                },
+                {
+                  "form": "revisionId",
+                  "name": "revisionId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/assetStateDebug",
+              "example": "/debug/assetStateDebug"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "app": "AssetService",
+              "layer": "all.test.qa1.stage"
+            }
+          },
+          "contextScope": {
+            "app": "AssetService",
+            "layer": "all.test.qa1.stage"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.AssetService.qa1.stage.plist",
+      "encryptedFilename": "9589fbb7bfd9d258509e6053033c54052a037d6024bc9007255677bca636f96bfac238ff82be60d2620a0d053a5f4519722447e3eb50fc419619f6a7251028380982ff0cda39e444de95a8fabb7d4dfd838453c4e5eece35e4db06365bb2a09edfb15bac75a1dc50c950b717af7c91d80adb0dcb03cc2ae9b84bb158d98f90da0952510749e78b336a21ecf1ee91a7041c2dca6dfe2132fb91d0275112c40bd7",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/"
+      },
+      "resourcePriority": "2384",
+      "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/urls-debug.AssetService.qa1.stage.plist"
+    },
+    {
+      "locationPriority": "24",
+      "map": {
+        "data": {
+          "data": {
+            "visualDebug": {
+              "description": "Visualize Assets",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.visualization.debug.AssetVisualizationDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/visualDebug",
+              "example": "/debug/visualDebug"
+            },
+            "refreshAheadCacheDebug": {
+              "description": "Refresh Ahead Cache Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "RefreshAheadCacheDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "selectedCacheName",
+                  "name": "selectedCacheName",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/refreshAheadCacheDebug",
+              "example": "/debug/refreshAheadCacheDebug"
+            },
+            "stubImagePushStartDateDebug": {
+              "description": "Stub Image Push Start Date Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "StubImagePushStartDateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "lastImagePushStartDate",
+                  "name": "lastImagePushStartDate",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/stubImagePushStartDateDebug",
+              "example": "/debug/stubImagePushStartDateDebug"
+            },
+            "detectorDebugPage": {
+              "description": "Visualization Detector Debug Page",
+              "dispatch": {
+                "action": "page",
+                "page": "DetectorDebugPage"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "imageId",
+                  "name": "imageId",
+                  "type": "String"
+                },
+                {
+                  "form": "versionCode",
+                  "name": "versionCode",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/detectorDebugPage",
+              "example": "/debug/detectorDebugPage"
+            },
+            "META": {
+              "contextScope": {
+                "app": "AssetService",
+                "layer": "all.test.pod.stage"
+              }
+            },
+            "assetStateDebug": {
+              "description": "Determine Asset State",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.debug.AssetStateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                },
+                {
+                  "form": "revisionId",
+                  "name": "revisionId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/assetStateDebug",
+              "example": "/debug/assetStateDebug"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "app": "AssetService",
+              "layer": "all.test.pod.stage"
+            }
+          },
+          "contextScope": {
+            "app": "AssetService",
+            "layer": "all.test.pod.stage"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.AssetService.pod.it.stage.plist",
+      "encryptedFilename": "00ad9cb614b88b9907e08578f3a6bba744639cf29b23b3e7fe955b54e05376d30ae203a2e340d070c058934032b1f699ff78fc3fe9ddfd910c1776ecef41f9abdb90f72f7154fefdf19a840cb17dfdcbc93ea5ec5cf28bc9252e548b343b3ce8d12f25857ca12954703633dc72cc9cef3404b04be1a379b9b03bc957929e3512311aae52f7c09051340c96ad660e5470b5ecf072de154f5d227841e5cb1d6fdc",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/"
+      },
+      "resourcePriority": "2379",
+      "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/urls-debug.AssetService.pod.it.stage.plist"
+    },
+    {
+      "locationPriority": "24",
+      "map": {
+        "data": {
+          "data": {
+            "META": {
+              "contextScope": {
+                "app": "AssetService",
+                "layer": "all.dev.integration.dev01"
+              }
+            },
+            "refreshAheadCacheDebug": {
+              "description": "Refresh Ahead Cache Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "RefreshAheadCacheDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "selectedCacheName",
+                  "name": "selectedCacheName",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/refreshAheadCacheDebug",
+              "example": "/debug/refreshAheadCacheDebug"
+            },
+            "detectorDebugPage": {
+              "description": "Visualization Detector Debug Page",
+              "dispatch": {
+                "action": "page",
+                "page": "DetectorDebugPage"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "imageId",
+                  "name": "imageId",
+                  "type": "String"
+                },
+                {
+                  "form": "versionCode",
+                  "name": "versionCode",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/detectorDebugPage",
+              "example": "/debug/detectorDebugPage"
+            },
+            "assetStateDebug": {
+              "description": "Determine Asset State",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.debug.AssetStateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                },
+                {
+                  "form": "revisionId",
+                  "name": "revisionId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/assetStateDebug",
+              "example": "/debug/assetStateDebug"
+            },
+            "imageSetValidator": {
+              "description": "Validate Image Sets",
+              "dispatch": {
+                "action": "page",
+                "page": "ImageSetValidator"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "baseImage",
+                  "name": "baseImage",
+                  "type": "String"
+                },
+                {
+                  "form": "override",
+                  "name": "override",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/imageSetValidator",
+              "example": "/debug/imageSetValidator"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "app": "AssetService",
+              "layer": "all.dev.integration.dev01"
+            }
+          },
+          "contextScope": {
+            "app": "AssetService",
+            "layer": "all.dev.integration.dev01"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.AssetService.dev01.stage.plist",
+      "encryptedFilename": "91dfc97fb47bf49ca212e694a236f204bbff26e8176f79dc64402d2c081c44d7c831ef47b14995c48ea0c337622c8b95e71e49698e5b392710fe7581012df4874cfe6b8825d7168512dc476199ae8db0255ed953f0b1533befe20555ffb298aa1a805ad226b88f6f4fcc651f04e4d7fb781ff3a2b95ab575652a30870b7eb11d06ec3407430aeca0515b75b87214f3fd9cfa0310a692593b5809cc99551efbe5",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/"
+      },
+      "resourcePriority": "2378",
+      "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/urls-debug.AssetService.dev01.stage.plist"
+    },
+    {
+      "locationPriority": "24",
+      "map": {
+        "data": {
+          "data": {
+            "assetStateDebug": {
+              "description": "Determine Asset State",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.debug.AssetStateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                },
+                {
+                  "form": "revisionId",
+                  "name": "revisionId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/assetStateDebug",
+              "example": "/debug/assetStateDebug"
+            },
+            "visualDebug": {
+              "description": "Visualize Assets",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.visualization.debug.AssetVisualizationDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/visualDebug",
+              "example": "/debug/visualDebug"
+            },
+            "imageSetValidator": {
+              "description": "Validate Image Sets",
+              "dispatch": {
+                "action": "page",
+                "page": "ImageSetValidator"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "baseImage",
+                  "name": "baseImage",
+                  "type": "String"
+                },
+                {
+                  "form": "override",
+                  "name": "override",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/imageSetValidator",
+              "example": "/debug/imageSetValidator"
+            },
+            "META": {
+              "contextScope": {
+                "app": "AssetService",
+                "layer": "all.dev.integration.stage"
+              }
+            },
+            "refreshAheadCacheDebug": {
+              "description": "Refresh Ahead Cache Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "RefreshAheadCacheDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "selectedCacheName",
+                  "name": "selectedCacheName",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/refreshAheadCacheDebug",
+              "example": "/debug/refreshAheadCacheDebug"
+            },
+            "detectorDebugPage": {
+              "description": "Visualization Detector Debug Page",
+              "dispatch": {
+                "action": "page",
+                "page": "DetectorDebugPage"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "imageId",
+                  "name": "imageId",
+                  "type": "String"
+                },
+                {
+                  "form": "versionCode",
+                  "name": "versionCode",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/detectorDebugPage",
+              "example": "/debug/detectorDebugPage"
+            },
+            "stubImagePushStartDateDebug": {
+              "description": "Stub Image Push Start Date Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "StubImagePushStartDateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "lastImagePushStartDate",
+                  "name": "lastImagePushStartDate",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/stubImagePushStartDateDebug",
+              "example": "/debug/stubImagePushStartDateDebug"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "app": "AssetService",
+              "layer": "all.dev.integration.stage"
+            }
+          },
+          "contextScope": {
+            "app": "AssetService",
+            "layer": "all.dev.integration.stage"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.AssetService.dev.stage.plist",
+      "encryptedFilename": "acf3fa36d855e72a74a4fa9d5ddbbbf00424821184da456cdff47dd17611d6087144d7253e4dd2d1c1ad00a5acb85fec6b866f32fe5b3dbd4c9322f5db5d3c0e0e1245cac95b25a6d4dee7926b4eb9ec171a54978ea658f48c1ea960e13a2d4742f3d647e0a7a2741ade9f03ee2059bae47b3a2d4df01e0e4a1b059d7ab2b40b3ed1d1069878a054bb9b16e2bf990d60714f386ca5eec437e545a20f60c9e927",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/"
+      },
+      "resourcePriority": "2377",
+      "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/urls-debug.AssetService.dev.stage.plist"
+    },
+    {
+      "locationPriority": "24",
+      "map": {
+        "data": {
+          "data": {
+            "META": {
+              "contextScope": {
+                "app": "AssetService",
+                "layer": "all.prod.stage"
+              }
+            },
+            "refreshAheadCacheDebug": {
+              "description": "Refresh Ahead Cache Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "RefreshAheadCacheDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "selectedCacheName",
+                  "name": "selectedCacheName",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/refreshAheadCacheDebug",
+              "example": "/debug/refreshAheadCacheDebug"
+            },
+            "detectorDebugPage": {
+              "description": "Visualization Detector Debug Page",
+              "dispatch": {
+                "action": "page",
+                "page": "DetectorDebugPage"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "imageId",
+                  "name": "imageId",
+                  "type": "String"
+                },
+                {
+                  "form": "versionCode",
+                  "name": "versionCode",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/detectorDebugPage",
+              "example": "/debug/detectorDebugPage"
+            },
+            "assetStateDebug": {
+              "description": "Determine Asset State",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.debug.AssetStateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                },
+                {
+                  "form": "revisionId",
+                  "name": "revisionId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/assetStateDebug",
+              "example": "/debug/assetStateDebug"
+            },
+            "imageSetValidator": {
+              "description": "Validate Image Sets",
+              "dispatch": {
+                "action": "page",
+                "page": "ImageSetValidator"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "baseImage",
+                  "name": "baseImage",
+                  "type": "String"
+                },
+                {
+                  "form": "override",
+                  "name": "override",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/imageSetValidator",
+              "example": "/debug/imageSetValidator"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "app": "AssetService",
+              "layer": "all.prod.stage"
+            }
+          },
+          "contextScope": {
+            "app": "AssetService",
+            "layer": "all.prod.stage"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.AssetService.prod.stage.plist",
+      "encryptedFilename": "eefcbd6d1788563dda91cc6d23461ec8faaeb592c69e902964b4b71466ed9094a690a0cb490f7b683e96d7c6254ac1c11ccbf049f64004c66bcf26e0e6e995e150f6f594dc9a3adc8ab53b3127a0a2de8e4be632aab26c388eac60c46003656438bb6a94c9eb4cbba32bbf1d6571993a4907524f40979216793a28eefc87a119c2677d97d5795138bbd56c21ed22d4eee49488cfa5c2f193cb44c0dbd1fadc8f",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/"
+      },
+      "resourcePriority": "2380",
+      "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/urls-debug.AssetService.prod.stage.plist"
+    },
+    {
+      "locationPriority": "24",
+      "map": {
+        "data": {
+          "data": {
+            "META": {
+              "contextScope": {
+                "app": "AssetService",
+                "layer": "all.test.ce04"
+              }
+            },
+            "refreshAheadCacheDebug": {
+              "description": "Refresh Ahead Cache Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "RefreshAheadCacheDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "selectedCacheName",
+                  "name": "selectedCacheName",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/refreshAheadCacheDebug",
+              "example": "/debug/refreshAheadCacheDebug"
+            },
+            "detectorDebugPage": {
+              "description": "Visualization Detector Debug Page",
+              "dispatch": {
+                "action": "page",
+                "page": "DetectorDebugPage"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "imageId",
+                  "name": "imageId",
+                  "type": "String"
+                },
+                {
+                  "form": "versionCode",
+                  "name": "versionCode",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/detectorDebugPage",
+              "example": "/debug/detectorDebugPage"
+            },
+            "assetStateDebug": {
+              "description": "Determine Asset State",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.debug.AssetStateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                },
+                {
+                  "form": "revisionId",
+                  "name": "revisionId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/assetStateDebug",
+              "example": "/debug/assetStateDebug"
+            },
+            "imageSetValidator": {
+              "description": "Validate Image Sets",
+              "dispatch": {
+                "action": "page",
+                "page": "ImageSetValidator"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "baseImage",
+                  "name": "baseImage",
+                  "type": "String"
+                },
+                {
+                  "form": "override",
+                  "name": "override",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/imageSetValidator",
+              "example": "/debug/imageSetValidator"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "app": "AssetService",
+              "layer": "all.test.ce04"
+            }
+          },
+          "contextScope": {
+            "app": "AssetService",
+            "layer": "all.test.ce04"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.AssetService.ce04.stage.plist",
+      "encryptedFilename": "6031409e2ec0a57bb318a50cccb90a1a3f11599951dc3fa9268a9e4dc9e3b7f3b27e8a4c38714355b21c085b922fdc5c1a06b669333de3b3f9aebe5ea0d69982fef35fcc68f8e0200dd9cd03dc107c7c6e0ffc7bf483f23cee7589796c3ca6935ebf0f72cfd5022bc5e6584f9463a9953abec2b35cd50bdc9a12c997450c667fd22677816e80c86eb5e477129cd4ce3aa1e43ac84dbe4c26d36808ceab41a0c9",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/"
+      },
+      "resourcePriority": "2376",
+      "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/urls-debug.AssetService.ce04.stage.plist"
+    },
+    {
+      "locationPriority": "24",
+      "map": {
+        "data": {
+          "data": {
+            "META": {
+              "contextScope": {
+                "app": "AssetService",
+                "layer": "all.test.ce03"
+              }
+            },
+            "refreshAheadCacheDebug": {
+              "description": "Refresh Ahead Cache Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "RefreshAheadCacheDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "selectedCacheName",
+                  "name": "selectedCacheName",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/refreshAheadCacheDebug",
+              "example": "/debug/refreshAheadCacheDebug"
+            },
+            "detectorDebugPage": {
+              "description": "Visualization Detector Debug Page",
+              "dispatch": {
+                "action": "page",
+                "page": "DetectorDebugPage"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "imageId",
+                  "name": "imageId",
+                  "type": "String"
+                },
+                {
+                  "form": "versionCode",
+                  "name": "versionCode",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/detectorDebugPage",
+              "example": "/debug/detectorDebugPage"
+            },
+            "assetStateDebug": {
+              "description": "Determine Asset State",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.debug.AssetStateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                },
+                {
+                  "form": "revisionId",
+                  "name": "revisionId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/assetStateDebug",
+              "example": "/debug/assetStateDebug"
+            },
+            "imageSetValidator": {
+              "description": "Validate Image Sets",
+              "dispatch": {
+                "action": "page",
+                "page": "ImageSetValidator"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "baseImage",
+                  "name": "baseImage",
+                  "type": "String"
+                },
+                {
+                  "form": "override",
+                  "name": "override",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/imageSetValidator",
+              "example": "/debug/imageSetValidator"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "app": "AssetService",
+              "layer": "all.test.ce03"
+            }
+          },
+          "contextScope": {
+            "app": "AssetService",
+            "layer": "all.test.ce03"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.AssetService.ce03.stage.plist",
+      "encryptedFilename": "9d0bb359980f8fa5544b3961e04d0e4f2e4b78f83fb06b1a523f7187148b0bd18341733b96fb022210302df1a7f4053db734155972333f87d969cff8299a764a7a5e4018334d20b39918634a99aac30e6eec13d59e5f7a80225d99bcca78abd13adf418859b6eb4c4b9230bbdde45387fcc5041bc3a053c77de261c89828d4e1cf1cf163ed79c98b66811a9d63e6f3292871fd34af7b31aba549b15343fbd00c",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/"
+      },
+      "resourcePriority": "2375",
+      "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/urls-debug.AssetService.ce03.stage.plist"
+    },
+    {
+      "locationPriority": "24",
+      "map": {
+        "data": {
+          "data": {
+            "META": {
+              "contextScope": {
+                "app": "AssetService",
+                "layer": "all.test.ce02"
+              }
+            },
+            "refreshAheadCacheDebug": {
+              "description": "Refresh Ahead Cache Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "RefreshAheadCacheDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "selectedCacheName",
+                  "name": "selectedCacheName",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/refreshAheadCacheDebug",
+              "example": "/debug/refreshAheadCacheDebug"
+            },
+            "detectorDebugPage": {
+              "description": "Visualization Detector Debug Page",
+              "dispatch": {
+                "action": "page",
+                "page": "DetectorDebugPage"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "imageId",
+                  "name": "imageId",
+                  "type": "String"
+                },
+                {
+                  "form": "versionCode",
+                  "name": "versionCode",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/detectorDebugPage",
+              "example": "/debug/detectorDebugPage"
+            },
+            "assetStateDebug": {
+              "description": "Determine Asset State",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.debug.AssetStateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                },
+                {
+                  "form": "revisionId",
+                  "name": "revisionId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/assetStateDebug",
+              "example": "/debug/assetStateDebug"
+            },
+            "imageSetValidator": {
+              "description": "Validate Image Sets",
+              "dispatch": {
+                "action": "page",
+                "page": "ImageSetValidator"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "baseImage",
+                  "name": "baseImage",
+                  "type": "String"
+                },
+                {
+                  "form": "override",
+                  "name": "override",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/imageSetValidator",
+              "example": "/debug/imageSetValidator"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "app": "AssetService",
+              "layer": "all.test.ce02"
+            }
+          },
+          "contextScope": {
+            "app": "AssetService",
+            "layer": "all.test.ce02"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.AssetService.ce02.stage.plist",
+      "encryptedFilename": "02209b3e0fb8bf0073c780421504a700d16b85d6e5fa71b8b792ad2f2f0c75b34e418d4d966e97d9460f0a8790d9f0efa88ce3fb27a9ae848fff8d279096518733683d687cb6aec2710d18dc9b4bd78736d2248dc0b9fc898aa4f5c53bf55950f253b7786d89e3f18b2234de02e7e61beaab114e53d13334ef1d5f26af025be24abfadc1b608aa13e6eed67795405803ee136f516ed1aa6ef30696e04b8b1c91",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/"
+      },
+      "resourcePriority": "2374",
+      "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/urls-debug.AssetService.ce02.stage.plist"
+    },
+    {
+      "locationPriority": "24",
+      "map": {
+        "data": {
+          "data": {
+            "META": {
+              "contextScope": {
+                "app": "AssetService",
+                "layer": "all.test.ce01bm"
+              }
+            },
+            "refreshAheadCacheDebug": {
+              "description": "Refresh Ahead Cache Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "RefreshAheadCacheDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "selectedCacheName",
+                  "name": "selectedCacheName",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/refreshAheadCacheDebug",
+              "example": "/debug/refreshAheadCacheDebug"
+            },
+            "detectorDebugPage": {
+              "description": "Visualization Detector Debug Page",
+              "dispatch": {
+                "action": "page",
+                "page": "DetectorDebugPage"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "imageId",
+                  "name": "imageId",
+                  "type": "String"
+                },
+                {
+                  "form": "versionCode",
+                  "name": "versionCode",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/detectorDebugPage",
+              "example": "/debug/detectorDebugPage"
+            },
+            "assetStateDebug": {
+              "description": "Determine Asset State",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.debug.AssetStateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                },
+                {
+                  "form": "revisionId",
+                  "name": "revisionId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/assetStateDebug",
+              "example": "/debug/assetStateDebug"
+            },
+            "imageSetValidator": {
+              "description": "Validate Image Sets",
+              "dispatch": {
+                "action": "page",
+                "page": "ImageSetValidator"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "baseImage",
+                  "name": "baseImage",
+                  "type": "String"
+                },
+                {
+                  "form": "override",
+                  "name": "override",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/imageSetValidator",
+              "example": "/debug/imageSetValidator"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "app": "AssetService",
+              "layer": "all.test.ce01bm"
+            }
+          },
+          "contextScope": {
+            "app": "AssetService",
+            "layer": "all.test.ce01bm"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.AssetService.ce01bm.stage.plist",
+      "encryptedFilename": "d85b38939c71a84a414ccaa3087da653d43fa3c5e8967348989ba62ad89b35d5eebba20baf79096bab28627a8c935208ae032da6786663ec42fa53f265acc9ea964bc8ad8e4e975123878c522d43e00216e4a361676bd13c954a6e2bd1d7156d221ed28d8c18bedc2e9aade42b2c9f2ceece815519071d9743dce8800281fdda8ad2b5ef32352334a77042e9bbba877099b91d45f9e45e1d6baf79baf5a5bffa",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/"
+      },
+      "resourcePriority": "2373",
+      "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/urls-debug.AssetService.ce01bm.stage.plist"
+    },
+    {
+      "locationPriority": "24",
+      "map": {
+        "data": {
+          "data": {
+            "META": {
+              "contextScope": {
+                "app": "AssetService",
+                "layer": "all.test.ce01"
+              }
+            },
+            "refreshAheadCacheDebug": {
+              "description": "Refresh Ahead Cache Debug",
+              "dispatch": {
+                "action": "page",
+                "page": "RefreshAheadCacheDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "selectedCacheName",
+                  "name": "selectedCacheName",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/refreshAheadCacheDebug",
+              "example": "/debug/refreshAheadCacheDebug"
+            },
+            "detectorDebugPage": {
+              "description": "Visualization Detector Debug Page",
+              "dispatch": {
+                "action": "page",
+                "page": "DetectorDebugPage"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "imageId",
+                  "name": "imageId",
+                  "type": "String"
+                },
+                {
+                  "form": "versionCode",
+                  "name": "versionCode",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/detectorDebugPage",
+              "example": "/debug/detectorDebugPage"
+            },
+            "assetStateDebug": {
+              "description": "Determine Asset State",
+              "dispatch": {
+                "action": "page",
+                "page": "com.apple.store.domain.asset.debug.AssetStateDebug"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "assetId",
+                  "name": "assetId",
+                  "type": "String"
+                },
+                {
+                  "form": "revisionId",
+                  "name": "revisionId",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/assetStateDebug",
+              "example": "/debug/assetStateDebug"
+            },
+            "imageSetValidator": {
+              "description": "Validate Image Sets",
+              "dispatch": {
+                "action": "page",
+                "page": "ImageSetValidator"
+              },
+              "group": "AssetService",
+              "parameters": [
+                {
+                  "form": "baseImage",
+                  "name": "baseImage",
+                  "type": "String"
+                },
+                {
+                  "form": "override",
+                  "name": "override",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/imageSetValidator",
+              "example": "/debug/imageSetValidator"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "app": "AssetService",
+              "layer": "all.test.ce01"
+            }
+          },
+          "contextScope": {
+            "app": "AssetService",
+            "layer": "all.test.ce01"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.AssetService.ce01.stage.plist",
+      "encryptedFilename": "09959e6769bb0260d1dd0b6438e935d87578605df79ea3a4de0fe751cedb97ab4cbf7f1d00d5ace854f213212b5150775d4932eacd4333e56b03f7f4f194c3c0428054dc7c88ce3edbccce31c49685d6c70dd3642164580b1ca4532d1de07c5f9db780a083cda64ac1c45eaa03d79ed3cabf886e01eb9131481fdec061ebf66edc3616cc848d559ef3f2dd8c23aa98483365a95fa87af18e7cbf5cdccde2a152",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/"
+      },
+      "resourcePriority": "2372",
+      "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/urls-debug.AssetService.ce01.stage.plist"
+    },
+    {
+      "locationPriority": "26",
+      "map": {
+        "data": {
+          "data": {
+            "META": {
+              "contextScope": {
+                "app": "/Sheriff|Nemo|ContentMessagingService|ContentMetaDataService|ContentDeliveryService|ContentAuthoringService/SeoAuthoringService"
+              }
+            },
+            "peerSubjects-": "",
+            "peerList-": ""
+          },
+          "meta": {
+            "contextScope": {
+              "app": "/Sheriff|Nemo|ContentMessagingService|ContentMetaDataService|ContentDeliveryService|ContentAuthoringService/SeoAuthoringService"
+            }
+          },
+          "contextScope": {
+            "app": "/Sheriff|Nemo|ContentMessagingService|ContentMetaDataService|ContentDeliveryService|ContentAuthoringService/SeoAuthoringService"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.pubsysapps.plist",
+      "encryptedFilename": "55c14dcd4755ac0401f85a02bf1f0129f272b61d9166911878ccef6f36e7196136b326685d954c3e5d3416ac0fb11cb36868f98590c1f354f4eefaabcec4a366031466bad89f7b3d077d4d742fa9ea4e7e405d513e73881292abfd169fc7d5ea84b6241025219fd39c078aa757c07a915ee17c7a5774db80de101f731209bc92819da59fecce72b9846c9c6880c565d270f9f924d4e1871a97cfedf5a3fe82ba",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/InfrastructureConfiguration/"
+      },
+      "resourcePriority": "2594",
+      "path": "/Local/AS/Configuration/releases/201901311813/InfrastructureConfiguration/urls-debug.pubsysapps.plist"
+    },
+    {
+      "locationPriority": "24",
+      "map": {
+        "data": {
+          "data": {
+            "META": {
+              "contextScope": {
+                "app": "/Sheriff|Nemo|ContentMessagingService|ContentMetaDataService|ContentDeliveryService|ContentAuthoringService|ContentService/"
+              }
+            },
+            "peerSubjects-": "",
+            "peerList-": ""
+          },
+          "meta": {
+            "contextScope": {
+              "app": "/Sheriff|Nemo|ContentMessagingService|ContentMetaDataService|ContentDeliveryService|ContentAuthoringService|ContentService/"
+            }
+          },
+          "contextScope": {
+            "app": "/Sheriff|Nemo|ContentMessagingService|ContentMetaDataService|ContentDeliveryService|ContentAuthoringService|ContentService/"
+          },
+          "namespace": "urls-debug"
+        },
+        "namespaceFromFilename": "urls-debug"
+      },
+      "filename": "urls-debug.pubsysapps.plist",
+      "encryptedFilename": "8ca447d4de8a04827a9c3b10a5c92dd0c5bfb34bfd4ca9bd4796655e2fa95c6a0d74ce1cd0500ac3afddb6a04811804ef3740a967f18b6f9a49225ac583e711d13996276fed3e8256d11f5a78d6918ec5689511c1d7bc705ad4f8fc52301537e5cff9379852afd07de435652f5be506f3283b86aaa8eb3e5416e70a142f541e0348dbda81819144b263a91ddc1915641",
+      "location": {
+        "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/"
+      },
+      "resourcePriority": "2385",
+      "path": "/Local/AS/Configuration/releases/201901311813/ContentConfiguration/urls-debug.pubsysapps.plist"
+    },
+    {
+      "locationPriority": "5",
+      "map": {
+        "data": {
+          "data": {
+            "invalidCharacterConfig": {
+              "description": "Provides view of the post-processed config",
+              "example": "/debug/invalidCharacterConfig",
+              "dispatch": {
+                "action": "page",
+                "page": "InvalidCharacterConfigPage"
+              },
+              "url": "<DEBUG>/invalidCharacterConfig"
+            },
+            "META": {
+              "contextScope": {
+                "app": "BlackWordService"
+              }
+            },
+            "checkContent": {
+              "url": "<DEBUG>/checkContent",
+              "example": "/debug/checkContent",
+              "parameters": [
+                {
+                  "form": "handler",
+                  "name": "handler",
+                  "type": "String"
+                },
+                {
+                  "form": "languageCode",
+                  "name": "languageCode",
+                  "type": "String"
+                },
+                {
+                  "optional": "true",
+                  "type": "String",
+                  "name": "countryCode",
+                  "form": "countryCode"
+                },
+                {
+                  "form": "typeName",
+                  "name": "typeName",
+                  "type": "String"
+                },
+                {
+                  "form": "content",
+                  "name": "content",
+                  "type": "String"
+                }
+              ],
+              "dispatch": {
+                "action": "page",
+                "page": "CheckContentPage"
+              },
+              "description": "Lets you test black words interactively"
+            },
+            "blackwordConfig": {
+              "description": "Provides view of the post-processed config",
+              "example": "/debug/blackwordConfig",
+              "dispatch": {
+                "action": "page",
+                "page": "BlackWordConfigPage"
+              },
+              "url": "<DEBUG>/blackwordConfig"
+            }
+          },
+          "meta": {
+            "contextScope": {
+              "app": "BlackWordService"
+            }
+          },
+          "contextScope": {
+            "app": "BlackWordService"
+          },
+          "namespace": "urls-debug"
+        }
+      },
+      "filename": "config/urls-debug.plist",
+      "encryptedFilename": "ddc3d1713c1dd001509f010305d02de7670f283c3684bc937dc2fb45e2af9a751002cdfabca82386cb1e5e2484858587fceb408759858ec6778dde8424f7b840675be879da687c9c92bc65f954af1347c3812778435a43a7e79f110c885df6f8c61a4a81b95de0b7631af0c8aba8755ecd8539e4a64d7bdb51401be011bf715c2cd7b85391c6e1b6a830bd2a5abfc75cef23ec77cce0964fa4243867d73f8848ae536edb40dbc3832decf8c971c12a4845a23c1f3ed289f7f162c16b517ec1af77e69b5fd3d2e6291b0d626f21ac8351",
+      "location": {
+        "path": "/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/BlackWordService-2019.3debugPage-SNAPSHOT.jar!config/"
+      },
+      "resourcePriority": "0",
+      "path": "/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/BlackWordService-2019.3debugPage-SNAPSHOT.jar!config/urls-debug.plist"
+    },
+    {
+      "locationPriority": "4",
+      "map": {
+        "data": {
+          "data": {
+            "javadoc": {
+              "parameters": [
+                {
+                  "type": "String",
+                  "required": "true",
+                  "name": "class",
+                  "form": "name"
+                }
+              ],
+              "url": "<TOOLS>/javadoc/jump.cgi"
+            },
+            "STATISTICS_VIEW_PARAMETERS": {
+              "parameters": [
+                {
+                  "type": "String",
+                  "value": "default",
+                  "name": "namespace",
+                  "form": "ns"
+                },
+                {
+                  "form": "n",
+                  "name": "namePattern",
+                  "type": "String"
+                },
+                {
+                  "form": "fz",
+                  "name": "fuzzy",
+                  "type": "String"
+                },
+                {
+                  "form": "q",
+                  "name": "qualifier",
+                  "type": "String"
+                },
+                {
+                  "form": "s",
+                  "name": "sortKey",
+                  "type": "String"
+                },
+                {
+                  "type": "String",
+                  "value": "descending",
+                  "name": "sortDirection",
+                  "form": "d"
+                },
+                {
+                  "type": "String",
+                  "value": "60 min",
+                  "name": "period",
+                  "form": "p"
+                }
+              ]
+            },
+            "peerList": {
+              "url": "<DEBUG>/application/peers",
+              "parameters": [
+                {
+                  "form": "subject",
+                  "name": "subject",
+                  "type": "String"
+                },
+                {
+                  "form": "url",
+                  "name": "currentUrl",
+                  "type": "CurrentUrl"
+                }
+              ],
+              "group": "Peer",
+              "dispatch": {
+                "action": "page",
+                "page": "PeerListDebugger"
+              },
+              "description": "show application peers"
+            },
+            "netstat": {
+              "url": "<DEBUG>/netstat",
+              "title": "netstat",
+              "group": "Runtime",
+              "dispatch": {
+                "action": "page",
+                "page": "DebugNetstat"
+              },
+              "description": "netstat on the host"
+            },
+            "INFRARED_VIP": {
+              "parameter": {
+                "type": "Host",
+                "value": "http://${environment.webservers.infrared.virtual}",
+                "required": "true",
+                "name": "host"
+              }
+            },
+            "viewConfiguration": {
+              "description": "view single namespace, e.g. app",
+              "dispatch": {
+                "action": "page",
+                "page": "ShowConfigurationNamespace"
+              },
+              "group": "Configuration",
+              "parameters": [
+                {
+                  "form": "raw",
+                  "name": "raw",
+                  "type": "String"
+                },
+                {
+                  "form": "debug",
+                  "name": "debug",
+                  "type": "String"
+                },
+                {
+                  "form": "context",
+                  "name": "context",
+                  "type": "Map"
+                },
+                {
+                  "form": "ambiguityCheck",
+                  "name": "ambiguityCheck",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/configuration/view/<NAMESPACE>",
+              "example": "/debug/configuration/view/app"
+            },
+            "APP_HOST_ADMIN_PORT": {
+              "parameter": {
+                "type": "OptionalAppHostAndAdminPort",
+                "value": "false",
+                "required": "false",
+                "name": "appHostAndAdminPort"
+              }
+            },
+            "TOOLS": {
+              "parameter": {
+                "description": "Prefix for tools box.",
+                "type": "Host",
+                "value": "http://storedev-tools.corp.apple.com",
+                "name": "host"
+              }
+            },
+            "NAMESPACE": {
+              "parameter": {
+                "name": "namespace",
+                "type": "String",
+                "required": "true"
+              }
+            },
+            "DEBUG": {
+              "fragment": "<APP_HOST_ADMIN_PORT>/debug",
+              "parameters": [
+                {
+                  "form": "revision",
+                  "name": "revision",
+                  "type": "String"
+                },
+                {
+                  "form": "pubversion",
+                  "name": "pubversion",
+                  "type": "String"
+                }
+              ]
+            },
+            "RESOURCE_PATH": {
+              "parameter": {
+                "name": "path",
+                "type": "Path"
+              }
+            },
+            "threadDumpDebugger": {
+              "url": "<DEBUG>/threads",
+              "parameters": [
+                {
+                  "form": "filterBacktrace",
+                  "name": "filterBacktrace",
+                  "type": "String"
+                },
+                {
+                  "form": "filterThreadName",
+                  "name": "filterThreadName",
+                  "type": "String"
+                },
+                {
+                  "form": "showLocks",
+                  "name": "showLocks",
+                  "type": "String"
+                }
+              ],
+              "group": "Runtime",
+              "dispatch": {
+                "action": "page",
+                "page": "ThreadDumpDebugger"
+              },
+              "description": "thread dump"
+            },
+            "caches": {
+              "url": "<DEBUG>/stats/caches",
+              "parameters": [
+                {
+                  "name": "collectorType",
+                  "type": "String",
+                  "value": "Cache"
+                },
+                "<STATISTICS_VIEW_PARAMETERS>"
+              ],
+              "group": "Runtime",
+              "dispatch": {
+                "action": "page",
+                "page": "StatisticsDebugger"
+              },
+              "description": "Cache statistics"
+            },
+            "urldocEntry": {
+              "dispatch": {
+                "action": "page",
+                "page": "URLDoc"
+              },
+              "url": "<DEBUG>/urldoc",
+              "description": "url documentation",
+              "example": "/debug/urldoc",
+              "title": "URL Documentation",
+              "group": "Documentation",
+              "showInMenu": "false"
+            },
+            "MODULE_VERSION": {
+              "parameter": {
+                "name": "version",
+                "type": "String"
+              }
+            },
+            "REPOSITORY_PATH": {
+              "parameter": {
+                "name": "repository",
+                "type": "Path"
+              }
+            },
+            "serviceBrowserRetrieveOrder": {
+              "parameters": [
+                {
+                  "form": "serviceUrl",
+                  "name": "url",
+                  "type": "String"
+                },
+                {
+                  "form": "serviceName",
+                  "name": "serviceNAME",
+                  "type": "String"
+                },
+                {
+                  "form": "serviceDirectoryUrl",
+                  "name": "serviceDirectoryURL",
+                  "type": "String"
+                },
+                {
+                  "form": "methodName",
+                  "name": "methodNAME",
+                  "type": "String"
+                },
+                {
+                  "form": "serviceHandler",
+                  "name": "serviceHANDLER",
+                  "type": "String"
+                }
+              ],
+              "url": "<SERVICEBROWSER>/wa/callService"
+            },
+            "fleetGrid": {
+              "url": "<INFRARED_VIP>/infrared/fleetGrid/<APP_NAME>"
+            },
+            "MODULE_NAME": {
+              "parameter": {
+                "name": "module",
+                "type": "String"
+              }
+            },
+            "applicationInformation": {
+              "description": "show application information",
+              "dispatch": {
+                "action": "page",
+                "page": "ApplicationInformationDebugger"
+              },
+              "url": "<DEBUG>/application/info",
+              "group": "Runtime"
+            },
+            "cacheDebugger": {
+              "description": "cache debugger",
+              "dispatch": {
+                "action": "page",
+                "page": "CacheDebugger"
+              },
+              "group": "Cache",
+              "parameters": [
+                {
+                  "form": "cache",
+                  "name": "cacheName",
+                  "type": "String"
+                },
+                {
+                  "form": "key",
+                  "name": "key",
+                  "type": "String"
+                },
+                {
+                  "form": "script",
+                  "name": "script",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/cache",
+              "example": "/debug/cache"
+            },
+            "CRUCIBLE_HOST": {
+              "parameter": {
+                "type": "Host",
+                "value": "http://${environment.webservers.crucible.virtual}",
+                "required": "true",
+                "name": "host"
+              }
+            },
+            "favicon": {
+              "dispatch": {
+                "action": "staticresources"
+              },
+              "showInMenu": "false",
+              "parameters": [
+                {
+                  "name": "path",
+                  "type": "Path",
+                  "value": "favicon.ico"
+                }
+              ],
+              "url": "<ROOT>/favicon.ico"
+            },
+            "crucible": {
+              "parameters": [
+                {
+                  "form": "showid",
+                  "name": "revision",
+                  "type": "Integer"
+                }
+              ],
+              "url": "<CRUCIBLE_HOST>/fisheye/changelog/StoreSVN/<REPOSITORY_PATH>"
+            },
+            "debugMenu": {
+              "dispatch": {
+                "action": "page",
+                "page": "DebugMenu"
+              },
+              "url": "<DEBUG>",
+              "description": "Main application debugging console",
+              "example": "/debug",
+              "title": "Main Menu",
+              "parameters": [
+                {
+                  "form": "revision",
+                  "name": "revision",
+                  "type": "String"
+                },
+                {
+                  "form": "pubversion",
+                  "name": "pubversion",
+                  "type": "String"
+                }
+              ],
+              "showInMenu": "false"
+            },
+            "ROOT": {
+              "fragment": "<APP_HOST_ADMIN_PORT>"
+            },
+            "peerSubjects": {
+              "url": "<DEBUG>/application/peerSubjects",
+              "parameters": [
+                {
+                  "form": "url",
+                  "name": "currentUrl",
+                  "type": "CurrentUrl"
+                }
+              ],
+              "group": "Peer",
+              "dispatch": {
+                "action": "page",
+                "page": "PeerSubjectsDebugger"
+              },
+              "description": "show similar peers"
+            },
+            "viewLocalConfigFileHashes": {
+              "description": "Show SHA hashes of locally deployed config directories",
+              "dispatch": {
+                "action": "page",
+                "page": "DebugLocalConfigHash"
+              },
+              "group": "Configuration",
+              "parameters": [
+                {
+                  "form": "excludeSvn",
+                  "name": "excludeSvn",
+                  "type": "String"
+                },
+                {
+                  "form": "includeSecret",
+                  "name": "includeSecret",
+                  "type": "String"
+                },
+                {
+                  "form": "uncached",
+                  "name": "uncached",
+                  "type": "String"
+                },
+                {
+                  "form": "verbose",
+                  "name": "verbose",
+                  "type": "String"
+                },
+                {
+                  "form": "plainText",
+                  "name": "plainText",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/viewLocalConfigFileHashes",
+              "example": "/debug/viewLocalConfigFileHashes"
+            },
+            "viewConfigurationContexts2": {
+              "description": "view configuration by context; Completely disabled by default; rdar://28965016"
+            },
+            "viewMBean": {
+              "description": "view single mbean",
+              "dispatch": {
+                "action": "page",
+                "page": "DebugMBean"
+              },
+              "showInMenu": "false",
+              "group": "Runtime",
+              "url": "<DEBUG>/mbeans/<MBEAN_NAME>",
+              "example": "/debug/mbeans/java.lang:type=Runtime"
+            },
+            "lxrFile": {
+              "description": "Hook to opengrok to search by file name.",
+              "parameters": [
+                {
+                  "type": "String",
+                  "required": "true",
+                  "name": "file",
+                  "form": "path"
+                },
+                {
+                  "type": "Constant",
+                  "value": "aos",
+                  "name": "project",
+                  "form": "project"
+                }
+              ],
+              "url": "<TOOLS>/opengrok/search"
+            },
+            "META": {},
+            "viewNamespacesAll": {
+              "url": "<DEBUG>/configuration/all",
+              "parameters": [
+                {
+                  "name": "scope",
+                  "type": "String",
+                  "value": "all"
+                }
+              ],
+              "group": "Configuration",
+              "dispatch": {
+                "action": "page",
+                "page": "ShowConfigurationNamespaces"
+              },
+              "description": "view all namespaces (from viewNamespaces)"
+            },
+            "viewNamespaces": {
+              "description": "Entry point into configuration visualizer.",
+              "dispatch": {
+                "action": "page",
+                "page": "ShowConfigurationNamespaces"
+              },
+              "group": "Configuration",
+              "parameters": [
+                {
+                  "name": "scope",
+                  "type": "String",
+                  "value": "local"
+                }
+              ],
+              "url": "<DEBUG>/configuration",
+              "example": "/debug/configuration"
+            },
+            "timeSeriesStats": {
+              "description": "experimental time series stats",
+              "dispatch": {
+                "action": "page",
+                "page": "DebugTimeSeries"
+              },
+              "group": "Runtime",
+              "parameters": [
+                {
+                  "type": "String",
+                  "value": "fast",
+                  "name": "type",
+                  "form": "type"
+                },
+                {
+                  "type": "String",
+                  "value": "0",
+                  "name": "refresh",
+                  "form": "refresh"
+                }
+              ],
+              "url": "<DEBUG>/stats/series",
+              "example": "/debug/stats/series"
+            },
+            "gauges": {
+              "url": "<DEBUG>/stats/gauges",
+              "parameters": [
+                {
+                  "name": "collectorType",
+                  "type": "String",
+                  "value": "Gauge"
+                },
+                "<STATISTICS_VIEW_PARAMETERS>"
+              ],
+              "group": "Runtime",
+              "dispatch": {
+                "action": "page",
+                "page": "StatisticsDebugger"
+              },
+              "description": "Gauge statistics"
+            },
+            "serviceHandlerDebugger": {
+              "description": "Debug service handlers",
+              "dispatch": {
+                "action": "page",
+                "page": "ServiceHandlerDebugger"
+              },
+              "group": "Handlers",
+              "parameters": [
+                {
+                  "form": "k",
+                  "name": "serviceHandlerKey",
+                  "type": "String"
+                },
+                {
+                  "form": "m",
+                  "name": "serviceHandlerMethod",
+                  "type": "String"
+                },
+                {
+                  "form": "r",
+                  "name": "serviceHandlerRequest",
+                  "type": "String"
+                },
+                {
+                  "form": "a",
+                  "name": "action",
+                  "type": "String"
+                }
+              ],
+              "url": "<DEBUG>/serviceHandlers",
+              "example": "/debug/serviceHandlers"
+            },
+            "urldoc": {
+              "description": "url documentation for a particular namespace, e.g. urls-debug",
+              "dispatch": {
+                "action": "page",
+                "page": "URLDoc"
+              },
+              "group": "Documentation",
+              "title": "URL Documentation",
+              "url": "<DEBUG>/urldoc/<NAMESPACE>",
+              "example": "/debug/urldoc/urls-debug"
+            },
+            "SVNHOST": {
+              "parameter": {
+                "type": "Host",
+                "value": "http://${environment.webservers.svn.virtual}",
+                "required": "true",
+                "name": "host"
+              }
+            },
+            "TOOLS_VIP": {
+              "parameter": {
+                "type": "Host",
+                "value": "http://${environment.webservers.tools.virtual}",
+                "required": "true",
+                "name": "host"
+              }
+            },
+            "resource": {
+              "dispatch": {
+                "action": "staticresources"
+              },
+              "showInMenu": "false",
+              "url": "<ROOT>/r/<RESOURCE_PATH>"
+            },
+            "timers": {
+              "url": "<DEBUG>/stats/timers",
+              "parameters": [
+                {
+                  "name": "collectorType",
+                  "type": "String",
+                  "value": "Timer"
+                },
+                "<STATISTICS_VIEW_PARAMETERS>"
+              ],
+              "group": "Runtime",
+              "dispatch": {
+                "action": "page",
+                "page": "StatisticsDebugger"
+              },
+              "description": "Timer statistics"
+            },
+            "moduleDependencies": {
+              "url": "<TOOLS_VIP>/ImageDemo/dep/<MODULE_NAME>/<MODULE_VERSION>"
+            },
+            "viewvc": {
+              "parameters": [
+                {
+                  "form": "pathrev",
+                  "name": "revision",
+                  "type": "Integer"
+                }
+              ],
+              "url": "<SVNHOST>/cgi-bin/viewvc.cgi/aos/<REPOSITORY_PATH>"
+            },
+            "logsPage": {
+              "url": "<DEBUG>/logs",
+              "example": "/debug/logs",
+              "parameters": [],
+              "dispatch": {
+                "action": "page",
+                "page": "LogTailerPage"
+              },
+              "description": "Log Tail For This Service"
+            },
+            "urlDebugger": {
+              "dispatch": {
+                "action": "page",
+                "page": "URLDebugger"
+              },
+              "description": "url debugger",
+              "example": "/debug/urls",
+              "title": "URL Debugger",
+              "parameters": [
+                {
+                  "form": "url",
+                  "name": "url",
+                  "type": "String"
+                },
+                {
+                  "form": "patterns",
+                  "name": "patterns",
+                  "type": "String"
+                },
+                {
+                  "form": "namespace",
+                  "name": "namespace",
+                  "type": "String"
+                }
+              ],
+              "group": "URL",
+              "url": "<DEBUG>/urls"
+            },
+            "APP_NAME": {
+              "parameter": {
+                "name": "app",
+                "type": "String"
+              }
+            },
+            "viewConfigurationFile": {
+              "url": "<DEBUG>/viewConfigurationFile",
+              "parameters": [
+                {
+                  "form": "filename",
+                  "name": "filename",
+                  "type": "String"
+                }
+              ],
+              "group": "HIDDEN",
+              "dispatch": {
+                "action": "page",
+                "page": "DebugViewConfigurationFile"
+              },
+              "description": "Show the actual contents of a deployed configuration file, which must be underneath /Local/AS/Configuration/*Configuration and may not be in SecretConfiguration"
+            },
+            "serviceBrowser": {
+              "parameters": [
+                {
+                  "form": "serviceUrl",
+                  "name": "url",
+                  "type": "String"
+                },
+                {
+                  "form": "serviceName",
+                  "name": "name",
+                  "type": "String"
+                },
+                {
+                  "form": "serviceDirectoryUrl",
+                  "name": "serviceDirectoryURL",
+                  "type": "String"
+                }
+              ],
+              "url": "<SERVICEBROWSER>/wa/viewService"
+            },
+            "runHealthCheck": {
+              "description": "show application health",
+              "dispatch": {
+                "page": "HealthDebugger",
+                "class": "com.apple.store.webtoolkit.debug.app.RunHealthCheckAction"
+              },
+              "url": "<DEBUG>/application/health/<HEALTH_CHECK_NAME>",
+              "group": "Health"
+            },
+            "SERVICEBROWSER": {
+              "parameter": {
+                "type": "Host",
+                "value": "${environment.serviceBrowser}",
+                "required": "true",
+                "name": "serviceBrowserUrl"
+              }
+            },
+            "MBEAN_NAME": {
+              "parameter": {
+                "name": "objectName",
+                "type": "ObjectName",
+                "required": "true"
+              }
+            },
+            "healthDebugger": {
+              "url": "<DEBUG>/application/health",
+              "group": "Health",
+              "showInMenu": "false",
+              "dispatch": {
+                "action": "page",
+                "page": "HealthDebugger"
+              },
+              "description": "show application health"
+            },
+            "viewConfigurationContexts": {
+              "description": "view configuration by context (warning); Completely disabled by default; rdar://28965016"
+            },
+            "lxrClass": {
+              "description": "Hook to opengrok to search by class name.",
+              "parameters": [
+                {
+                  "type": "String",
+                  "required": "true",
+                  "name": "class",
+                  "form": "defs"
+                },
+                {
+                  "type": "Constant",
+                  "value": "aos",
+                  "name": "project",
+                  "form": "project"
+                }
+              ],
+              "url": "<TOOLS>/opengrok/search"
+            },
+            "mbeanList": {
+              "description": "list of mbeans",
+              "dispatch": {
+                "action": "page",
+                "page": "DebugMBeanList"
+              },
+              "group": "Runtime",
+              "parameters": [
+                {
+                  "form": "q",
+                  "name": "filter",
+                  "type": "Pattern"
+                }
+              ],
+              "title": "MBean List",
+              "url": "<DEBUG>/mbeans/list"
+            },
+            "HEALTH_CHECK_NAME": {
+              "parameter": {
+                "name": "healthCheckName",
+                "type": "String"
+              }
+            }
+          },
+          "meta": {},
+          "contextScope": {},
+          "namespace": "urls-debug"
+        }
+      },
+      "filename": "config/urls-debug.plist",
+      "encryptedFilename": "9d1750a0638527fe27437617abff397c3f30e822b6da144182ebbc5956429ff3a9584d2039a2246c3c6dca9ff557e91ca8dca6671a6813bb2da4f7e794430cc8729e10454a101943935e279fd7dcbbaf99252ad15bc14d024b58377634f551cfb4416a6232b6850116a9ff3b6a393e58202b4bb39dcc967cd97706be5914f3d1a6999aeb0295220d25930968fad3092d5ace0e8e33f7990c728232c3d63b44f8169692ddff829e0da53848f0300744f537ed87b1a7538707321b12d4db9e5a53",
+      "location": {
+        "path": "/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/ASWebToolkit-2019.3-SNAPSHOT.jar!config/"
+      },
+      "resourcePriority": "0",
+      "path": "/Local/AS/Sentinel/packages/BlackWordService-2019-3debugPage-20190124-222924-7/lib/ASWebToolkit-2019.3-SNAPSHOT.jar!config/urls-debug.plist"
+    }
+  ],
+  "configuration": {
+    "viewNamespaces": {
+      "description": "Entry point into configuration visualizer.",
+      "dispatch": {
+        "action": "page",
+        "page": "ShowConfigurationNamespaces"
+      },
+      "group": "Configuration",
+      "parameters": [
+        {
+          "name": "scope",
+          "type": "String",
+          "value": "local"
+        }
+      ],
+      "url": "<DEBUG>/configuration",
+      "example": "/debug/configuration"
+    },
+    "moduleDependencies": {
+      "url": "<TOOLS_VIP>/ImageDemo/dep/<MODULE_NAME>/<MODULE_VERSION>"
+    },
+    "urldocEntry": {
+      "dispatch": {
+        "action": "page",
+        "page": "URLDoc"
+      },
+      "url": "<DEBUG>/urldoc",
+      "description": "url documentation",
+      "example": "/debug/urldoc",
+      "title": "URL Documentation",
+      "group": "Documentation",
+      "showInMenu": "false"
+    },
+    "netstat": {
+      "url": "<DEBUG>/netstat",
+      "title": "netstat",
+      "group": "Runtime",
+      "dispatch": {
+        "action": "page",
+        "page": "DebugNetstat"
+      },
+      "description": "netstat on the host"
+    },
+    "timeSeriesStats": {
+      "description": "experimental time series stats",
+      "dispatch": {
+        "action": "page",
+        "page": "DebugTimeSeries"
+      },
+      "group": "Runtime",
+      "parameters": [
+        {
+          "type": "String",
+          "value": "fast",
+          "name": "type",
+          "form": "type"
+        },
+        {
+          "type": "String",
+          "value": "0",
+          "name": "refresh",
+          "form": "refresh"
+        }
+      ],
+      "url": "<DEBUG>/stats/series",
+      "example": "/debug/stats/series"
+    },
+    "healthDebugger": {
+      "url": "<DEBUG>/application/health",
+      "group": "Health",
+      "showInMenu": "false",
+      "dispatch": {
+        "action": "page",
+        "page": "HealthDebugger"
+      },
+      "description": "show application health"
+    },
+    "CRUCIBLE_HOST": {
+      "parameter": {
+        "type": "Host",
+        "value": "http://storedev-tools.corp.apple.com",
+        "required": "true",
+        "name": "host"
+      }
+    },
+    "DEBUG": {
+      "fragment": "<APP_HOST_ADMIN_PORT>/debug",
+      "parameters": [
+        {
+          "form": "revision",
+          "name": "revision",
+          "type": "String"
+        },
+        {
+          "form": "pubversion",
+          "name": "pubversion",
+          "type": "String"
+        }
+      ]
+    },
+    "viewLocalConfigFileHashes": {
+      "description": "Show SHA hashes of locally deployed config directories",
+      "dispatch": {
+        "action": "page",
+        "page": "DebugLocalConfigHash"
+      },
+      "group": "Configuration",
+      "parameters": [
+        {
+          "form": "excludeSvn",
+          "name": "excludeSvn",
+          "type": "String"
+        },
+        {
+          "form": "includeSecret",
+          "name": "includeSecret",
+          "type": "String"
+        },
+        {
+          "form": "uncached",
+          "name": "uncached",
+          "type": "String"
+        },
+        {
+          "form": "verbose",
+          "name": "verbose",
+          "type": "String"
+        },
+        {
+          "form": "plainText",
+          "name": "plainText",
+          "type": "String"
+        }
+      ],
+      "url": "<DEBUG>/viewLocalConfigFileHashes",
+      "example": "/debug/viewLocalConfigFileHashes"
+    },
+    "viewMBean": {
+      "description": "view single mbean",
+      "dispatch": {
+        "action": "page",
+        "page": "DebugMBean"
+      },
+      "showInMenu": "false",
+      "group": "Runtime",
+      "url": "<DEBUG>/mbeans/<MBEAN_NAME>",
+      "example": "/debug/mbeans/java.lang:type=Runtime"
+    },
+    "MODULE_VERSION": {
+      "parameter": {
+        "name": "version",
+        "type": "String"
+      }
+    },
+    "mbeanList": {
+      "description": "list of mbeans",
+      "dispatch": {
+        "action": "page",
+        "page": "DebugMBeanList"
+      },
+      "group": "Runtime",
+      "parameters": [
+        {
+          "form": "q",
+          "name": "filter",
+          "type": "Pattern"
+        }
+      ],
+      "title": "MBean List",
+      "url": "<DEBUG>/mbeans/list"
+    },
+    "lxrFile": {
+      "description": "Hook to opengrok to search by file name.",
+      "parameters": [
+        {
+          "type": "String",
+          "required": "true",
+          "name": "file",
+          "form": "path"
+        },
+        {
+          "type": "Constant",
+          "value": "aos",
+          "name": "project",
+          "form": "project"
+        }
+      ],
+      "url": "<TOOLS>/opengrok/search"
+    },
+    "JettyServers": {
+      "url": "<DEBUG>/application/JettyServers",
+      "group": "Runtime",
+      "showInMenu": "true",
+      "dispatch": {
+        "action": "page",
+        "page": "JettyServerDebugger"
+      },
+      "description": "Show Jetty Server information"
+    },
+    "crucible": {
+      "parameters": [
+        {
+          "form": "showid",
+          "name": "revision",
+          "type": "Integer"
+        }
+      ],
+      "url": "<CRUCIBLE_HOST>/fisheye/changelog/StoreSVN/<REPOSITORY_PATH>"
+    },
+    "HEALTH_CHECK_NAME": {
+      "parameter": {
+        "name": "healthCheckName",
+        "type": "String"
+      }
+    },
+    "debugMenu": {
+      "dispatch": {
+        "action": "page",
+        "page": "DebugMenu"
+      },
+      "url": "<DEBUG>",
+      "description": "Main application debugging console",
+      "example": "/debug",
+      "title": "Main Menu",
+      "parameters": [
+        {
+          "form": "revision",
+          "name": "revision",
+          "type": "String"
+        },
+        {
+          "form": "pubversion",
+          "name": "pubversion",
+          "type": "String"
+        }
+      ],
+      "showInMenu": "false"
+    },
+    "TOOLS_VIP": {
+      "parameter": {
+        "type": "Host",
+        "value": "http://tools.storedev01.rno.apple.com",
+        "required": "true",
+        "name": "host"
+      }
+    },
+    "serviceBrowser": {
+      "parameters": [
+        {
+          "form": "serviceUrl",
+          "name": "url",
+          "type": "String"
+        },
+        {
+          "form": "serviceName",
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "form": "serviceDirectoryUrl",
+          "name": "serviceDirectoryURL",
+          "type": "String"
+        }
+      ],
+      "url": "<SERVICEBROWSER>/wa/viewService"
+    },
+    "STATISTICS_VIEW_PARAMETERS": {
+      "parameters": [
+        {
+          "type": "String",
+          "value": "default",
+          "name": "namespace",
+          "form": "ns"
+        },
+        {
+          "form": "n",
+          "name": "namePattern",
+          "type": "String"
+        },
+        {
+          "form": "fz",
+          "name": "fuzzy",
+          "type": "String"
+        },
+        {
+          "form": "q",
+          "name": "qualifier",
+          "type": "String"
+        },
+        {
+          "form": "s",
+          "name": "sortKey",
+          "type": "String"
+        },
+        {
+          "type": "String",
+          "value": "descending",
+          "name": "sortDirection",
+          "form": "d"
+        },
+        {
+          "type": "String",
+          "value": "60 min",
+          "name": "period",
+          "form": "p"
+        }
+      ]
+    },
+    "viewNamespacesAll": {
+      "url": "<DEBUG>/configuration/all",
+      "parameters": [
+        {
+          "name": "scope",
+          "type": "String",
+          "value": "all"
+        }
+      ],
+      "group": "Configuration",
+      "dispatch": {
+        "action": "page",
+        "page": "ShowConfigurationNamespaces"
+      },
+      "description": "view all namespaces (from viewNamespaces)"
+    },
+    "serviceHandlerDebugger": {
+      "description": "Debug service handlers",
+      "dispatch": {
+        "action": "page",
+        "page": "ServiceHandlerDebugger"
+      },
+      "group": "Handlers",
+      "parameters": [
+        {
+          "form": "k",
+          "name": "serviceHandlerKey",
+          "type": "String"
+        },
+        {
+          "form": "m",
+          "name": "serviceHandlerMethod",
+          "type": "String"
+        },
+        {
+          "form": "r",
+          "name": "serviceHandlerRequest",
+          "type": "String"
+        },
+        {
+          "form": "a",
+          "name": "action",
+          "type": "String"
+        }
+      ],
+      "url": "<DEBUG>/serviceHandlers",
+      "example": "/debug/serviceHandlers"
+    },
+    "checkContent": {
+      "url": "<DEBUG>/checkContent",
+      "example": "/debug/checkContent",
+      "parameters": [
+        {
+          "form": "handler",
+          "name": "handler",
+          "type": "String"
+        },
+        {
+          "form": "languageCode",
+          "name": "languageCode",
+          "type": "String"
+        },
+        {
+          "optional": "true",
+          "type": "String",
+          "name": "countryCode",
+          "form": "countryCode"
+        },
+        {
+          "form": "typeName",
+          "name": "typeName",
+          "type": "String"
+        },
+        {
+          "form": "content",
+          "name": "content",
+          "type": "String"
+        }
+      ],
+      "dispatch": {
+        "action": "page",
+        "page": "CheckContentPage"
+      },
+      "description": "Lets you test black words interactively"
+    },
+    "logsPage": {
+      "url": "<DEBUG>/logs",
+      "example": "/debug/logs",
+      "parameters": [],
+      "dispatch": {
+        "action": "page",
+        "page": "LogTailerPage"
+      },
+      "description": "Log Tail For This Service"
+    },
+    "invalidCharacterConfig": {
+      "description": "Provides view of the post-processed config",
+      "example": "/debug/invalidCharacterConfig",
+      "dispatch": {
+        "action": "page",
+        "page": "InvalidCharacterConfigPage"
+      },
+      "url": "<DEBUG>/invalidCharacterConfig"
+    },
+    "favicon": {
+      "dispatch": {
+        "action": "staticresources"
+      },
+      "showInMenu": "false",
+      "parameters": [
+        {
+          "name": "path",
+          "type": "Path",
+          "value": "favicon.ico"
+        }
+      ],
+      "url": "<ROOT>/favicon.ico"
+    },
+    "lxrClass": {
+      "description": "Hook to opengrok to search by class name.",
+      "parameters": [
+        {
+          "type": "String",
+          "required": "true",
+          "name": "class",
+          "form": "defs"
+        },
+        {
+          "type": "Constant",
+          "value": "aos",
+          "name": "project",
+          "form": "project"
+        }
+      ],
+      "url": "<TOOLS>/opengrok/search"
+    },
+    "viewvc": {
+      "parameters": [
+        {
+          "form": "pathrev",
+          "name": "revision",
+          "type": "Integer"
+        }
+      ],
+      "url": "<SVNHOST>/cgi-bin/viewvc.cgi/aos/<REPOSITORY_PATH>"
+    },
+    "viewConfigurationFile": {
+      "url": "<DEBUG>/viewConfigurationFile",
+      "parameters": [
+        {
+          "form": "filename",
+          "name": "filename",
+          "type": "String"
+        }
+      ],
+      "group": "HIDDEN",
+      "dispatch": {
+        "action": "page",
+        "page": "DebugViewConfigurationFile"
+      },
+      "description": "Show the actual contents of a deployed configuration file, which must be underneath /Local/AS/Configuration/*Configuration and may not be in SecretConfiguration"
+    },
+    "INFRARED_VIP": {
+      "parameter": {
+        "type": "Host",
+        "value": "http://",
+        "required": "true",
+        "name": "host"
+      }
+    },
+    "NAMESPACE": {
+      "parameter": {
+        "name": "namespace",
+        "type": "String",
+        "required": "true"
+      }
+    },
+    "runHealthCheck": {
+      "description": "show application health",
+      "dispatch": {
+        "page": "HealthDebugger",
+        "class": "com.apple.store.webtoolkit.debug.app.RunHealthCheckAction"
+      },
+      "url": "<DEBUG>/application/health/<HEALTH_CHECK_NAME>",
+      "group": "Health"
+    },
+    "cacheDebugger": {
+      "description": "cache debugger",
+      "dispatch": {
+        "action": "page",
+        "page": "CacheDebugger"
+      },
+      "group": "Cache",
+      "parameters": [
+        {
+          "form": "cache",
+          "name": "cacheName",
+          "type": "String"
+        },
+        {
+          "form": "key",
+          "name": "key",
+          "type": "String"
+        },
+        {
+          "form": "script",
+          "name": "script",
+          "type": "String"
+        }
+      ],
+      "url": "<DEBUG>/cache",
+      "example": "/debug/cache"
+    },
+    "gauges": {
+      "url": "<DEBUG>/stats/gauges",
+      "parameters": [
+        {
+          "name": "collectorType",
+          "type": "String",
+          "value": "Gauge"
+        },
+        "<STATISTICS_VIEW_PARAMETERS>"
+      ],
+      "group": "Runtime",
+      "dispatch": {
+        "action": "page",
+        "page": "StatisticsDebugger"
+      },
+      "description": "Gauge statistics"
+    },
+    "scriptShell": {},
+    "peerList": {
+      "url": "<DEBUG>/application/peers",
+      "parameters": [
+        {
+          "form": "subject",
+          "name": "subject",
+          "type": "String"
+        },
+        {
+          "form": "url",
+          "name": "currentUrl",
+          "type": "CurrentUrl"
+        }
+      ],
+      "group": "Peer",
+      "dispatch": {
+        "action": "page",
+        "page": "PeerListDebugger"
+      },
+      "description": "show application peers"
+    },
+    "APP_NAME": {
+      "parameter": {
+        "name": "app",
+        "type": "String"
+      }
+    },
+    "viewConfigurationContexts2": {
+      "description": "view configuration by context; Completely disabled by default; rdar://28965016"
+    },
+    "REPOSITORY_PATH": {
+      "parameter": {
+        "name": "repository",
+        "type": "Path"
+      }
+    },
+    "blackwordConfig": {
+      "description": "Provides view of the post-processed config",
+      "example": "/debug/blackwordConfig",
+      "dispatch": {
+        "action": "page",
+        "page": "BlackWordConfigPage"
+      },
+      "url": "<DEBUG>/blackwordConfig"
+    },
+    "resource": {
+      "dispatch": {
+        "action": "staticresources"
+      },
+      "showInMenu": "false",
+      "url": "<ROOT>/r/<RESOURCE_PATH>"
+    },
+    "serviceBrowserRetrieveOrder": {
+      "parameters": [
+        {
+          "form": "serviceUrl",
+          "name": "url",
+          "type": "String"
+        },
+        {
+          "form": "serviceName",
+          "name": "serviceNAME",
+          "type": "String"
+        },
+        {
+          "form": "serviceDirectoryUrl",
+          "name": "serviceDirectoryURL",
+          "type": "String"
+        },
+        {
+          "form": "methodName",
+          "name": "methodNAME",
+          "type": "String"
+        },
+        {
+          "form": "serviceHandler",
+          "name": "serviceHANDLER",
+          "type": "String"
+        }
+      ],
+      "url": "<SERVICEBROWSER>/wa/callService"
+    },
+    "MBEAN_NAME": {
+      "parameter": {
+        "name": "objectName",
+        "type": "ObjectName",
+        "required": "true"
+      }
+    },
+    "viewConfigurationContexts": {
+      "description": "view configuration by context (warning); Completely disabled by default; rdar://28965016"
+    },
+    "peerSubjects": {
+      "url": "<DEBUG>/application/peerSubjects",
+      "parameters": [
+        {
+          "form": "url",
+          "name": "currentUrl",
+          "type": "CurrentUrl"
+        }
+      ],
+      "group": "Peer",
+      "dispatch": {
+        "action": "page",
+        "page": "PeerSubjectsDebugger"
+      },
+      "description": "show similar peers"
+    },
+    "applicationInformation": {
+      "description": "show application information",
+      "dispatch": {
+        "action": "page",
+        "page": "ApplicationInformationDebugger"
+      },
+      "url": "<DEBUG>/application/info",
+      "group": "Runtime"
+    },
+    "urldoc": {
+      "description": "url documentation for a particular namespace, e.g. urls-debug",
+      "dispatch": {
+        "action": "page",
+        "page": "URLDoc"
+      },
+      "group": "Documentation",
+      "title": "URL Documentation",
+      "url": "<DEBUG>/urldoc/<NAMESPACE>",
+      "example": "/debug/urldoc/urls-debug"
+    },
+    "TOOLS": {
+      "parameter": {
+        "description": "Prefix for tools box.",
+        "type": "Host",
+        "value": "http://storedev-tools.corp.apple.com",
+        "name": "host"
+      }
+    },
+    "fleetGrid": {
+      "url": "<INFRARED_VIP>/infrared/fleetGrid/<APP_NAME>"
+    },
+    "SVNHOST": {
+      "parameter": {
+        "type": "Host",
+        "value": "http://storesvn.apple.com",
+        "required": "true",
+        "name": "host"
+      }
+    },
+    "ROOT": {
+      "fragment": "<APP_HOST_ADMIN_PORT>"
+    },
+    "threadDumpDebugger": {
+      "url": "<DEBUG>/threads",
+      "parameters": [
+        {
+          "form": "filterBacktrace",
+          "name": "filterBacktrace",
+          "type": "String"
+        },
+        {
+          "form": "filterThreadName",
+          "name": "filterThreadName",
+          "type": "String"
+        },
+        {
+          "form": "showLocks",
+          "name": "showLocks",
+          "type": "String"
+        }
+      ],
+      "group": "Runtime",
+      "dispatch": {
+        "action": "page",
+        "page": "ThreadDumpDebugger"
+      },
+      "description": "thread dump"
+    },
+    "viewConfiguration": {
+      "description": "view single namespace, e.g. app",
+      "dispatch": {
+        "action": "page",
+        "page": "ShowConfigurationNamespace"
+      },
+      "group": "Configuration",
+      "parameters": [
+        {
+          "form": "raw",
+          "name": "raw",
+          "type": "String"
+        },
+        {
+          "form": "debug",
+          "name": "debug",
+          "type": "String"
+        },
+        {
+          "form": "context",
+          "name": "context",
+          "type": "Map"
+        },
+        {
+          "form": "ambiguityCheck",
+          "name": "ambiguityCheck",
+          "type": "String"
+        }
+      ],
+      "url": "<DEBUG>/configuration/view/<NAMESPACE>",
+      "example": "/debug/configuration/view/app"
+    },
+    "timers": {
+      "url": "<DEBUG>/stats/timers",
+      "parameters": [
+        {
+          "name": "collectorType",
+          "type": "String",
+          "value": "Timer"
+        },
+        "<STATISTICS_VIEW_PARAMETERS>"
+      ],
+      "group": "Runtime",
+      "dispatch": {
+        "action": "page",
+        "page": "StatisticsDebugger"
+      },
+      "description": "Timer statistics"
+    },
+    "urlDebugger": {
+      "dispatch": {
+        "action": "page",
+        "page": "URLDebugger"
+      },
+      "description": "url debugger",
+      "example": "/debug/urls",
+      "title": "URL Debugger",
+      "parameters": [
+        {
+          "form": "url",
+          "name": "url",
+          "type": "String"
+        },
+        {
+          "form": "patterns",
+          "name": "patterns",
+          "type": "String"
+        },
+        {
+          "form": "namespace",
+          "name": "namespace",
+          "type": "String"
+        }
+      ],
+      "group": "URL",
+      "url": "<DEBUG>/urls"
+    },
+    "APP_HOST_ADMIN_PORT": {
+      "parameter": {
+        "type": "OptionalAppHostAndAdminPort",
+        "value": "false",
+        "required": "false",
+        "name": "appHostAndAdminPort"
+      }
+    },
+    "caches": {
+      "url": "<DEBUG>/stats/caches",
+      "parameters": [
+        {
+          "name": "collectorType",
+          "type": "String",
+          "value": "Cache"
+        },
+        "<STATISTICS_VIEW_PARAMETERS>"
+      ],
+      "group": "Runtime",
+      "dispatch": {
+        "action": "page",
+        "page": "StatisticsDebugger"
+      },
+      "description": "Cache statistics"
+    },
+    "SERVICEBROWSER": {
+      "parameter": {
+        "type": "Host",
+        "value": "https://storetest-tools.corp.apple.com/Apple/WebObjects/ServiceBrowser-DC1-QA1.woa",
+        "required": "true",
+        "name": "serviceBrowserUrl"
+      }
+    },
+    "javadoc": {
+      "parameters": [
+        {
+          "type": "String",
+          "required": "true",
+          "name": "class",
+          "form": "name"
+        }
+      ],
+      "url": "<TOOLS>/javadoc/jump.cgi"
+    },
+    "RESOURCE_PATH": {
+      "parameter": {
+        "name": "path",
+        "type": "Path"
+      }
+    },
+    "MODULE_NAME": {
+      "parameter": {
+        "name": "module",
+        "type": "String"
+      }
+    }
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "pageMeta": {
+    "pageController": "controllers/cacheDebuggerController.js",
+    "loadAction": [
+      {
+        "type": "xhr",
+        "url": "/src/mockData/schemas/cacheDebugger/pageSchemas/sectionSchemas/cacheMainPage/sectionCache.json",
+        "method": "GET",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "cacheListing",
+          "successHandler": "myPageSuccessHandler"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "cacheListing.cacheEntries.error.message",
+          "targetDataStore": "cacheListing",
+          "targetDataField": "cacheListing.cacheEntries.error",
+          "failureHandler": "myPageFailureHandler"
+        }
+      },
+      {
+        "type": "xhr",
+        "url": "/src/mockData/schemas/cacheDebugger/pageSchemas/sectionSchemas/cacheMainPage/sectionCFM.json",
+        "method": "GET",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "cacheListing",
+          "targetDataField": "cacheListing.CFMServiceData",
+          "successHandler": "myPageSuccessHandler"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "cacheListing.CFMServiceData.error.message",
+          "targetDataStore": "cacheListing",
+          "targetDataField": "cacheListing.CFMServiceData.error",
+          "failureHandler": "myPageFailureHandler"
+        }
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Cache Entries",
+      "onClickRow": "onClickMyRow",
+      "onClickCell": "onClickMyCell",
+      "className": "toggle-collapsible",
+      "columns": [
+        {
+          "accessor": "name",
+          "Header": "Name",
+          "Cell": "onCellRenderer",
+          "filterOption": "exactMatch"
+        },
+        {
+          "accessor": "type",
+          "Header": "Type",
+          "filterOption": "relativeMatch"
+        },
+        {
+          "accessor": "count",
+          "Header": "Count"
+        },
+        {
+          "accessor": "size",
+          "Header": "Size"
+        },
+        {
+          "accessor": "crm",
+          "Header": "CRM"
+        },
+        {
+          "accessor": "effectiveData",
+          "Header": "Effective Data",
+          "filterable": false
+        },
+        {
+          "accessor": "hardFlushDebugInfo",
+          "Header": "Hard Flush Debug Info",
+          "filterable": false
+        }
+      ],
+      "tableSettings": {
+        "showPagination": false
+      },
+      "sourceDataStore": "cacheListing",
+      "sourceDataField": "cacheListing.cacheEntries",
+      "footer": "*** By default, the \"Remote Count\" is not supported by CCCache, being very expensive on the server side."
+    },
+    {
+      "type": "FORM",
+      "title": "CFMClientSpi form WITH LIST",
+      "classNames": "ui-no-submit",
+      "sourceDataStore": "cacheListing",
+      "data": {
+        "health": "",
+        "healthDetail": "",
+        "implementation": ""
+      },
+      "structure": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "CFMServiceData.CFMStatus.health": {
+              "title": "Health",
+              "type": "string"
+            },
+            "CFMServiceData.CFMStatus.healthDetail": {
+              "title": "Health Detail",
+              "type": "string"
+            },
+            "name": {
+              "title": "CFM",
+              "type": "string"
+            },
+            "CFMServiceData.CFMStatus.implementation": {
+              "title": "Implementation",
+              "type": "array"
+            },
+            "cacheEntries": {
+              "title": "Entries",
+              "type": "array"
+            }
+          }
+        },
+        "uiSchema": {
+          "ui:field": "bindFormFieldList"
+        }
+      }
+    },
+    {
+      "type": "FORM",
+      "title": "CFMClientSpi bindMyCustomFormFieldList",
+      "classNames": "ui-no-submit",
+      "sourceDataStore": "cacheListing",
+      "structure": {
+        "defaultValues": {
+          "health": "",
+          "healthDetail": "",
+          "implementation": ""
+        },
+        "schema": {
+          "type": "object",
+          "properties": {
+            "CFMServiceData.CFMStatus.health": {
+              "title": "Health",
+              "type": "string"
+            },
+            "CFMServiceData.CFMStatus.healthDetail": {
+              "title": "Health Detail",
+              "type": "string"
+            },
+            "name": {
+              "title": "CFM",
+              "type": "string"
+            },
+            "CFMServiceData.CFMStatus.implementation": {
+              "title": "Implementation",
+              "type": "array"
+            },
+            "cacheEntries": {
+              "title": "Entries",
+              "type": "array"
+            }
+          }
+        },
+        "uiSchema": {
+          "ui:field": "bindMyCustomFormFieldList"
+        }
+      }
+    },
+    {
+      "type": "FORM",
+      "title": "CFMClientSpi form, NO list",
+      "classNames": "ui-no-submit",
+      "sourceDataStore": "cacheListing",
+      "sourceDataField": "cacheListing.CFMServiceData.CFMStatus",
+      "data": {
+        "health": "",
+        "healthDetail": "",
+        "implementation": ""
+      },
+      "structure": {
+        "schema": {
+          "title": "CFMClientSpi implementation",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "health": {
+              "type": "string",
+              "title": "Health"
+            },
+            "healthDetail": {
+              "type": "string",
+              "title": "Health detail"
+            }
+          }
+        },
+        "uiSchema": {
+          "health": {
+            "ui:readonly": true,
+            "classNames": "ui-readonly-field"
+          },
+          "healthDetail": {
+            "ui:readonly": true,
+            "classNames": "ui-readonly-field"
+          },
+          "implementation": {
+            "ui:readonly": true,
+            "classNames": "ui-readonly-field"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "fruit": "Extra value for testing",
+  "flower": [
+    "debugABC - /<APPHOSTANDADMINPORT>/debug",
+    "WXYZAdaptors - /<APPHOSTANDADMINPORT>/debug/application/WOAdaptors",
+    "ABChealthDebugger - /<APPHOSTANDADMINPORT>/debug/application/health"
+  ]
+}

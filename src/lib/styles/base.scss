@@ -1,0 +1,32 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: $body-bg !important;
+  font-family: $default-font !important;
+  font-weight: $default-font-weight !important;
+  font-size: $default-font-size;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: $link-color;
+}
+
+b {
+  font-weight: 500 !important;
+}
+
+a:hover,
+a:focus {
+  color: $link-color-focus;
+}
+
+[role='button'] {
+  cursor: pointer;
+}

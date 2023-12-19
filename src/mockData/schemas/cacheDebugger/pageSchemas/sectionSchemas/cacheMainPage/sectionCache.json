@@ -1,0 +1,61 @@
+{
+  "name": "Cache Listing",
+  "cacheEntries": [
+    {
+      "id": 1,
+      "name": "BeanCache app.debugMenu DebugMenuConfig",
+      "type": "StandardCache",
+      "count": 1,
+      "size": 400,
+      "crm": "OFF",
+      "effectiveData": null,
+      "hardFlushDebugInfo": null
+    },
+    {
+      "id": 2,
+      "name": "BeanCache app.beanHandler BeanHandlerConfiguration",
+      "type": "ContextAwareCache",
+      "count": 0,
+      "size": 400,
+      "crm": "OFF",
+      "effectiveData": null,
+      "hardFlushDebugInfo": null
+    },{
+      "id": 3,
+      "name": "URLPatterns urls-debug",
+      "type": "ContextAwareCache",
+      "count": 1,
+      "size": 500,
+      "crm": "OFF",
+      "effectiveData": "2018-10-22 15:24:50 PDT; URLPatternManagerFornamespace:Clearing internal cache after config change",
+      "hardFlushDebugInfo": "HARD_FLUSH_SUCCEEDED: 2018-10-22 15:24:50 PDT; URLPatternManagerFornamespace:Clearing internal cache after config change"
+    },{
+      "id": 4,
+      "name": "client-anonymous",
+      "type": "ServiceCache",
+      "count": 0,
+      "size": 200,
+      "crm": "OK",
+      "effectiveData": "2017-03-14 15:34:33 PDT; [REMOTE/CFM] CFM:Never flushed",
+      "hardFlushDebugInfo": "null"
+    },{
+      "id": 5,
+      "name": "default Config Resource Cache",
+      "type": "InvalidatingCache",
+      "count": 100,
+      "size": 100,
+      "crm": "OFF",
+      "effectiveData": "2018-10-31 11:28:32 PDT; ConfigurationManager:null",
+      "hardFlushDebugInfo": "HARD_FLUSH_SUCCEEDED: 2018-10-31 11:28:32 PDT; ConfigurationManager:null"
+    },{
+      "id": 6,
+      "name": "default Config Resource List Cache",
+      "type": "StandardCache",
+      "count": 2971,
+      "size": 10000,
+      "crm": "OK",
+      "effectiveData": "2018-10-31 11:28:32 PDT; ConfigurationManager:null",
+      "hardFlushDebugInfo": "HARD_FLUSH_SUCCEEDED: 2018-10-31 11:28:32 PDT; ConfigurationManager:null"
+    }
+  ]
+}

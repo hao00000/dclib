@@ -1,0 +1,12 @@
+{
+  "timeout": "10m",
+  "sourceType": "configurationResourceCache",
+  "kind": "invalidating",
+  "jitter": "0ms",
+  "useHardReferences": "true",
+  "size": "100",
+  "_expire": "-1",
+  "contextKeys": [],
+  "name": "default Config Resource Cache",
+  "maximumStaleness": "0ms"
+}

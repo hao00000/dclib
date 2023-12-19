@@ -1,0 +1,14 @@
+{
+  "BeanCache app.debugMenu DebugMenuConfig": {
+    "17313491ebf929de531a58766cc33593": {
+      "hits": "760",
+      "data": "com.apple.store.toolkit.config.AbstractContextAwareFactory$Entry@481bb502",
+      "created": "1552485257680",
+      "gcd": "false",
+      "expiration": "Wed Dec 31 16:00:00 PST 1969",
+      "invalidationKeys": [],
+      "expired": "false"
+    }
+  },
+  "_expire": "-1"
+}

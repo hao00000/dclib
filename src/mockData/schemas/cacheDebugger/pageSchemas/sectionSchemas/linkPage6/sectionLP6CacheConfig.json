@@ -1,0 +1,12 @@
+{
+  "timeout": "10m",
+  "sourceType": "resourceList",
+  "kind": "standard",
+  "jitter": "0ms",
+  "useHardReferences": "false",
+  "size": "10000",
+  "_expire": "-1",
+  "contextKeys": [],
+  "name": "default Config Resource List Cache",
+  "maximumStaleness": "0ms"
+}

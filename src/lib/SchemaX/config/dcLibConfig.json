@@ -1,0 +1,146 @@
+{
+  "appMeta": {
+    "loadAction": [
+      {
+        "type": "xhr",
+        "method": "GET",
+        "url": "/servicedebugger/environmentURLs",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "envs"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "error.",
+          "targetDataStore": "envs"
+        }
+      },
+      {
+        "type": "xhr",
+        "method": "GET",
+        "url": "/servicedebugger/debug/:appContext.serviceName/versions",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "versions"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "error."
+        }
+      },
+      {
+        "type": "xhr",
+        "method": "POST",
+        "url": "/servicedebugger/send/:appContext.serviceName/:appContext.host/:appContext.port/admin",
+        "data": {
+          "method": "getConfiguration"
+        },
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "contextInfo",
+          "targetDataField": "contextInfo"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "error.",
+          "targetDataStore": "contextInfo",
+          "targetDataField": "contextInfo"
+        }
+      },
+      {
+        "type": "xhr",
+        "method": "POST",
+        "url": "/servicedebugger/send/:appContext.serviceName/:appContext.host/:appContext.port/peer",
+        "data": {
+          "method": "getPeerInfo"
+        },
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "peerInfo",
+          "targetDataField": "peerInfo.peerList"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "page error.",
+          "failureHandler": "myPageFailureHandler"
+        }
+      },
+      {
+        "type": "xhr",
+        "method": "GET",
+        "url": "/servicedebugger/service/:appContext.serviceName/:appContext.host/:appContext.port/api",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "allHandlers",
+          "successHandler": "getAllHandlersSuccessHandler"
+        },
+        "onFailure": {}
+      }
+    ]
+  },
+  "serviceInfo": {
+    "loadAction": [
+      {
+        "type": "xhr",
+        "method": "POST",
+        "sourceDataStore": "cacheListing",
+        "oldUrl": "/src/mockData/schemas/admin.json",
+        "url": "/servicedebugger/send/:appContext.serviceName/:appContext.host/:appContext.port/admin",
+        "data": {
+          "method": "extendedInfo"
+        },
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "metrics",
+          "targetDataField": "metrics.summaryInfo"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "error.",
+          "targetDataStore": "metrics",
+          "targetDataField": "metrics.extendedInfo"
+        }
+      },
+      {
+        "type": "xhr",
+        "method": "POST",
+        "oldUrl": "/src/mockData/schemas/stats.json",
+        "url": "/servicedebugger/send/:appContext.serviceName/:appContext.host/:appContext.port/stats",
+        "data": {
+          "method": "getMBeans",
+          "name": "java.lang:type=Threading"
+        },
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "metrics",
+          "targetDataField": "metrics.threadCountInfo"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "error.",
+          "targetDataStore": "metrics",
+          "targetDataField": "metrics.getMBeans"
+        }
+      },
+      {
+        "type": "xhr",
+        "method": "POST",
+        "url": "/servicedebugger/send/:appContext.serviceName/:appContext.host/:appContext.port/admin",
+        "data": {
+          "method": "getApplicationRuntimeInfo"
+        },
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "metrics",
+          "targetDataField": "metrics.serviceInfo"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "error.",
+          "targetDataStore": "metrics",
+          "targetDataField": "metrics.serviceInfo"
+        }
+      }
+    ]
+  }
+}

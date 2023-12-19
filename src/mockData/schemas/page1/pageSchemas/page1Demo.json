@@ -1,0 +1,442 @@
+{
+  "pageMeta": {
+    "pageController": "controllers/page1DemoController.js"
+  },
+  "sections": [
+    {
+      "type": "FORM",
+      "title": "Filters",
+      "sourceDataStore": "timerFilter",
+      "data": {
+        "period": "60 min",
+        "values": "",
+        "names": "",
+        "fuzzy_names": "",
+        "namespace": "default"
+      },
+      "structure": {
+        "schema": "schemaMapper",
+        "uiSchema": {
+          "namespace": {
+            "ui:placeholder": "Provide a config namespace"
+          },
+          "names": {
+            "ui:placeholder": "Regex, e.g. .*CPU.*"
+          },
+          "fuzzy_names": {
+            "ui:placeholder": "Fuzzy, e.g. \"fserv\" matches \"FooService\""
+          },
+          "values": {
+            "ui:placeholder": "e.g. (min > 0) and (average > 10.0)"
+          }
+        }
+      },
+      "onSubmit": {
+        "addToQueryString": ["names", "namespace"],
+        "loadAction": {
+          "type": "xhr",
+          "method": "POST",
+          "url": "/servicedebugger/send/:appContext.serviceName/:appContext.host/:appContext.port/stats",
+          "data": {
+            "method": "getTimers",
+            "includeAll": "true"
+          },
+          "onSuccess": {
+            "message": "",
+            "targetDataStore": "timerResponse",
+            "successHandler": "onTimerResponseLoaded"
+          },
+          "onFailure": {
+            "message": "Unable to fetch the timer",
+            "targetDataStore": "timerResponse",
+            "errorMessageField": "page error.",
+            "failureHandler": "myPageFailureHandler"
+          }
+        }
+      }
+    },
+    {
+      "type": "LIST",
+      "title": "List section with loadAction data",
+      "sourceDataStore": "page1Source",
+      "sourceDataField": "page1Source.flower",
+      "loadAction": {
+        "type": "xhr",
+        "url": "/src/mockData/schemas/page1/pageSchemas/sectionSchemas/sectionListData1.json",
+        "method": "GET",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "page1Source",
+          "targetDataField": "page1Source.flower"
+        },
+        "onFailure": {}
+      }
+    },
+    {
+      "type": "PRE",
+      "title": "Pre View",
+      "desc": "extra description",
+      "sourceDataStore": "netStatResponse",
+      "sourceDataField": "netStatResponse.stdout",
+      "loadAction": {
+        "type": "xhr",
+        "method": "GET",
+        "url": "/src/mockData/schemas/cacheDebugger/pageSchemas/sectionSchemas/netstat.json",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "netStatResponse"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "page error.",
+          "failureHandler": "myPageFailureHandler"
+        }
+      },
+      "sectionLocation": "Number(optional)"
+    },
+    {
+      "type": "FORM",
+      "title": "Application Information",
+      "titleRenderFunction": "myTitleRenderFunction",
+      "classNames": "ui-no-submit",
+      "sourceDataStore": "appInfo",
+      "loadAction": {
+        "type": "xhr",
+        "method": "GET",
+        "url": "/src/mockData/schemas/cacheDebugger/pageSchemas/sectionSchemas/appInfo.json",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "appInfo",
+          "successHandler": "mySectionSuccessHandler"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "page error.",
+          "failureHandler": "mySectionFailureHandler"
+        }
+      },
+      "data": {
+        "arguments": ""
+      },
+      "structure": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "host": {
+              "type": "string",
+              "title": "Host"
+            },
+            "uptime": {
+              "type": "string",
+              "title": "Uptime"
+            },
+            "mainBundle": {
+              "type": "string",
+              "title": "Path"
+            },
+            "javaVersion": {
+              "type": "string",
+              "title": "JVM"
+            },
+            "arguments": {
+              "type": "array",
+              "title": "Arguments"
+            }
+          }
+        },
+        "uiSchema": {
+          "ui:field": "bindFormFieldList"
+        }
+      }
+    },
+    {
+      "type": "TABLE",
+      "title": "employee table",
+      "verticalHeader": true,
+      "sourceDataStore": "page1Source",
+      "sourceDataField": "page1Source.employeeSheet.employeeList",
+      "loadAction": {
+        "type": "xhr",
+        "url": "/src/mockData/schemas/page1/pageSchemas/sectionSchemas/sectionEmployeeTable.json",
+        "method": "GET",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "page1Source",
+          "targetDataField": "page1Source.employeeSheet",
+          "successHandler": "myTableSectionSuccessHandler"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "error.",
+          "failureHandler": "myTableSectionFailureHandler"
+        }
+      },
+      "columns": [
+        {
+          "accessor": "firstName",
+          "Header": "FName"
+        },
+        {
+          "accessor": "lastName",
+          "Header": "LName"
+        },
+        {
+          "accessor": "email",
+          "Header": "Email"
+        },
+        {
+          "accessor": "bio",
+          "Header": "Biography"
+        },
+        {
+          "accessor": "password",
+          "Header": "Secured Password"
+        }
+      ],
+      "tableSettings": {
+        "showPagination": false
+      }
+    },
+    {
+      "type": "FORM",
+      "title": "Filter",
+      "data": {
+        "taskname": "Finalizer",
+        "backtrace": ""
+      },
+      "structure": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "taskname": {
+              "type": "string",
+              "title": "Task Name"
+            },
+            "backtrace": {
+              "type": "string",
+              "title": "Backtrace"
+            }
+          }
+        },
+        "uiSchema": {
+          "taskname": {
+            "ui:placeholder": "Enter Task Name"
+          },
+          "backtrace": {
+            "ui:placeholder": "Enter Backtrace"
+          }
+        }
+      },
+      "onSubmit": {
+        "loadAction": {
+          "type": "xhr",
+          "method": "POST",
+          "url": "/servicedebugger/send/DataStorageService/rn-aosd-d01-lapp12.rno.apple.com/13520/admin",
+          "data": {
+            "method": "getThreadDump"
+          },
+          "onSuccess": {
+            "message": "",
+            "targetDataStore": "threadDumpResponse"
+          },
+          "onFailure": {
+            "message": "Unable to fetch the timer",
+            "errorMessageField": "page error."
+          }
+        }
+      }
+    },
+    {
+      "type": "FORM",
+      "title": "Employee entry form",
+      "fieldTemplate": "CustomFieldTemplate",
+      "sectionWrapper": "Specify PATH to a wrapper container by title to wrap around the rendered section. This allows Tab/Collapse/Accordion to be implemented",
+      "targetSection": "write title of another section here. Data created upon form submission of this form can be used as data for the table/json section given in aggregation",
+      "sourceDataStore": "page1Source",
+      "sourceDataField": "page1Source.employeeData.employeeEntry",
+      "loadAction": {
+        "type": "xhr",
+        "url": "/src/mockData/schemas/page1/pageSchemas/sectionSchemas/sectionEmployeeForm.json",
+        "method": "GET",
+        "onSuccess": {
+          "message": "",
+          "targetDataStore": "page1Source",
+          "targetDataField": "page1Source.employeeData"
+        },
+        "onFailure": {
+          "message": "",
+          "errorMessageField": "error.",
+          "failureHandler": "mySectionFailureHandler"
+        }
+      },
+      "onChange": "myOnChange",
+      "onBlur": "myOnBlur",
+      "onSubmit": {
+        "addToQueryString": true,
+        "handlerFunction": "UNUSED: name of function to be called. Used only when developer needs handle to it. The datastore object of form should be the input to the function",
+        "loadAction": {
+          "type": "xhr",
+          "oldUrl": "http://localhost:5000/api/companies/5be50e6b4bd881df48925721/addEmployee",
+          "useCase1Url": "/servicedebugger/debug/:query.hostName/:query.port/employeeTable?vehicleName=:query.vehicleName&favTeam=:query.favTeam",
+          "url": "/servicedebugger/debug/:query.hostName/:query.port/employeeTable",
+          "method": "POST",
+          "data": {
+            "vehicleName": ":query.vehicleName",
+            "category": "engineer",
+            "biography": ":source.page1Source.employeeSheet.employeeList[0].bio",
+            "favTeam": ":query.favTeam"
+          },
+          "onSuccess": {
+            "message": "",
+            "targetDataStore": "page1Source",
+            "targetDataField": "page1Source.employeeRecord",
+            "successHandler": "mySectionSuccessHandler"
+          },
+          "onFailure": {
+            "message": "",
+            "errorMessageField": "error."
+          }
+        }
+      },
+      "onError": "myOnError",
+      "data": {
+        "firstName": "",
+        "lastName": "",
+        "email": "",
+        "bio": "",
+        "password": ""
+      },
+      "structure": {
+        "schema": {
+          "title": "A regular form",
+          "description": "A simple form example.",
+          "type": "object",
+          "required": ["firstName", "lastName"],
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "title": "First name"
+            },
+            "lastName": {
+              "type": "string",
+              "title": "Last name"
+            },
+            "email": {
+              "type": "string",
+              "title": "Email"
+            },
+            "bio": {
+              "type": "string",
+              "title": "Bio"
+            },
+            "password": {
+              "type": "string",
+              "title": "Password",
+              "minLength": 3
+            }
+          }
+        },
+        "uiSchema": {
+          "firstName": {
+            "ui:emptyValue": "",
+            "ui:placeholder": "Enter your first name"
+          },
+          "lastName": {
+            "ui:emptyValue": "",
+            "ui:placeholder": "Enter your last name"
+          },
+          "email": {
+            "ui:emptyValue": "",
+            "ui:title": "Email",
+            "ui:description": "(Only @gmail, @mail, @hotmail, @apple are allowed)",
+            "ui:placeholder": "Enter your email"
+          },
+          "bio": {
+            "ui:widget": "textarea",
+            "ui:placeholder": "Enter your bio"
+          },
+          "password": {
+            "ui:widget": "password",
+            "ui:help": "Hint: Make it strong!",
+            "ui:placeholder": "Enter your password"
+          }
+        }
+      }
+    },
+    {
+      "type": "JSON",
+      "title": "Thread Dump JSON",
+      "desc": "extra description",
+      "sectionLocation": "Number(optional)",
+      "sourceDataStore": "pageDemo1",
+      "sourceDataField": "pageDemo1.data",
+      "data": [
+        {
+          "id": 1,
+          "first_name": "Gibby",
+          "last_name": "Varnam",
+          "email": "gvarnam0@weibo.com",
+          "gender": "Male",
+          "ip_address": "214.182.98.67"
+        },
+        {
+          "id": 2,
+          "first_name": "Sharity",
+          "last_name": "Ferrige",
+          "email": "sferrige1@marketwatch.com",
+          "gender": "Female",
+          "ip_address": "145.78.176.179"
+        },
+        {
+          "id": 3,
+          "first_name": "Lonnard",
+          "last_name": "Yakobovitz",
+          "email": "lyakobovitz2@census.gov",
+          "gender": "Male",
+          "ip_address": "195.217.173.251"
+        }
+      ]
+    },
+    {
+      "type": "PRE",
+      "title": "Pre View",
+      "desc": "extra description",
+      "sectionLocation": "Number(optional)",
+      "sourceDataStore": "pageDemo1",
+      "sourceDataField": "pageDemo1.data",
+      "renderHandler": "htmlStringBuilder",
+      "data": [
+        {
+          "id": 1,
+          "first_name": "Gibby",
+          "last_name": "Varnam",
+          "email": "gvarnam0@weibo.com",
+          "gender": "Male",
+          "ip_address": "214.182.98.67"
+        },
+        {
+          "id": 2,
+          "first_name": "Sharity",
+          "last_name": "Ferrige",
+          "email": "sferrige1@marketwatch.com",
+          "gender": "Female",
+          "ip_address": "145.78.176.179"
+        },
+        {
+          "id": 3,
+          "first_name": "Lonnard",
+          "last_name": "Yakobovitz",
+          "email": "lyakobovitz2@census.gov",
+          "gender": "Male",
+          "ip_address": "195.217.173.251"
+        }
+      ]
+    },
+    {
+      "type": "CUSTOM",
+      "sectionContainer": "a custom Container to build out the entire section your way, that section will be nested in the app, inherit the SideBar and feature as an option in there",
+      "title": "Custom Container"
+    }
+  ],
+  "pageWrapper": "Page1Wrapper to enhance look and feel of the Page, add Header/Footer/Banner or anything wrapping the page of sections"
+}

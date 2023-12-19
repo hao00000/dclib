@@ -1,0 +1,18 @@
+{
+  "employeeBiometrics": {
+    "weight": 140,
+    "height": "5'8",
+    "HbgV": 22.8,
+    "glucose": 13.9,
+    "bloodType": "B"
+  },
+  "employeeMood": "happy",
+  "employeeEntry": {
+    "firstName": "Doe",
+    "lastName": "Joe",
+    "email": "codingdojo@gmail.com",
+    "bio": "sample bio",
+    "password": "*****"
+  },
+  "employeeRideShare": true
+}

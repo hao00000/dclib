@@ -1,0 +1,132 @@
+{
+  "pageMeta": {
+    "pageController": "controllers/viewConfigController.js",
+    "loadAction": {
+      "type": "xhr",
+      "method": "POST",
+      "url": "/servicedebugger/send/:appContext.serviceName/:appContext.host/:appContext.port/admin",
+      "data": {
+        "method": "getConfiguration",
+        "namespace": ":query.namespace"
+      },
+      "onSuccess": {
+        "message": "",
+        "targetDataStore": "configResponse",
+        "successHandler": "onConfigResponseLoaded"
+      },
+      "onFailure": {
+        "message": "",
+        "errorMessageField": "page error.",
+        "failureHandler": "myPageFailureHandler"
+      }
+    }
+  },
+  "sections": [
+    {
+      "type": "FORM",
+      "title": "Context",
+      "sourceDataStore": "configResponse",
+      "sourceDataField": "configResponse.context",
+      "onBlur": "onBlurViewConfigContextForm",
+      "structure": {
+        "defaultValues": {
+          "format": "",
+          "port": ""
+        },
+        "schema": {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "type": "string",
+              "title": "Mode"
+            },
+            "port": {
+              "type": "string",
+              "title": "Port"
+            },
+            "host": {
+              "type": "string",
+              "title": "Host"
+            },
+            "user": {
+              "type": "string",
+              "title": "User"
+            },
+            "container": {
+              "type": "string",
+              "title": "Container"
+            },
+            "app": {
+              "type": "string",
+              "title": "App"
+            },
+            "format": {
+              "type": "string",
+              "title": "Format"
+            },
+            "channel": {
+              "type": "string",
+              "title": "Channel"
+            },
+            "region": {
+              "type": "string",
+              "title": "Region"
+            },
+            "segment": {
+              "type": "string",
+              "title": "Segment"
+            },
+            "revmode": {
+              "type": "string",
+              "title": "Revmode"
+            },
+            "layer": {
+              "type": "string",
+              "title": "Layer"
+            },
+            "toolkitCompatibilityVersion": {
+              "type": "string",
+              "title": "toolkitCompatibilityVersion"
+            },
+            "desktopMode": {
+              "type": "string",
+              "title": "desktopMode"
+            },
+            "partition": {
+              "type": "string",
+              "title": "Partition"
+            }
+          }
+        },
+        "uiSchema": {
+          "port": {
+            "ui:emptyValue": "",
+            "ui:placeholder": ""
+          }
+        }
+      }
+    },
+    {
+      "type": "JSON",
+      "title": "Configuration",
+      "sourceDataStore": "configResponse",
+      "sourceDataField": "configResponse.configuration"
+    },
+    {
+      "type": "LIST",
+      "title": "Matching resources",
+      "desc": "In priority order, high to low.",
+      "sourceDataStore": "configResponse",
+      "sourceDataField": "configResponse.matchingResources",
+      "renderHandler": "resourcesListRenderer"
+    },
+    {
+      "type": "LIST",
+      "title": "All resources for namespace (not incl. imported namespaces)",
+      "desc": "(Not including imported namespaces.) In priority order, high to low, with the matching ones highlighted",
+      "sourceDataStore": "configResponse",
+      "sourceDataField": "configResponse.resources",
+      "renderHandler": "resourcesListRenderer"
+    }
+  ]
+}

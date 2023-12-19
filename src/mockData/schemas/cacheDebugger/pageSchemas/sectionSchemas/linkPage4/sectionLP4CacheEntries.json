@@ -1,0 +1,14 @@
+{
+  "BeanCache MemCached MemCachedConfiguration": {
+    "4fba7588d73951f89ceeaf5050f6a673": {
+      "hits": "1",
+      "data": "com.apple.store.toolkit.config.AbstractContextAwareFactory$Entry@400cd9c9",
+      "created": "1552450509217",
+      "gcd": "false",
+      "expiration": "Wed Dec 31 16:00:00 PST 1969",
+      "invalidationKeys": [],
+      "expired": "false"
+    }
+  },
+  "_expire": "-1"
+}

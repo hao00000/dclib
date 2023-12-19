@@ -1,0 +1,41 @@
+$body-bg: #f5f6fa;
+$default-font: 'Helvetica Neue';
+$default-font-weight: 300;
+$default-font-size: 16px;
+
+// Colors
+$color-white: #ffffff;
+$color-success: #36a832;
+$color-blue: #047fe8;
+$color-black: #333333;
+
+// Link
+$link-color: $color-blue;
+$link-color-focus: darken($link-color, 10%);
+
+// Header color
+$header-bg: $color-white;
+$header-brand-bg-color: #4f546a;
+$header-brand-color: $color-white;
+$header-brand-bottom-border-color: #68728d;
+
+// Left Navigation
+$left-nav-bg: #4f546a;
+$left-nav-link-color: #bcbec3;
+$left-nav-link-hover-color: $color-white;
+$left-nav-active-menu-color: #65687a;
+
+// Badge
+$badge-default-bg: #e8e8e8;
+$badge-default-color: #656a7d;
+$badge-default-border: #707070;
+$badge-success-bg: #36a832;
+$badge-error-bg: #fb7774;
+$badge-warning-bg: #faebcc;
+$badge-default-bg: #999999;
+$badge-success-color: $color-white;
+
+// progress-bar
+$progress-bg-success: $color-success;
+$progress-bg-blue: $color-blue;
+$progress-bg-default: #d5d2d2;

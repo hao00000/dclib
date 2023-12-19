@@ -1,0 +1,31 @@
+{
+  "timeout": "0ms",
+  "sourceType": "urlPatterns",
+  "kind": "contextAware",
+  "jitter": "0ms",
+  "useHardReferences": "true",
+  "size": "500",
+  "_expire": "-1",
+  "contextKeys": [
+    "app",
+    "container",
+    "serviceBootstrapMode",
+    "sap",
+    "toolkitCompatibilityVersion",
+    "masterApp",
+    "layer",
+    "tlsSupportVersion",
+    "disableRemoteConfiguration",
+    "mode",
+    "partition",
+    "port",
+    "segment",
+    "revmode",
+    "host",
+    "region",
+    "user",
+    "dc"
+  ],
+  "name": "URLPatterns urls-debug",
+  "maximumStaleness": "0ms"
+}

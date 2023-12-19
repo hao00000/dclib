@@ -1,0 +1,51 @@
+@import '~bootstrap/scss/bootstrap';
+
+.ui-area-chart {
+  // CSS for area chart
+}
+
+.ui-bar-chart {
+  // CSS for bar chart
+}
+
+.ui-line-chart {
+  // CSS for line chart
+}
+
+.ui-pie-chart {
+  // CSS for pie chart
+}
+
+.ui-scatter-chart {
+  // CSS for scatter chart
+  .recharts-surface {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+  }
+}
+
+.ui-single-stats-chart {
+  // CSS for single-stats chart
+  font-size: 0;
+
+  .single-stats {
+    font-size: 16px;
+    display: inline-block;
+    height: 75px;
+    min-width: 150px;
+    background-color: #40B1FB;
+    margin: 2px;
+    border: 1px solid #888;
+    .stats-text {
+      text-align: left;
+      font-size: 14px;
+      color: #FFF;
+    }
+    .stats{
+      text-align: center;
+      font-size: 20px;
+      color: #FFF;
+    }
+  }
+}

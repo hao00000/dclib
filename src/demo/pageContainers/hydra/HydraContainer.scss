@@ -1,0 +1,69 @@
+.hydra-view {
+  margin-left: 6px;
+  padding: 10px;
+  h4 {
+    margin: 20px 0px 10px;
+    font-weight: 300 !important;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+  h2 {
+    margin: 20px 0px 20px;
+    font-weight: 300 !important;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+  .ui-single-stats-chart {
+    margin-left: 10px;
+  }
+  .list-view {
+    margin-left: 20px;
+  }
+  .pre-view {
+    margin-left: 5px;
+  }
+  .form-wrapper {
+    width: 80%;
+    padding: 10px;
+    .form-input-row {
+      width: auto !important;
+      .form-input-title.col {
+        display: none;
+      }
+      .form-input.col {
+        .form-input-container {
+          .form-input-title.col {
+            display: block;
+          }
+        }
+      }
+    }
+    > div:nth-child(2) {
+      text-align: right;
+      width: 72%;
+      margin-left: 2px;
+      .btn-info {
+        position: relative;
+        margin: 10px 0px;
+      }
+    }
+    .btn-info {
+      position: relative;
+      margin: 10px 0px;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      border-radius: 0.2rem;
+    }
+  }
+  .table-view-container {
+    .rt-thead.-header {
+      background-color: #ddd;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      box-shadow: none;
+    }
+    .rt-resizable-header-content {
+      text-transform: capitalize;
+    }
+  }
+}

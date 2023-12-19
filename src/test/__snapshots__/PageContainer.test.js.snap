@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page container test should render the component 1`] = `"<div class=\\"form-view\\"><p>This is a sample page for CUSTOM_PAGE type.</p><p>This page is loaded through PageContainer setting, see demo/index.js and appConfig.json</p></div>"`;

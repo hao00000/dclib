@@ -1,0 +1,20 @@
+{
+  "basicTable": [
+    {
+      "_id": "5bee693a8a32cf26ad431e03",
+      "firstName": "Jennifer",
+      "lastName": "Lawrence",
+      "email": "jlawrence@gmail.com",
+      "bio": "Kentucky-born actress Jennifer Lawrence began her career as a teenager, appearing on shows like Monk and The Bill Engvall Show from 2006 through 2009",
+      "password": "*****"
+    },
+    {
+      "_id": "5bee69418a32cf26ad431e04",
+      "firstName": "Johnny",
+      "lastName": "Deep",
+      "email": "jdeep@gmail.com",
+      "bio": "His numerous collaborations with director Tim Burton, as well as solid performances in a number of critically acclaimed films, have allowed Depp to carve a niche for himself as a serious, if idiosyncratic performer, a real-life role that has continuously surprised critics intent on writing him off as just another photogenic Tiger Beat casualty",
+      "password": "*****"
+    }
+  ]
+}

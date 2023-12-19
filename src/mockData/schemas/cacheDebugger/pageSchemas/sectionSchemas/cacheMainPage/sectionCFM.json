@@ -1,0 +1,13 @@
+{
+  "CFM": "Extra value for testing",
+  "CFMStatus": {
+    "health": "OK",
+    "healthDetail": "OK({ResourceManager=OK(null), client:anonymous=OK(null)})",
+    "implementation": [
+      "com.apple1.store.toolkit.cache.cfm.spi_impl.CFMClientImpl_V1(sla=null)",
+      "com.apple2.store.toolkit.cache.cfm.spi_impl.CFMClientImpl_V1(sla=null)",
+      "com.apple3.store.toolkit.cache.cfm.spi_impl.CFMClientImpl_V1(sla=null)",
+      "com.apple4.store.toolkit.cache.cfm.spi_impl.CFMClientImpl_V1(sla=null)"
+    ]
+  }
+}

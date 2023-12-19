@@ -1,0 +1,27 @@
+{
+  "_expire": "-1",
+  "default Config Resource Cache": {
+    "effectiveSoftFlushDate": {
+      "audit": {
+        "auditTimestamp": "1553000050638",
+        "user": "ConfigurationManager"
+      },
+      "softFlushTimestamp": "1553000050637"
+    },
+    "cacheCfmHealth": {
+      "inGracePeriod": "false",
+      "statusMessage": "Blacklisted",
+      "status": "OFF"
+    },
+    "hardFlushDebugInfo": {
+      "changeDate": {
+        "audit": {
+          "auditTimestamp": "1553000050638",
+          "user": "ConfigurationManager"
+        },
+        "softFlushTimestamp": "1553000050638"
+      },
+      "state": "HARD_FLUSH_SUCCEEDED"
+    }
+  }
+}
